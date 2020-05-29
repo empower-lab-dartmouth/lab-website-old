@@ -1,0 +1,17 @@
+.header-block {
+	font-family: Avenir, sans-serif;
+	margin: 20px;
+	margin-left: 320px;
+	width: 750px;
+}
+
+.page-header {
+	font-size: 28px;
+	text-align: left;
+}
+
+#construction {
+	font-family: Avenir, sans-serif;
+	margin: 50px;
+	text-align: center;
+}
