@@ -1,0 +1,5 @@
+
+*.espressostorage
+/lab-website.esproj/
+/.project
+/.metadata/
