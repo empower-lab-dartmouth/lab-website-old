@@ -8,6 +8,11 @@
   --pub-text: #5e5e5e;
   --pub-year-color: #5e5e5e; /*#82a043;*/
   --project-tags-year-top-alignment: 30%;
+  --domain-tag-color: #90daea;
+  --population-tag-color: #f9ec27;
+  --context-tag-color: #ae79e0;
+  --method-tag-color: #fbb870;
+  --interaction-tag-color: #8ed3ac;
 }
 
 @font-face { /* Neutra Text TF 500 */
@@ -229,13 +234,14 @@ body > * {
 /*********************NEWS PAGE*********************/
 
 /*********************PROJECTS PAGE*********************/
-#projects-preface {
+
+#projects-preface, .project-section-desc {
 	font-size: 13px;
-	padding-top: 5px;
+	margin-top: 5px;
 }
 .tags-block {
 	font-family: Neutra Text;
-	background-color: #fa0505;
+	/*background-color: #fa0505;*/
 }
 .tag-name {
 	font-size: 14px;
@@ -253,25 +259,39 @@ body > * {
 	border-radius: 6px;
 	padding: 3px;
 }
+
 .domain-tag {
-	background-color: #90daea;
+	background-color: var(--domain-tag-color);
+}
+.domain-span {
+	color: var(--domain-tag-color);
 }
 .population-tag {
-	background-color: #f9ec27;
+	background-color: var(--population-tag-color);
+}
+.population-span {
+	color: var(--population-tag-color);
 }
 .context-tag {
-	background-color: #ae79e0;
+	background-color: var(--context-tag-color);
+}
+.context-span {
+	color: var(--context-tag-color);
 }
 .method-tag {
-	background-color: #fbb870;
+	background-color: var(--method-tag-color);
+}
+.method-span {
+	color: var(--method-tag-color);
 }
 .interaction-tag {
-	background-color: #8ed3ac;
+	background-color: var(--interaction-tag-color);
+}
+.interaction-span {
+	color: var(--interaction-tag-color);
 }
 
-.projects-section {
-	background-color: green;
-}
+
 .project-entry {
 	background-color:  yellow;
 }
@@ -506,7 +526,7 @@ projects page, but could eventually make separate Talks page) */
 	margin-right: auto;
 	margin-bottom: 20px;
 }
-.pub-year-header {
+.pub-year-header, .project-section-header {
 	font-family: "Alegreya Sans SC", "Alegreya Sans", sans-serif;
 	font-size: 26px;
     overflow: hidden;
@@ -514,6 +534,11 @@ projects page, but could eventually make separate Talks page) */
     margin-bottom: 20px;
     color:  var(--pub-year-color);
     border-bottom: 1px dashed var(--pub-year-color);
+}
+.project-section-header {
+	font-size: 24px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 .pub-entry-grid {
 	font-family: Avenir;
