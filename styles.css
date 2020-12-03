@@ -760,7 +760,7 @@ projects page, but could eventually make separate Talks page) */
 .member-contact-bar a {
   	font-size: 24px;
   	/*color: #4dafca;*/
-  	color: #cdcdcd;
+  	color: white;/*#cdcdcd;*/
   	margin-left: auto;
   	margin-right: auto;
   	text-align: center;
@@ -769,7 +769,7 @@ projects page, but could eventually make separate Talks page) */
   	padding-right: 2px;
   	padding-left: 2px;
 	transition: all 0.3s ease;
-	text-shadow: 1px 0px 2px white, -1px 0px 2px white, 0px -1px 2px white, 0px 1px 2px white;
+	/*text-shadow: 1px 0px 2px white, -1px 0px 2px white, 0px -1px 2px white, 0px 1px 2px white;*/
 }
 .affiliate-linkout a {
 	font-size: 24px;
