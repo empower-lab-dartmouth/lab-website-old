@@ -401,6 +401,19 @@ body > * {
 	background-image:url(images/icons/material_demo.png);
 	background-size: 100% 100%;
 }
+.material-video:before {
+	content: '\f03d';
+	/*content: "";
+	background-image:url(images/icons/material_video2.png);
+	background-size: 100% 100%;*/
+/*	height: 11px;
+	margin-top: 2px;*/
+}
+.material-workshop:before {
+	content: "";
+	background-image:url(images/icons/material_workshop.png);
+	background-size: 100% 100%;
+}
 .project-materials span {
 	padding-top: 15px;
 	vertical-align: bottom;
@@ -408,13 +421,14 @@ body > * {
 .project-details { 
 	grid-area: footer; 
 	text-align: left; 
+	width: 100%;
 }
 .proj-collapsible {
 	font-family: Avenir;
 	text-align: left;
   	color: white;
   	cursor: pointer;
-  	width: 100%;
+  	width: 30%;
   	margin: 0px;
   	padding: 18px;
   	border: none;
@@ -455,47 +469,79 @@ body > * {
 	font-family: Avenir;
 	font-size: 12px;
 }
-
 .proj-pubs {
 	/* pub icon*/
 }
 .proj-talks {
-	/*  TALK ICON*/
+	/* TALK ICON*/
 }
 .proj-posters {
-	/*  POSTER ICON*/
+	/* POSTER ICON*/
 }
 .proj-demos {
-	/*  demo ICON*/
+	/* demo ICON*/
 }
 .proj-videos {
-	/*  video ICON*/
+	/* video ICON*/
 }
-
+.proj-workshops {
+	/* workshop ICON*/
+}
+.proj-press {
+	/* press ICON*/
+}
+.proj-imgs {
+	/* images icon */
+}
+/* Lightbox for images (screenshots, mockups, photos, etc) */
+.my-gallery {
+  	width: 100%;
+  	float: left;
+}
+.my-gallery img {
+  	width: 100%;
+  	height: auto;
+}
+.my-gallery figure {
+  	display: block;
+  	float: left;
+  	margin: 0 5px 5px 0;
+  	width: 150px;
+}
+.my-gallery figcaption {
+  	display: none;
+}
+.pswp__img {
+	/*border: 1px solid gray;*/
+}
+.pswp__caption__center {
+	font-family: Avenir;
+	max-width: 900px;	
+}
 
 /* Formatting for talks (currently only in collapsible section on 
 projects page, but could eventually make separate Talks page) */
-.talk-row, .poster-row, .demo-row, .video-row {
+.talk-row, .poster-row, .demo-row, .video-row, .workshop-row {
 	background-color: #4aceef;
 }
-.talk-row::after, .poster-row::after, .demo-row::after, .video-row::after {
+.talk-row::after, .poster-row::after, .demo-row::after, .video-row::after, .workshop-row::after {
   	content: "";
   	clear: both;
   	display: table;
 }
-.talk-column, .poster-column, .demo-column, .video-column {
+.talk-column, .poster-column, .demo-column, .video-column, .workshop-column {
 	font-family: "Avenir", sans-serif;
 	font-size: 14px;
   	float: left;
   	width: 33.33%;
 	background-color: #cdafef;	
 }
-.talk-card, .poster-card, .demo-card, .video-card {
+.talk-card, .poster-card, .demo-card, .video-card, .workshop-card {
 	font-size: 12px;
     background: yellow;
     margin: 0px;
 }
-.talk-thumb, .poster-thumb, .demo-thumb, .video-thumb {
+.talk-thumb, .poster-thumb, .demo-thumb, .video-thumb, .workshop-thumb {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px;
@@ -503,7 +549,7 @@ projects page, but could eventually make separate Talks page) */
 	height: 100px;
 	background-color: #ea7f7f;
 }
-.talk-info > p, .poster-info > p, .demo-info > p, .video-info > p {
+.talk-info > p, .poster-info > p, .demo-info > p, .video-info > p, .workshop-info > p {
 	font-size: 12px;
 	background-color: green;
 	margin: 0px;
@@ -585,14 +631,14 @@ projects page, but could eventually make separate Talks page) */
 .paper-info > p {
 	margin: 0px;
 }
-.paper-title, .talk-title, .poster-title, .demo-title { 
+.paper-title, .talk-title, .poster-title, .demo-title, .workshop-title { 
 	font-size: 15px;
 }
-.paper-authors, .talk-presenters, .poster-presenters { 
+.paper-authors, .talk-presenters, .poster-presenters, .workshop-organizers { 
 	font-size: 13px;
 	padding-top: 5px;
 }
-.paper-venue, .talk-venue, .poster-venue { 
+.paper-venue, .talk-venue, .poster-venue, .workshop-venue { 
 	color: var(--pub-text);
 	font-style: italic;
 	padding-top: 5px;
@@ -604,18 +650,18 @@ projects page, but could eventually make separate Talks page) */
 	padding-bottom: 5px;
 	vertical-align: middle;
 }
-.paper-links, .talk-links, .poster-links { 
+.paper-links, .talk-links, .poster-links, .workshop-links { 
 	grid-area: paper-links; 
 	text-align: left; 
 	
 }
-.paper-links-container, .talk-links-container, .poster-links-container {
+.paper-links-container, .talk-links-container, .poster-links-container, .workshop-links-container {
 	border-top: 1px solid #c8c8c8;
 }
-.paper-links, .talk-links, .poster-links a {
+.paper-links, .talk-links, .poster-links, .workshop-links a {
 	color: #549fec;
 }
-.paper-links, .talk-links, .poster-links a:hover {
+.paper-links, .talk-links, .poster-links, .workshop-links a:hover {
 	color: var(--link-hover);
 }
 
