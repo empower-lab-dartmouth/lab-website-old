@@ -5,14 +5,19 @@
   --header-padding-left: 16px;
   --footer-icon-width: 35px;
   --footer-icon-height: 40px;
-  --pub-text: #5e5e5e;
-  --pub-year-color: #5e5e5e; /*#82a043;*/
+  --off-gray-color: #5e5e5e; /*#82a043;*/
   --project-tags-year-top-alignment: 30%;
   --domain-tag-color: #90daea;
   --population-tag-color: #f9ec27;
   --context-tag-color: #ae79e0;
   --method-tag-color: #fbb870;
   --interaction-tag-color: #8ed3ac;
+  --project-grid-border-radius: 10px;
+  --project-grid-border: 1px solid black;
+  --more-details-margin: 10px;
+  --more-details-font: 10px;
+  --more-details-font-bigger1: 11px;
+  --more-details-font-bigger2: 13px;
 }
 
 @font-face { /* Neutra Text TF 500 */
@@ -101,24 +106,40 @@ body > * {
 
 .content {
 	font-family: Avenir, sans-serif;
+	padding-bottom: 50px;
+}
+.content-preface, .section-desc {
+	font-size: 13px;
+	margin-top: 5px;
+}
+#home-content {
+	padding-bottom: 0px;
 }
  
 .tagline, .page-header, .section-header1, .section-header2 {
-	font-family: Avenir, sans-serif;
-	font-size: 27px;
+	font: normal normal 27px Avenir, sans-serif;
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 10px;
 }
-.section-header1{
-	margin-bottom: 20px;
+.section-header1 {
+	margin-bottom: 10px;
 }
 .section-header2 {
-	font-size: 22px;
-	font-variant: small-caps;
+	font-size: 20px;
 	font-weight: bold;
+	/*font-variant: small-caps;*/
 	margin-top: 30px;
+	text-align: left;
 }
+.link-look {
+	/*font-style: italic;*/
+	text-decoration: underline; 
+	color: blue;
+}
+
+/* Eliminate the white space before bulleted list */
+p + .condensed-list { margin-top: -1em; }
 
 .footer-container {
 	/* Extend footer to bottom of page */
@@ -237,17 +258,14 @@ body > * {
 
 /*********************PROJECTS PAGE*********************/
 
-#projects-preface, .project-section-desc {
-	font-size: 13px;
-	margin-top: 5px;
-}
 .tags-block {
 	font-family: Neutra Text;
 	/*background-color: #fa0505;*/
 }
 .tag-name {
 	font-size: 14px;
-	margin-right: 3px;
+	/*font-weight: bold;*/
+	margin-right: 3px;	
 }
 .tags-bar {
 	display: inline-block;
@@ -294,91 +312,156 @@ body > * {
 }
 
 
+.projects-row {
+	/*background-color: yellow;*/
+	margin-bottom: 10px;
+}
+.projects-row::after {
+  	content: "";
+  	clear: both;
+  	display: table;
+}
+.project-column {
+  	float: left;
+  	width: 48%;
+  	margin-right: 10px;
+  	/*margin-bottom: 16px;*/
+  	box-sizing: border-box;
+  	/*background-color: orange;*/
+}
 .project-entry {
-	background-color:  yellow;
+	/*background-color: yellow;*/ /* for layout/debugging */
 }
 .project-grid {
-	font-family: Neutra Text;
+	/*width: 500px;*/
+	font-family: Avenir;
   	display: grid;
   	grid-template-areas:
-    	'proj-thumb header year'
-    	'proj-thumb desc materials-summary '
+    	'title-tags-area title-tags-area year'
+    	'proj-thumb desc desc'
+    	/*'recruiting desc desc'*/
+    	'materials-summary materials-summary materials-summary'
     	'footer footer footer';
-    grid-template-columns: 200px auto 100px;
-    grid-template-rows: 30px auto auto;
+    grid-template-columns: auto auto 70px;
+    grid-template-rows: 30px 100px 20px;
   	/*grid-gap: 10px;*/
-  	background-color: #2196F3;
-  	padding: 10px;
-  	margin-bottom: 10px;
+  	/*padding: 5px;*/
+  	margin-bottom: 20px;
+  	/*background-color: #2196F3; /* for layout/debugging *!/*/
+  	/*background-color: black;*/
+  	/*border: 2px solid black;*/
+  	/*border-radius: 10px;/*var(--project-grid-border-radius-outer);*!/*/
+  	
 }
 .project-grid > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
+	font-size: 11px;
+	/*background-color: rgba(255, 255, 255, 0.8); /* for layout/debugging *!/*/
+	/*background-color: white; /* for layout/debugging *!/*/
 }
-.project-thumb { 
-	grid-area: proj-thumb; 
+.title-tags-bar { 
+	grid-area: title-tags-area; 
+	text-align: left;
 	position: relative;
-	width: 200px;
-	height: 150px;
-	background-color: pink;
-	
-}
-.project-thumb img {
-	max-width: 100%;
-	max-height: 100%;
-	background-color: green;
-}
-.project-title-bar { 
-	grid-area: header; 
-	text-align: left; 
-	position: relative;
+	background-color: black;
+	border-radius: var(--project-grid-border-radius) 0px 0px 0px;
 }
 .project-name {
-	font-size: 22px;
 	font-family: Avenir;
-	background-color: orange;	
+	font-size: 20px;
+	color: white;
+	padding-left: 10px;
+	/*padding-top: 15px;*/
 }
 .project-tags { 
-	background-color: yellow; 
+	grid-area: tags-area;
 	margin-left: 10px;
+	margin-top: 0;
 	padding: 0px;
 	position: absolute;
-	top: var(--project-tags-year-top-alignment);
-	vertical-align: middle;
+	top: 20%;/*var(--project-tags-year-top-alignment);*/
+	/*background-color: yellow; /* for layout/debugging *!/*/
+}
+.project-tags > span {
+	font-size: 10.5px;
 }
 .project-years { 
 	grid-area: year; 
 	text-align: right;
-	position: relative; 
+	color: white;
+
+	background-color: black;
+	border-radius: 0px var(--project-grid-border-radius) 0px 0px;
+	position: relative; 	
+	/*border-radius: 0px var(--project-grid-border-radius-inner) 0px 0px;*/
 }
 .project-years > span {
-	background-color: pink;
 	position: absolute;
-	top: var(--project-tags-year-top-alignment);
+	top: 20%;
+	/*top: var(--project-tags-year-top-alignment);*/
 	right: 0px;
+	padding-right: 5px;
+	/*padding-top: 5px;*/
+	/*background-color: pink; /* for layout/debugging *!/*/
+	border-radius: 0px var(--project-grid-border-radius) 0px 0px;
+}
+.project-thumb { 
+	grid-area: proj-thumb; 
+	position: relative;
+	width: 100px;
+	/*height: 100px;*/
+	background-color: white;
+	border-left: var(--project-grid-border);
+	/*border-radius: var(--project-grid-border-radius-inner) 0px 0px 0px;*/
+	/*background-color: pink; /* for layout/debugging *!/*/
+	
+}
+.project-thumb img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-height: 100px;
+	padding-top: 15px;
+	/*background-color: green; /* for layout/debugging *!/*!/*/
 }
 .project-desc { 
 	grid-area: desc; 
 	text-align: left; 
-	margin-right: 40px;
+	padding-top: 10px;
+	padding-right: 5px;
+	border-right: var(--project-grid-border);
 }
 .project-materials { 
 	grid-area: materials-summary; 
-	text-align: left; 
+	text-align: center; 
+	border-left: var(--project-grid-border);
+	border-right: var(--project-grid-border);
+	padding-top: 5px;
 }
-.project-materials div {
-	margin-bottom: 5px;
-	background-color: rgba(116, 172, 244, 0.66);
-	vertical-align: middle;
+.project-materials span {
+	/*margin-bottom: 5px;*/
+	/*vertical-align: middle;*/
+	/*background-color: rgba(116, 172, 244, 0.66); /* for layout/debugging *!/*/
 }
-.project-materials > div:before {
+.project-materials > span:before {
 	font-family: 'FontAwesome';
-	width: 12px;
-	height: 14px;
+	font-size: 10px;
+	width: 9px;
+	height: 11px;
 	display: inline-block;
-	margin-right: 4px;
-	vertical-align: middle;
-	background-color: rgba(255, 192, 202, 0.66);
+	margin-left: 5px; /* distance from icon to previous material item */
+	margin-right: 4px; /* distance from icon to material label */
+	/*padding-top: 3px;*/
+	/*vertical-align: middle;*/
+	/*background-color: rgba(255, 192, 202, 0.66); /* for layout/debugging *!/*/
+}
+.project-materials > span:after {
+	content: '\a0\2219\a0';
+	/*color: gray;*/
+	padding-left: 5px;
+}
+.project-materials > .last-material:after {
+	content: none;
 }
 .material-pub:before {
 	content: "";
@@ -414,36 +497,43 @@ body > * {
 	background-image:url(images/icons/material_workshop.png);
 	background-size: 100% 100%;
 }
-.project-materials span {
-	padding-top: 15px;
-	vertical-align: bottom;
-}
 .project-details { 
 	grid-area: footer; 
-	text-align: left; 
-	width: 100%;
+	/*text-align: center; */
+	border: var(--project-grid-border);
+	border-top: none;
+	/*margin-top: 10px;*/
+	border-radius: 0px 0px var(--project-grid-border-radius) var(--project-grid-border-radius);
 }
 .proj-collapsible {
-	font-family: Avenir;
-	text-align: left;
-  	color: white;
+	text-align: center;
   	cursor: pointer;
-  	width: 30%;
-  	margin: 0px;
-  	padding: 18px;
+  	width: 100%;
+  	/*margin: 0px;*/
+/*  	padding: 0px;*/
+	margin-top: 5px;
   	border: none;
   	outline: none;
-  	background-color: var(--link-hover);
-  	opacity: .6;
+  	background-color: rgba(243, 201, 0, 0.6);
+  	border-radius: 0px 0px var(--project-grid-border-radius) var(--project-grid-border-radius);
+  	/*border-radius: 0px 0px var(--project-grid-border-radius-inner) var(--project-grid-border-radius-inner);*/
+}
+.proj-collapsible > span {
+	font-family: Avenir;
+	font-size: 10px;
+	color: black;
+	margin-left: var(--more-details-margin);
 }
 .active, .proj-collapsible:hover {
-  	opacity: 1;
+  	background-color: rgba(243, 201, 0, 1.0);
+  	/*background-color: var(--link-hover);*/
 }
 .proj-collapsible:after {
   	content: '\002B';
-  	color: white;
-  	font-weight: bold;
+  	color: black;
+  	/*font-weight: bold;*/
   	float: right;
+  	margin-right: var(--more-details-margin);
 }
 .active:after {
   	content: "\2212";
@@ -455,12 +545,11 @@ body > * {
   	transition: max-height 0.2s ease-out;
 }
 .proj-detail {
-	font-size: 16px;
-	border-top: 1px solid #333;
-	background-color: purple;
+	font-size: 13px;
+	border-top: 1px solid var(--off-gray-color);
 	margin-bottom: 0px;
+	/*background-color: purple; /* for layout/debugging *!/*/
 }
-
 .proj-collabs {
 	/* collab icon */	
 	margin: 0px;
@@ -522,7 +611,7 @@ body > * {
 /* Formatting for talks (currently only in collapsible section on 
 projects page, but could eventually make separate Talks page) */
 .talk-row, .poster-row, .demo-row, .video-row, .workshop-row {
-	background-color: #4aceef;
+	/*background-color: #4aceef; /* for layout/debugging *!/*/
 }
 .talk-row::after, .poster-row::after, .demo-row::after, .video-row::after, .workshop-row::after {
   	content: "";
@@ -534,12 +623,13 @@ projects page, but could eventually make separate Talks page) */
 	font-size: 14px;
   	float: left;
   	width: 33.33%;
-	background-color: #cdafef;	
+	/*background-color: #cdafef; /* for layout/debugging *!/ */
 }
 .talk-card, .poster-card, .demo-card, .video-card, .workshop-card {
 	font-size: 12px;
-    background: yellow;
-    margin: 0px;
+	margin: 0px;
+    /*background: yellow; /*for layout/debugging*!/*/
+    
 }
 .talk-thumb, .poster-thumb, .demo-thumb, .video-thumb, .workshop-thumb {
 	margin-top: 0px;
@@ -547,12 +637,12 @@ projects page, but could eventually make separate Talks page) */
 	padding: 0px;
 	width: 200px;
 	height: 100px;
-	background-color: #ea7f7f;
+	/*background-color: #ea7f7f; /*for layout/debugging*!/*/
 }
 .talk-info > p, .poster-info > p, .demo-info > p, .video-info > p, .workshop-info > p {
 	font-size: 12px;
-	background-color: green;
 	margin: 0px;
+	/*background-color: green; /*for layout/debugging*!/*/
 }
 
 
@@ -580,8 +670,8 @@ projects page, but could eventually make separate Talks page) */
     overflow: hidden;
     margin-top: 20px;
     margin-bottom: 20px;
-    color:  var(--pub-year-color);
-    border-bottom: 1px dashed var(--pub-year-color);
+    color:  var(--off-gray-color);
+    border-bottom: 1px dashed var(--off-gray-color);
 }
 .project-section-header {
 	font-size: 24px;
@@ -605,11 +695,11 @@ projects page, but could eventually make separate Talks page) */
 	grid-area: paper-id;
 	text-align: left;
 }
-.paper-award {
+.paper-award-icon {
 	grid-area: award;
 	text-align: left;
 }
-.paper-award i {
+.paper-award-icon i {
 	width: 10px;
 }
 .paper-thumb {
@@ -639,7 +729,7 @@ projects page, but could eventually make separate Talks page) */
 	padding-top: 5px;
 }
 .paper-venue, .talk-venue, .poster-venue, .workshop-venue { 
-	color: var(--pub-text);
+	color: var(--off-gray-color);
 	font-style: italic;
 	padding-top: 5px;
 }
@@ -650,28 +740,49 @@ projects page, but could eventually make separate Talks page) */
 	padding-bottom: 5px;
 	vertical-align: middle;
 }
-.paper-links, .talk-links, .poster-links, .workshop-links { 
+.paper-links, .talk-links, .poster-links, .workshop-links, .video-links { 
 	grid-area: paper-links; 
 	text-align: left; 
 	
 }
-.paper-links-container, .talk-links-container, .poster-links-container, .workshop-links-container {
+.paper-links-container, .talk-links-container, .poster-links-container, .workshop-links-container, .video-links-container {
 	border-top: 1px solid #c8c8c8;
 }
-.paper-links, .talk-links, .poster-links, .workshop-links a {
+.paper-links, .talk-links, .poster-links, .workshop-links, .video-links a {
 	color: #549fec;
 }
-.paper-links, .talk-links, .poster-links, .workshop-links a:hover {
+.paper-links, .talk-links, .poster-links, .workshop-links, .video-links a:hover {
 	color: var(--link-hover);
 }
 
+/*Override the paper and other project material styling (to be smaller) 
+for content within the 'More details' collapsible on the Projects page*/
+.collapsible-content > p {
+	text-align: left;
+	background-color: red;
+	font-size: var(--more-details-font-bigger2);
+}
+.proj-detail > span, .collapsible-content > div {
+	text-align: left;
+	background-color: cyan;
+	font-size: var(--more-details-font);
+}
+
+.collapsible-content .pub-entry-grid .paper-title {
+	background-color: orange;
+	font-size: var(--more-details-font-bigger1);
+}
+.collapsible-content .pub-entry-grid p {
+	background-color: purple;
+	font-size: var(--more-details-font);
+}
 
 /*********************PEOPLE PAGE*********************/
 /* Grid of lab members, affiliated groups, and collaborators */
 #people-page {
 	margin-bottom: 150px;
 }
-.member-column, .affiliate-groups-column {
+.member-column, .affiliate-group-column {
 	font-family: "Alegreya Sans", sans-serif;
 	font-size: 14px;
   	float: left;
@@ -685,7 +796,7 @@ projects page, but could eventually make separate Talks page) */
     width: 100%;
     display: block;
   }
-  .affiliate-groups-column {
+  .affiliate-group-column {
     width: 100%;
     display: block;
   }
@@ -862,6 +973,26 @@ projects page, but could eventually make separate Talks page) */
 }
 .lab-member-emph {
 	font-weight: bold;
+}
+
+
+/*********************RECRUITING PAGE*********************/
+#building-imgs-right {
+	width: 200px;
+	float: right;
+	padding-top: 25px;
+}
+#building-imgs-right figure {
+	width: 90%;
+  	margin-left: 10px;
+}
+.funding-table {
+	height: 300px;
+	margin: 0px;
+}
+.funding-table > iframe {
+	width: 100%;
+	height: 100%;
 }
 
 
