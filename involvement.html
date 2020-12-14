@@ -8,13 +8,25 @@
 
 	<title>Empower Research Lab at Dartmouth College</title>
 	<link rel="SHORTCUT ICON" href="images/empower-lab.ico" />
-	<link rel="stylesheet" type="text/css" href="styles.css" />
 	
 	<!-- Icons & web fonts -->
 	<link rel="stylesheet" href="images/icons/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="images/icons/academicons-1.9.0/css/academicons.min.css"/>
 	<script src="https://use.fontawesome.com/cb1f9cec96.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i|Alegreya+Sans+SC:300,300i,400,400i,500,500i,700,700i' rel='stylesheet' type='text/css' /> 
+	
+	<!-- Lightbox to display image galleries. Credit: https://github.com/dimsemenov/PhotoSwipe/ -->
+	<link rel="stylesheet" href="libs/PhotoSwipe-master/dist/photoswipe.css"> 
+	<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+	     In the folder of skin CSS file there are also:
+	     - .png and .svg icons sprite, 
+	     - preloader.gif (for browsers that do not support CSS animations) -->
+	<link rel="stylesheet" href="libs/PhotoSwipe-master/dist/default-skin/default-skin.css"> 
+	<script src="libs/PhotoSwipe-master/dist/photoswipe.min.js"></script> <!-- Core JS file -->
+	<script src="libs/PhotoSwipe-master/dist/photoswipe-ui-default.min.js"></script> <!-- UI JS file -->
+	
+	<!-- My stylesheet (needs to be loaded after other stylesheets to enable any desired overwriting) -->
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 	
 	<meta name="google-site-verification" content="0ws4vyaq4Uqntg3jDvGOEi_Uspk1Km0LlmEy6GJ5G7c" />
 </head>
@@ -35,39 +47,324 @@
 		  	</nav>
 		</div>
 		
-		- the google form
-		- links to the various project portals
-		- join our empower workspace on slack [tell people they can message me on thayer slack]
-		- empower mailing list
+		<div class="content content-preface">
 		
-		are you a builder on multiple levels -- not only software/hardware building -- but also program building, community building, vision building? (and/or put on personal website as part of recruiting blurb?)
-		want to play a role in shaping something bigger than yourself)?
+			<p>There are a variety of ways to get involved with our lab as well as with human-centered design (HCD) and human-computer interaction (HCI) at Dartmouth more generally. Keep reading to learn more!
+			<div id="building-imgs-right">
+				<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="images/180305_thayer.cs_interior1.png" itemprop="contentUrl" data-size="810x455"><img src="images/180305_thayer.cs_interior1.png" itemprop="thumbnail" alt="CECS rendering" /></a>
+					</figure>
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="images/building-floorplan.png" itemprop="contentUrl" data-size="1448x824"><img src="images/building-floorplan.png" itemprop="thumbnail" alt="CECS floorplan" /></a>
+					</figure>
+				</div>
+			</div>
+			</p>
+			
+			<p>We are also always glad to correspond with undergrads interested in getting research experience, graduate students hoping to work together, and anyone else curious about opportunities for collaboration. These are the best ways to contact us:
+				<ul class="condensed-list">
+					<li><b>Email Professor Murnane (Liz)</b>: <span class="link-look">emurnane@dartmouth.edu</span></li>
+					<li><b>Join our group's workspace on slack</b>: <span class="link-look">empower-lab-dartmouth.slack.com</span> or direct message us on the Thayer slack (<span class="link-look">thayerschool.slack.com</span>): <span class="link-look">@Liz Murnane</span> </li>
+					<li><b>Join our group's mailing list</b>: <span class="link-look">empower-lab@thayer.dartmouth.edu</span></li>
+				</ul>
+			</p>
+			
+			<p>Some day (hopefully soon), you can visit us in person, once safe to do so:
+				<ul class="condensed-list">
+					<li><b>Empower Lab Space</b>: Cummings 016</li>
+					<li><b>Liz's office</b>: MacLean [whatever] + office hours [temporarily suspended] strikethrough</li>
+				</ul>
+			</p>
+			<p>Excitingly, the new <a href="https://campus-services.dartmouth.edu/projects/projects-planning-design-phase/thayer-engineering-and-computer-science" target="_blank">Center for Engineering and Computer Science (CECS)</a> is scheduled to complete construction in Fall 2021 (renderings & floorplans on the right). At that point, our lab and offices will move to the new building’s neighborhood for design research. In addition to Thayer and CS, the building will also be home to the Magnuson Center for Entrepreneurship and overall offer a dynamic environment that facilitates interdisciplinary, integrative, high impact work across a broad array of disciplines, particularly energy, electronics, medicine, security, and design.
+			</p>
+
+			<h1 class="section-header1">Research</h1>
+			<p>We are always working on a variety of <a href="projects.html">projects</a> and looking to recruit team members to the lab (undergraduates, masters and PhD students, and post-doctoral scholars; we even host stellar high school students from time to time!) You may particularly appreciate and thrive at Dartmouth and Thayer if you consider yourself a "builder" on multiple levels; beyond imagining and creating innovative software and hardware, we are in the midst of rapidly expanding design research within Dartmouth and the wider research community, which offers a unique opportunity to play a role in envisioning and shaping the future of human-centered engineering and interactive, societally impactful technology.</p>
+			<p>To get involved with the lab, please fill out our <a href="https://forms.gle/UrwtvkC45jusZqG2A">recruiting form</a> or email Liz with a description of your research experiences and interests.</p>
+			
+			<h2 class="section-header2">PhD students</h2>
+			<p style="color: red;"><b>The lab is currently recruiting PhD students!</b></p>
+			<ul class="condensed-list">
+				<li>Liz's home department is Thayer Engineering; that PhD application is <b><a href="https://engineering.dartmouth.edu/academics/graduate/phd/">here</a></b>.
+				</li>
+				<li>Given our lab's emphasis on translational, real-world impact, many of our members apply to the Engineering School's selective <b>Innovation Fellowship</b> program, which affords prestige, funding, and access to exclusive mentoring, coursework, and entrepreneurship opportunities; Innovation Program application is <b><a href="https://engineering.dartmouth.edu/academics/graduate/innovation">here</a></b>.
+				</li>
+				<li>Liz is also an adjunct professor and advises students in Computer Science; the application to the CS PhD program is <b><a href="https://web.cs.dartmouth.edu/graduate/applying/phd-program">here</a></b>.
+				</li>
+				
+			</ul>
+			<p><i>Note: For anyone who applied prior to mid-December 2020, Professor's Murnane name and "research area" keywords (<i>human-centered design, human-computer interaction, informatics, interactive systems, social computing</i>) had not yet been entered into the online application. If possible, please update your application, or feel free to email Liz to express your interest in those topics.</i></p>
+			
+			<h2 class="section-header2">Postdocs</h2>
+			<p>The lab accepts postdoc applications on a rolling basis. Please email Liz to describe your mutual interests and your objectives & goals from a postdoctoral position.</p>
+			<ul class="condensed-list"><li>In particular, please specify if you are interested in the <a href="https://neukom.dartmouth.edu/funding/faculty/postdoctoral-fellows">Neukom Postdoctoral Fellowship</a>.</li>
+			</ul>
 		
-		PHD RECRUITING
-		FOR ANYONE WHO APPLIED BEFORE NOV 13: My name and keywords weren't in the system -- please reapply/update your application
-		
-		Postdoc hiring
-		- Neukom
-		
-		Opportunities
-		
-		Undergrads: 
-		[make sure I have an entry in all of these that enable posting of projects]
-		- Luce
-		- Neukom scholars https://neukom.dartmouth.edu/funding/students/neukom-scholars-program
-		- UGAR: https://students.dartmouth.edu/ugar/research/programs
-		
-		We are always glad to correspond with graduate students looking for an advisor/co-advisor or undergrads interested in getting involved with research. 
-		
-		talk up the new building... pictures of the floorplan (see orientation slides as well as aerial photos)
-		https://campus-services.dartmouth.edu/projects/projects-planning-design-phase/thayer-engineering-and-computer-science
-		
+			<h2 class="section-header2">Undergraduate students</h2>
+			<p>We welcome and very much enjoy engaging undergraduate students in research. To express interest in getting involved with projects in our lab, please fill out our <a href="https://forms.gle/UrwtvkC45jusZqG2A">recruiting form</a> or email Liz to describe your relevant background and the projects that appeal to you. 
+			</p> 
+			<p>Our general policy is to offer credit to students who are new to the lab. We also maintain a list of relevant Dartmouth-sponsored research programs that could help fund involvement with the lab; let Liz know if you want to specify her as the faculty mentor on an application:</p>
+			<div class="funding-table">
+				<span></span>
+				<iframe src="https://docs.google.com/document/d/e/2PACX-1vRnU_O_WWSQiZ5vCPhmLeywUmDgZslU79gE-CknHFdwngcaTFcQWNEGToiO636IjRsjSMaubWGtlw-P/pub?embedded=true"></iframe>
+			</div>
+			
+			<h1 class="section-header1">Coursework</h1>
+			<p>If you're interested in HCD/HCI classes, consider taking <a href="https://engineering.dartmouth.edu/academics/courses/engs12" target="_blank">ENGS12: Design Thinking</a> or <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-67" target="_blank">COSC67: Introduction to Human-Computer Interaction</a> as a starting point. Here's a more comprehensive list of relevant courses:</p>
+			
+			<ul class="condensed-list">
+				<li>ENGS 12: Design Thinking</li>
+				<li>ENGS 13: Virtual Medicine and Cybercare</li>
+				<li>ENGS 15: Senior Design Challenge</li>
+				<li>ENGS 69/COSC 065: Smartphone Programming</li>
+				<li>ENGS 75: Product Design</li>
+				<li>ENGS 89/90: Engineering Design Methodology and Project Initiation</li>
+				<li>ENGM 191: Product Design and Development</li>
+				<li>COSC 1 Introduction to Programming and Computation</li>
+				<li>COSC 21 Foundations of Digital Design</li>
+				<li>COSC 23.01 or 63.01: Augmented and Virtual Reality Design or Development</li>
+				<li>COSC 25.01 and/or 02: Intro to UI/UX Design I/II</li>
+				<li>COSC 29.04 Impact Design</li>
+				<li>COSC 29.05: Digital Fabrication & Rapid Prototyping</li>
+				<li>COSC 63.01 Augmented and Virtual Reality Development</li>
+				<li>COSC 67/267: Introduction to Human Computer Interaction</li>
+				<li>COSC 69.11: Mobile X</li>
+				<li>COSC 89.20: Data Science for Health</li>
+			</ul>
+						
+			<p>If these topics pique your interest, Thayer offers a <a href="https://engineering.dartmouth.edu/academics/undergraduate/ab/human-centered-design-minor/" target="_blank">Human-Centered Design Minor</a>. Masters students in Computer Science may be interested in the <a href="https://web.cs.dartmouth.edu/graduate/applying/ms-programs/ms-cs-concentration-digital-arts" target="_blank">M.S. with Concentration in Digital Arts</a>. In the spring term, Liz teaches <a href="https://engineering.dartmouth.edu/academics/courses/engm191" target="_blank">ENGM191</a>, which is geared at Thayer MEM students, Innovation PhD students, Tuck MBA students, and Dartmouth medical students.</p>
+			
+			<h1 class="section-header1">HCD/HCI Events</h1>
+			<p>If you're generally interested in HCD/HCI, feel welcome to attend the weekly <!--<a href="" target="_blank">-->HCI seminar<!--</a>-->, which Liz co-organizes with CS Prof <a href="https://www.cs.dartmouth.edu/~xingdong/" target="_blank">XD Yang</a>.</p>
+			<ul class="condensed-list">
+				<li><b>Dartmouth HCI Seminar</b>: <i>(Winter timing and Zoom information coming soon)</i></li>
+			</ul>
+		</div>
 	</div>	
-	A running list of opportunities (lab-relevant, funding, etc) that may interest will be posted here: 
+		
+	<div class="footer-container">
+		<div class="footer-grid">
+			<div class="footer-left"><img src="images/icons/thayer_logo.png" id="thayer-logo"/></div>
+			<div class="footer-mid"><span class="footer-text">Murnane Research Group at Dartmouth College &ensp;|&ensp; Contact: emurnane@dartmouth.edu &ensp;|&ensp; Last updated: December 2020</span></div>
+			<div class="footer-right"><img src="images/icons/D-Pine_RGB.png" id="DC-logo"/></div>
+		</div>
+	</div>
 	
-	2021 Law and Ethics Fellowship - Applications due Dec 1 [link https://vox.dartmouth.edu/archive?id=49313] Apply here: https://ethics-institute.dartmouth.edu/students/2021-law-and-ethics-fellowship
-	
-	ADD FOOTER
+	<!-- For lightbox image galleries. Credit: https://github.com/dimsemenov/PhotoSwipe/
+		Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	    <!-- Background of PhotoSwipe. 
+	         It's a separate element, as animating opacity is faster than rgba(). -->
+	    <div class="pswp__bg"></div>
+	    <!-- Slides wrapper with overflow:hidden. -->
+	    <div class="pswp__scroll-wrap">
+	        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+	        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+	        <div class="pswp__container">
+	            <div class="pswp__item"></div>
+	            <div class="pswp__item"></div>
+	            <div class="pswp__item"></div>
+	        </div>
+	        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+	            <div class="pswp__top-bar">
+	                <!--  Controls are self-explanatory. Order can be changed. -->
+	                <div class="pswp__counter"></div>
+	                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+	                <!--<button class="pswp__button pswp__button--share" title="Share"></button>	-->
+	                <!--<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>-->
+	                <!--<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>-->
+	                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+	                <!-- element will get class pswp__preloader--active when preloader is running -->
+	                <div class="pswp__preloader">
+	                    <div class="pswp__preloader__icn">
+	                      <div class="pswp__preloader__cut">
+	                        <div class="pswp__preloader__donut"></div>
+	                      </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <!--<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+	                <div class="pswp__share-tooltip"></div> 
+	            </div>-->
+	            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+	            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+	            <div class="pswp__caption">
+	                <div class="pswp__caption__center"></div>
+	            </div>
+			</div>
+		</div>
+	</div>
 </body>
+
+<!-- Script to show lightbox image galleries. Credit: https://github.com/dimsemenov/PhotoSwipe/ -->
+<script type="text/javascript">
+
+	var initPhotoSwipeFromDOM = function(gallerySelector) {
+	    // parse slide data (url, title, size ...) from DOM elements 
+	    // (children of gallerySelector)
+	    var parseThumbnailElements = function(el) {
+	        var thumbElements = el.childNodes,
+	            numNodes = thumbElements.length,
+	            items = [],
+	            figureEl,
+	            linkEl,
+	            size,
+	            item;
+	        for(var i = 0; i < numNodes; i++) {
+	            figureEl = thumbElements[i]; // <figure> element
+	            // include only element nodes 
+	            if(figureEl.nodeType !== 1) {
+	                continue;
+	            }
+	            linkEl = figureEl.children[0]; // <a> element
+	            size = linkEl.getAttribute('data-size').split('x');
+	            // create slide object
+	            item = {
+	                src: linkEl.getAttribute('href'),
+	                w: parseInt(size[0], 10),
+	                h: parseInt(size[1], 10)
+	            };
+	            if(figureEl.children.length > 1) {
+	                // <figcaption> content
+	                item.title = figureEl.children[1].innerHTML; 
+	            }
+	            if(linkEl.children.length > 0) {
+	                // <img> thumbnail element, retrieving thumbnail url
+	                item.msrc = linkEl.children[0].getAttribute('src');
+	            } 
+	            item.el = figureEl; // save link to element for getThumbBoundsFn
+	            items.push(item);
+	        }
+	        return items;
+	    };
+	
+	    // find nearest parent element
+	    var closest = function closest(el, fn) {
+	        return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+	    };
+	
+	    // triggers when user clicks on thumbnail
+	    var onThumbnailsClick = function(e) {
+	        e = e || window.event;
+	        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+	        var eTarget = e.target || e.srcElement;
+	        // find root element of slide
+	        var clickedListItem = closest(eTarget, function(el) {
+	            return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+	        });
+	        if(!clickedListItem) {
+	            return;
+	        }
+	        // find index of clicked item by looping through all child nodes
+	        // alternatively, you may define index via data- attribute
+	        var clickedGallery = clickedListItem.parentNode,
+	            childNodes = clickedListItem.parentNode.childNodes,
+	            numChildNodes = childNodes.length,
+	            nodeIndex = 0,
+	            index;
+	        for (var i = 0; i < numChildNodes; i++) {
+	            if(childNodes[i].nodeType !== 1) { 
+	                continue; 
+	            }
+	            if(childNodes[i] === clickedListItem) {
+	                index = nodeIndex;
+	                break;
+	            }
+	            nodeIndex++;
+	        }
+	        if(index >= 0) {
+	            // open PhotoSwipe if valid index found
+	            openPhotoSwipe( index, clickedGallery );
+	        }
+	        return false;
+	    };
+	    // parse picture index and gallery index from URL (#&pid=1&gid=2)
+	    var photoswipeParseHash = function() {
+	        var hash = window.location.hash.substring(1),
+	        params = {};
+	        if(hash.length < 5) {
+	            return params;
+	        }
+	        var vars = hash.split('&');
+	        for (var i = 0; i < vars.length; i++) {
+	            if(!vars[i]) {
+	                continue;
+	            }
+	            var pair = vars[i].split('=');  
+	            if(pair.length < 2) {
+	                continue;
+	            }           
+	            params[pair[0]] = pair[1];
+	        }
+	        if(params.gid) {
+	            params.gid = parseInt(params.gid, 10);
+	        }
+	        return params;
+	    };
+	    var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+	        var pswpElement = document.querySelectorAll('.pswp')[0],
+	            gallery,
+	            options,
+	            items;
+	        items = parseThumbnailElements(galleryElement);
+	        // define options (if needed)
+	        options = {
+	            // define gallery index (for URL)
+	            galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+	            getThumbBoundsFn: function(index) {
+	                // See Options -> getThumbBoundsFn section of documentation for more info
+	                var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+	                    pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+	                    rect = thumbnail.getBoundingClientRect(); 
+	
+	                return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+	            }
+	        };
+	        // PhotoSwipe opened from URL
+	        if(fromURL) {
+	            if(options.galleryPIDs) {
+	                // parse real index when custom PIDs are used 
+	                // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+	                for(var j = 0; j < items.length; j++) {
+	                    if(items[j].pid == index) {
+	                        options.index = j;
+	                        break;
+	                    }
+	                }
+	            } else {
+	                // in URL indexes start from 1
+	                options.index = parseInt(index, 10) - 1;
+	            }
+	        } else {
+	            options.index = parseInt(index, 10);
+	        }
+	        // exit if index not found
+	        if( isNaN(options.index) ) {
+	            return;
+	        }
+	        if(disableAnimation) {
+	            options.showAnimationDuration = 0;
+	        }
+	        // Pass data to PhotoSwipe and initialize it
+	        gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+	        gallery.init();
+	    };
+	    // loop through all gallery elements and bind events
+	    var galleryElements = document.querySelectorAll( gallerySelector );
+	    for(var i = 0, l = galleryElements.length; i < l; i++) {
+	        galleryElements[i].setAttribute('data-pswp-uid', i+1);
+	        galleryElements[i].onclick = onThumbnailsClick;
+	    }
+	    // Parse URL and open gallery if it contains #&pid=3&gid=1
+	    var hashData = photoswipeParseHash();
+	    if(hashData.pid && hashData.gid) {
+	        openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
+	    }
+	};
+	// execute above function
+	initPhotoSwipeFromDOM('.my-gallery');
+</script>
 
 </html>
