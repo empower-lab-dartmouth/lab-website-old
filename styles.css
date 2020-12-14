@@ -5,7 +5,8 @@
   --header-padding-left: 16px;
   --footer-icon-width: 35px;
   --footer-icon-height: 40px;
-  --off-gray-color: #5e5e5e; /*#82a043;*/
+  --light-gray-color: #c8c8c8;
+  --dark-gray-color: #5e5e5e; /*#82a043;*/
   --project-tags-year-top-alignment: 30%;
   --domain-tag-color: #90daea;
   --population-tag-color: #f9ec27;
@@ -18,6 +19,7 @@
   --more-details-font: 10px;
   --more-details-font-bigger1: 11px;
   --more-details-font-bigger2: 13px;
+  --single-space: 12px;
 }
 
 @font-face { /* Neutra Text TF 500 */
@@ -140,6 +142,14 @@ body > * {
 
 /* Eliminate the white space before bulleted list */
 p + .condensed-list { margin-top: -1em; }
+/* Reduce left margin of bullet */
+.reduced-margin {
+	margin-left: -20px;
+}
+.reduced-margin li span {
+	position: relative;
+	left: -5px;
+}
 
 .footer-container {
 	/* Extend footer to bottom of page */
@@ -333,7 +343,6 @@ p + .condensed-list { margin-top: -1em; }
 	/*background-color: yellow;*/ /* for layout/debugging */
 }
 .project-grid {
-	/*width: 500px;*/
 	font-family: Avenir;
   	display: grid;
   	grid-template-areas:
@@ -342,16 +351,14 @@ p + .condensed-list { margin-top: -1em; }
     	/*'recruiting desc desc'*/
     	'materials-summary materials-summary materials-summary'
     	'footer footer footer';
-    grid-template-columns: auto auto 70px;
-    grid-template-rows: 30px 100px 20px;
-  	/*grid-gap: 10px;*/
-  	/*padding: 5px;*/
+    grid-template-columns: 100px auto 70px;
+    grid-template-rows: 30px 125px 20px;
   	margin-bottom: 20px;
   	/*background-color: #2196F3; /* for layout/debugging *!/*/
-  	/*background-color: black;*/
-  	/*border: 2px solid black;*/
-  	/*border-radius: 10px;/*var(--project-grid-border-radius-outer);*!/*/
   	
+}
+.project-grid-no-details {
+	grid-template-rows: 30px 100px 20px;
 }
 .project-grid > div {
 	font-size: 11px;
@@ -431,7 +438,7 @@ p + .condensed-list { margin-top: -1em; }
 	padding-right: 5px;
 	border-right: var(--project-grid-border);
 }
-.project-materials { 
+.project-materials, .no-project-materials { 
 	grid-area: materials-summary; 
 	text-align: center; 
 	border-left: var(--project-grid-border);
@@ -497,36 +504,48 @@ p + .condensed-list { margin-top: -1em; }
 	background-image:url(images/icons/material_workshop.png);
 	background-size: 100% 100%;
 }
-.project-details { 
+.material-press:before {
+	content: "";
+	background: url(images/icons/material_press3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.project-details, .no-project-details { 
 	grid-area: footer; 
-	/*text-align: center; */
 	border: var(--project-grid-border);
 	border-top: none;
-	/*margin-top: 10px;*/
 	border-radius: 0px 0px var(--project-grid-border-radius) var(--project-grid-border-radius);
 }
-.proj-collapsible {
+.proj-collapsible, .no-project-details {
+	font-family: Avenir;
+	font-size: 10px;
 	text-align: center;
   	cursor: pointer;
   	width: 100%;
-  	/*margin: 0px;*/
-/*  	padding: 0px;*/
 	margin-top: 5px;
   	border: none;
   	outline: none;
   	background-color: rgba(243, 201, 0, 0.6);
   	border-radius: 0px 0px var(--project-grid-border-radius) var(--project-grid-border-radius);
-  	/*border-radius: 0px 0px var(--project-grid-border-radius-inner) var(--project-grid-border-radius-inner);*/
+}
+.no-project-materials {
+	border-bottom: var(--project-grid-border);
+	border-radius: 0px 0px var(--project-grid-border-radius) var(--project-grid-border-radius);
 }
 .proj-collapsible > span {
 	font-family: Avenir;
 	font-size: 10px;
+	text-align: center;
 	color: black;
 	margin-left: var(--more-details-margin);
 }
 .active, .proj-collapsible:hover {
+/*	font-family: Avenir;
+	font-size: 10px;*/
   	background-color: rgba(243, 201, 0, 1.0);
   	/*background-color: var(--link-hover);*/
+}
+.active {
+	border-radius: 0;
 }
 .proj-collapsible:after {
   	content: '\002B';
@@ -539,14 +558,14 @@ p + .condensed-list { margin-top: -1em; }
   	content: "\2212";
 }
 .collapsible-content {
-	padding: 0 18px;
+	padding: 0 5px;
   	max-height: 0;
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
 }
 .proj-detail {
 	font-size: 13px;
-	border-top: 1px solid var(--off-gray-color);
+	/*border-top: 1px solid var(--light-gray-color);*/
 	margin-bottom: 0px;
 	/*background-color: purple; /* for layout/debugging *!/*/
 }
@@ -591,11 +610,20 @@ p + .condensed-list { margin-top: -1em; }
   	width: 100%;
   	height: auto;
 }
+/*.gallery-thumb {
+	float: left;
+	width: 100px;
+	height: 50px;
+	margin-right: 10px;
+	background-color: pink;
+}*/
 .my-gallery figure {
   	display: block;
   	float: left;
-  	margin: 0 5px 5px 0;
-  	width: 150px;
+  	margin: 0 10px 10px 0;
+  	width: 100px;
+  	/*width: 100%;
+  	height: 100%;*/
 }
 .my-gallery figcaption {
   	display: none;
@@ -626,21 +654,23 @@ projects page, but could eventually make separate Talks page) */
 	/*background-color: #cdafef; /* for layout/debugging *!/ */
 }
 .talk-card, .poster-card, .demo-card, .video-card, .workshop-card {
-	font-size: 12px;
-	margin: 0px;
+	font-size: var(--more-details-font);
+	margin: 0 0px 25px;
+	width: 96%;
     /*background: yellow; /*for layout/debugging*!/*/
-    
 }
 .talk-thumb, .poster-thumb, .demo-thumb, .video-thumb, .workshop-thumb {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px;
-	width: 200px;
-	height: 100px;
+	width: 100%;
+/*	width: 175px;
+	height: 131px;*/
+	border: 1px solid var(--light-gray-color);
 	/*background-color: #ea7f7f; /*for layout/debugging*!/*/
 }
 .talk-info > p, .poster-info > p, .demo-info > p, .video-info > p, .workshop-info > p {
-	font-size: 12px;
+	font-size: var(--more-details-font);
 	margin: 0px;
 	/*background-color: green; /*for layout/debugging*!/*/
 }
@@ -670,8 +700,8 @@ projects page, but could eventually make separate Talks page) */
     overflow: hidden;
     margin-top: 20px;
     margin-bottom: 20px;
-    color:  var(--off-gray-color);
-    border-bottom: 1px dashed var(--off-gray-color);
+    color:  var(--dark-gray-color);
+    border-bottom: 1px dashed var(--dark-gray-color);
 }
 .project-section-header {
 	font-size: 24px;
@@ -690,6 +720,17 @@ projects page, but could eventually make separate Talks page) */
   	grid-gap: 0x;
   	padding: 0px;
   	margin-bottom: 30px;
+}
+.proj-pub-entry-grid {
+	grid-template-columns: 0px 90px auto;
+}
+.proj-pub-entry-grid > .paper-thumb {
+	margin: 0px;
+	padding: 0px;
+}
+.proj-pub-entry-grid > .paper-info > p {
+	padding-top: 3px;
+	line-height: var(--single-space);
 }
 .paper-id {
 	grid-area: paper-id;
@@ -727,11 +768,13 @@ projects page, but could eventually make separate Talks page) */
 .paper-authors, .talk-presenters, .poster-presenters, .workshop-organizers { 
 	font-size: 13px;
 	padding-top: 5px;
+	line-height: var(--single-space);
 }
 .paper-venue, .talk-venue, .poster-venue, .workshop-venue { 
-	color: var(--off-gray-color);
 	font-style: italic;
-	padding-top: 5px;
+	line-height: var(--single-space);
+	color: var(--dark-gray-color);
+	/*padding-top: 5px;*/
 }
 .paper-tags { 
 	grid-area: paper-tags; 
@@ -743,10 +786,9 @@ projects page, but could eventually make separate Talks page) */
 .paper-links, .talk-links, .poster-links, .workshop-links, .video-links { 
 	grid-area: paper-links; 
 	text-align: left; 
-	
 }
-.paper-links-container, .talk-links-container, .poster-links-container, .workshop-links-container, .video-links-container {
-	border-top: 1px solid #c8c8c8;
+.paper-links-container, /*.talk-links-container,*/ .poster-links-container, .workshop-links-container, .video-links-container {
+	border-top: 1px solid var(--light-gray-color);
 }
 .paper-links, .talk-links, .poster-links, .workshop-links, .video-links a {
 	color: #549fec;
@@ -755,25 +797,34 @@ projects page, but could eventually make separate Talks page) */
 	color: var(--link-hover);
 }
 
+/*Make lines in the Talk entries uniform heights even if wrap a 
+different number of times*/ 
+.talk-presenters {
+	/*height: 30px;*/
+}
+.talk-venue {
+	/*height: 35px;*/
+}
+
 /*Override the paper and other project material styling (to be smaller) 
 for content within the 'More details' collapsible on the Projects page*/
 .collapsible-content > p {
 	text-align: left;
-	background-color: red;
+	/*background-color: red;*/
 	font-size: var(--more-details-font-bigger2);
 }
 .proj-detail > span, .collapsible-content > div {
 	text-align: left;
-	background-color: cyan;
+	/*background-color: cyan;*/
 	font-size: var(--more-details-font);
 }
 
 .collapsible-content .pub-entry-grid .paper-title {
-	background-color: orange;
+	/*background-color: orange;*/
 	font-size: var(--more-details-font-bigger1);
 }
 .collapsible-content .pub-entry-grid p {
-	background-color: purple;
+	/*background-color: purple;*/
 	font-size: var(--more-details-font);
 }
 
