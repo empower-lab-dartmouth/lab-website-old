@@ -128,11 +128,20 @@ body > * {
 	margin-bottom: 10px;
 }
 .section-header2 {
-	font-size: 20px;
+	font-size: 24px;
+	font-variant: small-caps;
 	font-weight: bold;
-	/*font-variant: small-caps;*/
 	margin-top: 30px;
 	text-align: left;
+}
+.section-header3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.section-header3 + p {
+	margin-top: 5px;
 }
 .link-look {
 	/*font-style: italic;*/
@@ -723,6 +732,7 @@ projects page, but could eventually make separate Talks page) */
 }
 .proj-pub-entry-grid {
 	grid-template-columns: 0px 90px auto;
+	margin-bottom: 10px;
 }
 .proj-pub-entry-grid > .paper-thumb {
 	margin: 0px;
