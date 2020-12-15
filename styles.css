@@ -799,6 +799,7 @@ projects page, but could eventually make separate Talks page) */
 }
 .paper-links-container, /*.talk-links-container,*/ .poster-links-container, .workshop-links-container, .video-links-container {
 	border-top: 1px solid var(--light-gray-color);
+	color: black;
 }
 .paper-links, .talk-links, .poster-links, .workshop-links, .video-links a {
 	color: #549fec;
