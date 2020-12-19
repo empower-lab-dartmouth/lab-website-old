@@ -13,6 +13,7 @@
   --context-tag-color: #ae79e0;
   --method-tag-color: #fbb870;
   --interaction-tag-color: #8ed3ac;
+  --links-top-border: 1px solid var(--light-gray-color);
   --project-grid-border-radius: 10px;
   --project-grid-border: 1px solid black;
   --more-details-margin: 10px;
@@ -578,14 +579,6 @@ p + .condensed-list { margin-top: -1em; }
 	margin-bottom: 0px;
 	/*background-color: purple; /* for layout/debugging *!/*/
 }
-.proj-collabs {
-	/* collab icon */	
-	margin: 0px;
-}
-.proj-collabs > span {
-	font-family: Avenir;
-	font-size: 12px;
-}
 .proj-pubs {
 	/* pub icon*/
 }
@@ -645,8 +638,17 @@ p + .condensed-list { margin-top: -1em; }
 	max-width: 900px;	
 }
 
-/* Formatting for talks (currently only in collapsible section on 
-projects page, but could eventually make separate Talks page) */
+.proj-collabs {
+	/* collab icon */	
+	margin: 0px;
+}
+.proj-collabs > span {
+	font-family: Avenir;
+	font-size: 12px;
+}
+
+/* Formatting for talks/etc (currently only in collapsible section on 
+projects page, but could eventually make separate Talks/etc page) */
 .talk-row, .poster-row, .demo-row, .video-row, .workshop-row {
 	/*background-color: #4aceef; /* for layout/debugging *!/*/
 }
@@ -659,13 +661,27 @@ projects page, but could eventually make separate Talks page) */
 	font-family: "Avenir", sans-serif;
 	font-size: 14px;
   	float: left;
-  	width: 33.33%;
+  	padding-right: 10px;
 	/*background-color: #cdafef; /* for layout/debugging *!/ */
 }
+.column-x1 {
+	width: 100%;
+}
+.column-x1 > div > img, .column-x2 > div > img {
+	/*Even though column is wider, don't make thumbnail stretch the full width*/
+	width: 40%;
+}
+.column-x2 {
+	width: 50%;
+}
+.column-x3 {
+	width: 33.33%;
+}
+
 .talk-card, .poster-card, .demo-card, .video-card, .workshop-card {
 	font-size: var(--more-details-font);
-	margin: 0 0px 25px;
-	width: 96%;
+	margin: 0 0px 10px;
+	width: 100%;
     /*background: yellow; /*for layout/debugging*!/*/
 }
 .talk-thumb, .poster-thumb, .demo-thumb, .video-thumb, .workshop-thumb {
@@ -678,7 +694,10 @@ projects page, but could eventually make separate Talks page) */
 	border: 1px solid var(--light-gray-color);
 	/*background-color: #ea7f7f; /*for layout/debugging*!/*/
 }
-.talk-info > p, .poster-info > p, .demo-info > p, .video-info > p, .workshop-info > p {
+.talk-info, .poster-info, .demo-info, .video-info, .workshop-info {
+	margin-bottom: 5px;
+}
+.talk-info > p, .talk-info > span, .poster-info > p, .poster-info > span, .demo-info > p, .demo-info > span, .video-info > p, .video-info > span, .workshop-info > p, .workshop-info > span {
 	font-size: var(--more-details-font);
 	margin: 0px;
 	/*background-color: green; /*for layout/debugging*!/*/
@@ -780,6 +799,9 @@ projects page, but could eventually make separate Talks page) */
 	padding-top: 5px;
 	line-height: var(--single-space);
 }
+.poster-presenters {
+	padding-top: 0px;
+}
 .paper-venue, .talk-venue, .poster-venue, .workshop-venue { 
 	font-style: italic;
 	line-height: var(--single-space);
@@ -797,9 +819,9 @@ projects page, but could eventually make separate Talks page) */
 	grid-area: paper-links; 
 	text-align: left; 
 }
-.paper-links-container, /*.talk-links-container,*/ .poster-links-container, .workshop-links-container, .video-links-container {
-	border-top: 1px solid var(--light-gray-color);
+.paper-links-container, .talk-links-container, .poster-links-container, .workshop-links-container, .video-links-container {
 	color: black;
+	border-top: var(--links-top-border);
 }
 .paper-links, .talk-links, .poster-links, .workshop-links, .video-links a {
 	color: #549fec;
