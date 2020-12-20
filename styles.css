@@ -418,9 +418,6 @@ p + .condensed-list { margin-top: -1em; }
 	background-color: black;
 	border-radius: var(--project-grid-border-radius) 0px 0px 0px;
 }
-.DRAFT {
-	background-color: #fefa15;
-}
 .project-name {
 	font-family: Avenir;
 	font-size: 20px;
@@ -469,7 +466,6 @@ p + .condensed-list { margin-top: -1em; }
 	border-left: var(--project-grid-border);
 	/*border-radius: var(--project-grid-border-radius-inner) 0px 0px 0px;*/
 	/*background-color: pink; /* for layout/debugging *!/*/
-	
 }
 .project-thumb img {
 	display: block;
