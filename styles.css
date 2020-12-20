@@ -684,7 +684,7 @@ projects page, but could eventually make separate Talks/etc page) */
 	width: 100%;
     /*background: yellow; /*for layout/debugging*!/*/
 }
-.talk-thumb, .poster-thumb, .demo-thumb, .video-thumb, .workshop-thumb {
+.talk-thumb, .poster-thumb, .demo-thumb, .video-thumb, .mklbItem, .workshop-thumb {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px;
@@ -694,6 +694,17 @@ projects page, but could eventually make separate Talks/etc page) */
 	border: 1px solid var(--light-gray-color);
 	/*background-color: #ea7f7f; /*for layout/debugging*!/*/
 }
+/*For videos that appear in talk links, it's just text so don't put border, make it look like a link, and don't italicize on hover*/
+.talk-links-container > .mklbItem {
+	border: none;
+	text-decoration: underline; 
+	color: blue;
+}
+.talk-links-container > .mklbItem:hover {
+    font-style: normal;
+	font-weight: normal;
+}
+
 .talk-info, .poster-info, .demo-info, .video-info, .workshop-info {
 	margin-bottom: 5px;
 }
@@ -791,8 +802,11 @@ projects page, but could eventually make separate Talks/etc page) */
 .paper-info > p {
 	margin: 0px;
 }
-.paper-title, .talk-title, .poster-title, .demo-title, .workshop-title { 
+.paper-title, .talk-title, .poster-title, .demo-title, .video-title, .workshop-title { 
 	font-size: 15px;
+}
+.poster-title, .video-venue {
+	padding-top: 5px;
 }
 .paper-authors, .talk-presenters, .poster-presenters, .workshop-organizers { 
 	font-size: 13px;
@@ -802,7 +816,7 @@ projects page, but could eventually make separate Talks/etc page) */
 .poster-presenters {
 	padding-top: 0px;
 }
-.paper-venue, .talk-venue, .poster-venue, .workshop-venue { 
+.paper-venue, .talk-venue, .poster-venue, .video-venue, .workshop-venue { 
 	font-style: italic;
 	line-height: var(--single-space);
 	color: var(--dark-gray-color);
@@ -815,29 +829,25 @@ projects page, but could eventually make separate Talks/etc page) */
 	padding-bottom: 5px;
 	vertical-align: middle;
 }
-.paper-links, .talk-links, .poster-links, .workshop-links, .video-links { 
+.paper-links, .talk-links, .poster-links, .video-links, .workshop-links { 
 	grid-area: paper-links; 
 	text-align: left; 
 }
-.paper-links-container, .talk-links-container, .poster-links-container, .workshop-links-container, .video-links-container {
+.paper-links-container, .talk-links-container, .poster-links-container, .video-links-container, .workshop-links-container {
 	color: black;
 	border-top: var(--links-top-border);
 }
-.paper-links, .talk-links, .poster-links, .workshop-links, .video-links a {
+.paper-links, .talk-links, .poster-links, .video-links, .workshop-links a {
 	color: #549fec;
 }
-.paper-links, .talk-links, .poster-links, .workshop-links, .video-links a:hover {
+.paper-links, .talk-links, .poster-links, .video-links, .workshop-links a:hover {
 	color: var(--link-hover);
 }
 
 /*Make lines in the Talk entries uniform heights even if wrap a 
 different number of times*/ 
-.talk-presenters {
-	/*height: 30px;*/
-}
-.talk-venue {
-	/*height: 35px;*/
-}
+.talk-presenters {/*height: 30px;*/}
+.talk-venue {/*height: 35px;*/}
 
 /*Override the paper and other project material styling (to be smaller) 
 for content within the 'More details' collapsible on the Projects page*/
