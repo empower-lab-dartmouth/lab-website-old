@@ -1,7 +1,9 @@
 /*********************SITE WIDE*********************/
 
 :root {
+  --link-color: #549fec;
   --link-hover: #f3c900;
+  --links-top-border: 1px solid var(--light-gray-color);
   --header-padding-left: 16px;
   --footer-icon-width: 35px;
   --footer-icon-height: 40px;
@@ -13,7 +15,6 @@
   --context-tag-color: #ae79e0;
   --method-tag-color: #fbb870;
   --interaction-tag-color: #8ed3ac;
-  --links-top-border: 1px solid var(--light-gray-color);
   --project-grid-border-radius: 10px;
   --project-grid-border: 1px solid black;
   --more-details-margin: 10px;
@@ -208,6 +209,41 @@ p + .condensed-list { margin-top: -1em; }
 	padding-bottom: 10px;
 }
 
+/* Lightbox for images (screenshots, mockups, photos, etc) */
+.my-gallery {
+  	width: 100%;
+  	float: left;
+}
+.my-gallery img {
+  	width: 100%;
+  	height: auto;
+}
+/*.gallery-thumb {
+	float: left;
+	width: 100px;
+	height: 50px;
+	margin-right: 10px;
+	background-color: pink;
+}*/
+.my-gallery figure {
+  	display: block;
+  	float: left;
+  	margin: 0 10px 10px 0;
+  	width: 100px;
+  	/*width: 100%;
+  	height: 100%;*/
+}
+.my-gallery figcaption {
+  	display: none;
+}
+.pswp__img {
+	/*border: 1px solid gray;*/
+}
+.pswp__caption__center {
+	font-family: Avenir;
+	max-width: 900px;	
+}
+
 
 /*********************HOME PAGE*********************/
 
@@ -382,6 +418,9 @@ p + .condensed-list { margin-top: -1em; }
 	background-color: black;
 	border-radius: var(--project-grid-border-radius) 0px 0px 0px;
 }
+.DRAFT {
+	background-color: #fefa15;
+}
 .project-name {
 	font-family: Avenir;
 	font-size: 20px;
@@ -485,6 +524,11 @@ p + .condensed-list { margin-top: -1em; }
 	background-image:url(images/icons/material_pub2.png);
 	background-size: 100% 100%;	
 }
+.material-thesis:before {
+	content: "";
+	background-image: url(images/icons/material_thesis4.png);
+	background-size: 100% 100%;
+}
 .material-talk:before {
 	content: "";
 	background-image:url(images/icons/material_talk1.png);
@@ -519,6 +563,10 @@ p + .condensed-list { margin-top: -1em; }
 	background: url(images/icons/material_press3.png) no-repeat;
 	background-size: 100% 100%;
 }
+.recruiting-note:before {
+	content: "\2713";
+}
+
 .project-details, .no-project-details { 
 	grid-area: footer; 
 	border: var(--project-grid-border);
@@ -603,39 +651,14 @@ p + .condensed-list { margin-top: -1em; }
 .proj-imgs {
 	/* images icon */
 }
-/* Lightbox for images (screenshots, mockups, photos, etc) */
-.my-gallery {
-  	width: 100%;
-  	float: left;
+
+.talk-info, .poster-info, .demo-info, .video-info, .workshop-info {
+	margin-bottom: 5px;
 }
-.my-gallery img {
-  	width: 100%;
-  	height: auto;
-}
-/*.gallery-thumb {
-	float: left;
-	width: 100px;
-	height: 50px;
-	margin-right: 10px;
-	background-color: pink;
-}*/
-.my-gallery figure {
-  	display: block;
-  	float: left;
-  	margin: 0 10px 10px 0;
-  	width: 100px;
-  	/*width: 100%;
-  	height: 100%;*/
-}
-.my-gallery figcaption {
-  	display: none;
-}
-.pswp__img {
-	/*border: 1px solid gray;*/
-}
-.pswp__caption__center {
-	font-family: Avenir;
-	max-width: 900px;	
+.talk-info > p, .talk-info > span, .poster-info > p, .poster-info > span, .demo-info > p, .demo-info > span, .video-info > p, .video-info > span, .workshop-info > p, .workshop-info > span {
+	font-size: var(--more-details-font);
+	margin: 0px;
+	/*background-color: green; /*for layout/debugging*!/*/
 }
 
 .proj-collabs {
@@ -698,20 +721,12 @@ projects page, but could eventually make separate Talks/etc page) */
 .talk-links-container > .mklbItem {
 	border: none;
 	text-decoration: underline; 
-	color: blue;
+	color: var(--link-color)
 }
 .talk-links-container > .mklbItem:hover {
     font-style: normal;
 	font-weight: normal;
-}
-
-.talk-info, .poster-info, .demo-info, .video-info, .workshop-info {
-	margin-bottom: 5px;
-}
-.talk-info > p, .talk-info > span, .poster-info > p, .poster-info > span, .demo-info > p, .demo-info > span, .video-info > p, .video-info > span, .workshop-info > p, .workshop-info > span {
-	font-size: var(--more-details-font);
-	margin: 0px;
-	/*background-color: green; /*for layout/debugging*!/*/
+	color: var(--link-hover);
 }
 
 
@@ -837,10 +852,10 @@ projects page, but could eventually make separate Talks/etc page) */
 	color: black;
 	border-top: var(--links-top-border);
 }
-.paper-links, .talk-links, .poster-links, .video-links, .workshop-links a {
-	color: #549fec;
+.paper-links a, .talk-links a, .poster-links a, .video-links a, .workshop-links a {
+	color: var(--link-color);
 }
-.paper-links, .talk-links, .poster-links, .video-links, .workshop-links a:hover {
+.paper-links a:hover, .talk-links a:hover, .poster-links a:hover, .video-links a:hover, .workshop-links a:hover {
 	color: var(--link-hover);
 }
 

@@ -25,6 +25,9 @@
 	<script src="libs/PhotoSwipe-master/dist/photoswipe.min.js"></script> <!-- Core JS file -->
 	<script src="libs/PhotoSwipe-master/dist/photoswipe-ui-default.min.js"></script> <!-- UI JS file -->
 	
+	<!-- Lightbox for videos. Credit: https://www.cssscript.com/gallery-lightbox-mk/-->
+	<link rel="stylesheet" href="libs/mk-lightbox-master/mklb/css/mklb.css"> 
+	
 	<!-- My stylesheet (needs to be loaded after other stylesheets to enable any desired overwriting) -->
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 	
@@ -147,67 +150,28 @@
 		
 		<!--<p class='tagline'>Projects</p>-->
 		<h1 class="section-header1">Active projects</h1>
-<!--		<div class="header-footnote">The following projects are currently the most active in the lab. Projects seeking students denote such opportunities in the right hand column, with further details under...  </div>-->	
+		<div class="header-footnote">The lab is currently most focused on the following research. Projects seeking students denote such recruitment opportunities, which are described under that project's 'More details' section. </div>	
 		<div class="content">
 		
 			<div class="projects-row">
-				<!-- Families in cars project -->
-				<div class="project-grid project-column">
-				  	<div class="title-tags-bar">
-				  		<span class="project-name">Families in Cars</span>
-				  		<span class="project-tags">
-			  				<span class="domain-tag">education</span>
-			  				<span class="domain-tag">early development</span>
-			  				<span class="population-tag">children</span>
-			  				<span class="population-tag">families</span>
-			  				<span class="context-tag">cars</span>
-				  		</span>
-				  	</div>
-				  	<div class="project-years"><span>2018 &ndash;</span></div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/thumb_families-in-cars.png"/></div>
-				  	<div class="project-desc">family-centered intelligent agents to aid early childhood development, AISpy
-				  		<span class="recruiting">&#10003; Recruiting students</span>
-				  	</div>  
-				  	
-				  	<div class="project-materials">
-				  		
-				  	</div>
-				  	<div class="project-details">
-			  			<!-- Expanded pane detailing project materials -->
-			  			<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
-			  			<div class="collapsible-content">
-			  		  		<!-- List and link collaborators, publications, talks, etc -->
-			  		  		<p class="proj-detail proj-collabs">Collaborators:<br />
-			  		  			<span>TODO</span></p>			  		  		
-				  		  	<p class="proj-detail proj-grants">Grant: </p>
-				  			<div class="grant-row">
-			  					<div class="grant-column">
-			  						<div class="grant-card">
-			  					  		<img src="images/grant_thumbs/xxx.png" alt="" class="grant-thumb">
-			  					  		<div class="grant-info">
-			  					  			<p class="grant-title">xxx</p>
-			  					  		</div>
-			  						</div>
-			  		  			</div>
-				  			</div> <!-- end grant-row -->
-			  			</div> <!-- end collapsible--content -->
-			  		</div> <!-- end project-details -->
-				</div> <!-- end Families-in-cars project-grid -->
-			
+				
 				<!-- Biophilic design project -->
 				<div class="project-grid project-column">
-				  	<div class="title-tags-bar">
+				  	<div class="title-tags-bar DRAFT">
 				  		<span class="project-name">Biophilic design</span>
 				  		<span class="project-tags">
+				  			<span class="domain-tag">well-being</span>
+				  			<span class="domain-tag">sustainability</span>
 					  		<span class="context-tag">indoor spaces</span>
 					  		<span class="context-tag">nature</span>
 						</span>
 				  	</div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/thumb_biophilic.png"/></div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_biophilic.png"/></div>
 				  	<div class="project-years"><span>2018 &ndash;</span></div>
 				  	<div class="project-desc">exploring how computational systems might instantiate biophilic design patterns and how the digital user interfaces we regularly interact with today could satisfy our inherent need to connect with nature, promote restorative experiences, and overall enhance human wellness and flourish.</div>  
 				  	<div class="project-materials">
-			  			<span class="material-pub last-material">x publication</span>
+			  			<!--<span class="material-pub">x publication</span>-->
+			  			<span class="recruiting-note last-material">Recruiting students</span>
 			  		</div>
 				  	<div class="project-details">
 							<!-- Expanded pane detailing project materials -->
@@ -230,26 +194,73 @@
 							</div> <!-- end collapsible--content -->
 						</div> <!-- end project-details -->
 				</div> <!-- end Biophilic design project -->
+				
+				<!-- LCA project -->
+				<div class="project-grid project-column"> 
+				  	<div class="title-tags-bar DRAFT">
+						<span class="project-name">EcoSketch</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">sustainability</span>
+				  			<span class="interaction-tag">visualization</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/xx.png"/></div>
+				  	<div class="project-years"><span>2018&ndash;</span></div>
+				  	<div class="project-desc">[see the MOSE slide] analytics and visualization tools for sustainable product design
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub last-material">1 publication; does teja have any posters or videos or talk slides?</span>
+				  		
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Students and collaborators:<br />
+				  	  			<span>Teja Chatty, [undergrads], Jeremy Faludi</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publication: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI19_QuizBot_thumb.png"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">... Chatty 2020.. </p>
+				  	  				<p class="paper-authors">...<span class="lab-member-emph">Tejaswini Chatty</span>, ...</p>
+				  	  				<p class="paper-venue">Proceedings of xx (xx) &middot; Pages xx&ndash;xx &middot; ACM &middot; 20xx</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+					  						<a href="files/xx.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end LCA project-grid -->
 			</div> <!-- end projects-row -->
 			
 			<div class="projects-row">
-				<!-- Interpersonal Informatics project -->
+				<!-- Families in cars project -->
 				<div class="project-grid project-column"> 
 				  	<!--<div class="project-title"></div>-->
-				  	<div class="title-tags-bar">
-						<span class="project-name">Interpersonal Informatics</span>
+				  	<div class="title-tags-bar DRAFT">
+						<span class="project-name">Families in Cars</span>
 						<span class="project-tags">
-				  			<span class="domain-tag"></span>
-				  			<span class="interaction-tag"></span>
+							<span class="domain-tag">education</span>
+							<span class="domain-tag">early development</span>
+				  			<span class="population-tag">children</span>
+				  			<span class="population-tag">families</span>
+				  			<span class="context-tag">cars</span>
 						</span>
 				  	</div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/.png"/></div>
-				  	<div class="project-years"><span>20??&ndash;</span></div>
-				  	<div class="project-desc">this research is examining more collective informatics contexts, where data tracking and sensemaking practices may be socially motivated, collaboratively conducted, or otherwise extend beyond single-user audiences and requirements --- use cases for which graphical metaphors can help balance the benefits of sharing data and experiences, while providing a privacy-sensitive layer of abstraction. mood.cloud -- see job research stmt where i discuss mood cloud
-				  	<!--especially pertinent for sensitive or stigmatic health data.. addressing/preserving privacy-related concerns/needs--></div>  
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_families-in-cars.png"/></div>
+				  	<div class="project-years"><span>2018&ndash;</span></div>
+				  	<div class="project-desc">family-centered intelligent agents to aid early childhood development, AISpy. The other arm of the project focuses on family-centered technologies, scaffolding everyday and intrinsically motivated parent-child interactions around knowledge sharing and conceptual learning — with our goal to not only enhance children’s cognitive development, communication skills, and family bonding, but to also assemble a massive labeled dataset of commonsense knowledge for training AI systems as a byproduct of these interactions.
+				  	</div>  
+				  	
 				  	<div class="project-materials">
-				  		<span class="material-pub">1 publication</span>
-						<span class="material-workshop last-material">1 workshop</span>
+				  		<!--<span class="material-pub">1 publication</span>-->
+				  		<span class="recruiting-note last-material">Recruiting students</span>
 				  	</div>
 				  	<div class="project-details">
 				  		<!-- Expanded pane detailing project materials -->
@@ -257,27 +268,376 @@
 				  		<div class="collapsible-content">
 				  	  		<!-- List and link collaborators, publications, talks, etc -->
 				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
-				  	  			<span>Jaime Snyder, Steve Voida, Geri Gay, Younghui Kim</span></p>
+				  	  			<span>Khuyen Le, Michelle Huang, Sandra Bae, Abdallah AbuHashem, James Landay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publications: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI21_StoryCoder_thumb.png"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title"> ...</p>
+				  	  				<p class="paper-authors">... <span class="lab-member-emph">Elizabeth L. Murnane</span>, ...</p>
+				  	  				<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; (To appear) &middot; ACM &middot; 20xx</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+			  	  						<a href="files/xx.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div> <!-- end pubs -->
+
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Families in cars project-grid -->
+				
+				<!-- Creative Drive project -->
+				<div class="project-grid project-column"> 
+				  	<div class="title-tags-bar DRAFT">
+						<span class="project-name">Creative Drive</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">creativity</span>
+				  			<span class="interaction-tag">...</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_creativedrive.png"/></div>
+				  	<div class="project-years"><span>2018&ndash;</span></div>
+				  	<div class="project-desc">CHECK DYLAN REF BLURB This project investigates how intelligent in-car agents can engage with drivers and passengers to guide creative activities and elicit novel ideas, in an effective, enjoyable, and safe manner. One main thread of the project focuses on car commuters, undertaking on-road studies to test the impact of driving on creative ideation as well as prototyping interactive media to prime and elicit creative behavior. 
+				  	</div>  
+				  	<div class="project-materials">
+				  		<!--<span class="material-pub">1 publication</span>-->
+				  		<span class="recruiting-note last-material">Recruiting students</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Dylan E. Moore, Kat Gregory, Frances Watson, Kordell Schrock, Jwala Mitra, Catie Cuan, Becky Currano, David Sirkin</span></p>
+				  	  		<p class="proj-detail proj-recruiting">Recruiting:<br />
+				  	  			<span>We are currently seeking students to.... </span>
+				  	  		</p>
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Creative Drive project-grid -->
+			</div><!-- end projects-row -->
+			
+			
+			<div class="projects-row">
+			
+				<!-- Learning with stories project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar DRAFT">
+						<span class="project-name">Stories for STEM</span>
+						<span class="project-tags">
+							<span class="domain-tag">education</span>
+				  			<span class="population-tag">children</span>
+				  			<span class="interaction-tag">narrative</span>
+				  			<span class="interaction-tag">voice</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_education.png"/></div>
+				  	<div class="project-years"><span>2017&ndash;</span></div>
+				  	<div class="project-desc">Curiosity-driven learning
+				  	augmented reality and context-aware quests for curiosity-driven learning 
+				  	This research is aimed at revolutionizing education via innovative interaction design and AI technology to address problems of inefficacy and inequality in childhood learning. Specifically, we are focusing on developing a tablet-based tutoring system that supports adaptive, context-aware, and augmented-reality based narratives and hands-on activities to foster children's independent learning, critical thinking, and sense of exploration and discovery.
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub last-material">2 publications</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Griffin Dietz, Sherry Ruan, Abdallah AbuHashem, Swati Goel, Bethanie Maples, Roy Pea, Paula Moya, James Landay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publications: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI21_StoryCoder_thumb.png"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">StoryCoder: ...</p>
+				  	  				<p class="paper-authors">Griffin Dietz, ... <span class="lab-member-emph">Elizabeth L. Murnane</span>, James Landay</p>
+				  	  				<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; (To appear) &middot; ACM &middot; 2021</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+			  	  						<a href="files/CHI21_StoryCoder.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+			  	  				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+			  	  				<div class="paper-info">
+			  	  					<p class="paper-title">Supporting children's math learning with feedback-augmented narrative technology</p>
+			  	  					<p class="paper-authors">Sherry Ruan... <span class="lab-member-emph">Elizabeth L. Murnane</span>, ....</p>
+			  	  					<p class="paper-venue">? (IDC) &middot; Pages xx&ndash;xx &middot; ACM &middot; 20xx</p>
+			  	  				</div>
+			  	  				<div class="paper-links">
+			  	  					<span class="paper-links-container">
+			  	  						<a href="files/IDCxx_xx.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+			  	  					</span>
+			  	  				</div>
+			  	  			</div> <!-- end pubs -->
+			  	  			<p class="proj-detail proj-imgs">Screenshots (click to enlarge images):</p>
+			  	  			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+			  	  				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			  	  					<a href="images/project_imgs/zuki/teaser_overview.png" itemprop="contentUrl" data-size="4875x1465">
+			  	  						<img src="images/project_imgs/zuki/teaser_overview.png" itemprop="thumbnail" alt="Narrative components of WhoIsZuki app"/>
+			  	  					</a>
+			  	  					<figcaption itemprop="caption description">Narrative components of the WhoIsZuki app. As a user achieves weekly goals, the storyline progresses through a series of challenges that the protagonist character, Zuki, must accomplish to reach the plot’s overarching goal of saving his brother and home planet.</figcaption>
+			  	  				</figure>
+			  	  				
+			  	  			</div> <!-- end screenshots -->
+
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Stories+learning project-grid -->
+			
+				<!-- Narratives for health promotion project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar">
+						<span class="project-name">Interactive narratives</span>
+						<span class="project-tags">
+							<span class="domain-tag">health</span>
+							<span class="domain-tag">sustainability</span>
+				  			<span class="interaction-tag">narrative</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_zuki.png"/></div>
+				  	<div class="project-years"><span>2017&ndash;</span></div>
+				  	<div class="project-desc">This research develops personalized, data-driven narratives to shape behaviors and mindsets. Stories ambiently visualize a user’s activities and goals as components of a multi-chapter story, where the user's achievements are tied to plot progression. Current extensions include support for specialized health conditions and populations (indigenous peoples, older adults) as well as motivating behaviors that can have positive impacts beyond the individual (e.g., environmentally friendly activities).
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">1 publication</span>
+				  		<span class="material-talk">1 talk</span>
+				  		<span class="material-video last-material">1 video</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span> Cindy Jiang, Jenny Zhi, Gracie Young, Raymond Yao, Grace Zhou, Sasankh Munukutla, Matilda Nickell, Misbah Surani, Michelina Hanlon, Kate Glazko, Nicholas Machado, Hanh Giao, Jacob Ritchie, Miriam Michel, Jean Costa, Octavia Zahrt, Sunny Consolvo, Scott Delp, Alia Crum, Paula Moya, James Landay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publications: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+					  				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+					  				<div class="paper-info">
+					  					<p class="paper-title">narratives...</p>
+					  					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, ....</p>
+					  					<p class="paper-venue">? (CHI) &middot; Pages xx&ndash;xx &middot; ACM &middot; 2020</p>
+					  				</div>
+					  				<div class="paper-links">
+					  					<span class="paper-links-container">
+					  						<a href="files/CHI20_xx.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+					  					</span>
+					  				</div>
+					  			</div> <!-- end pubs -->
+							<p class="proj-detail proj-talks">Talks: </p>
+							<div class="talk-row">
+								<div class="talk-column column-x1">
+									<div class="talk-card">
+								  		<img src="images/thumbnails/talk_thumbs/CHI20_Zuki_Slides_thumb.png" alt="CHI20 Zuki talk slides" class="talk-thumb">
+								  		<div class="talk-info">
+								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+								  			<p class="talk-venue">for CHI &middot; &middot; May 2020</p>
+								  		</div>
+								  		<div class="talk-links">
+								  			<span class="talk-links-container">
+								  				<a href="files/CHI20_Zuki_Slides.pdf">Slides</a>
+								  				&thinsp;&middot;&thinsp;
+								  				<a class="mklbItem" data-video-src="http://stanford.edu/~emurnane/files/CHI20_Zuki_Talk.mp4">Video of presentation</a>
+								  			</span>
+								  		</div>
+									</div>
+								</div>
+							</div> <!-- end talks -->
+				  	  		<p class="proj-detail proj-videos">Video: </p>
+							<div class="video-row">
+				  				<div class="video-column column-x1">
+				  					<div class="video-card">
+				  				  		<img class="mklbItem" src="images/thumbnails/video_thumbs/CHI19_Spoonies_Video_thumb.png" data-video-src="http://stanford.edu/~emurnane/files/CHI20_Zuki_Video.mp4" />
+										<div class="video-info">
+											<p class="video-venue">CHI video preview &thinsp;&middot;&thinsp; 2020</p>
+										</div>
+				  					</div>
+				  	  			</div>
+							</div> <!-- end video-row -->
+							
+							<p class="proj-detail proj-imgs">Screenshots (click to enlarge images):</p>
+							<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a href="images/project_imgs/zuki/teaser_overview.png" itemprop="contentUrl" data-size="4875x1465">
+										<img src="images/project_imgs/zuki/teaser_overview.png" itemprop="thumbnail" alt="Narrative components of WhoIsZuki app"/>
+									</a>
+									<figcaption itemprop="caption description">Narrative components of the WhoIsZuki app. As a user achieves weekly goals, the storyline progresses through a series of challenges that the protagonist character, Zuki, must accomplish to reach the plot’s overarching goal of saving his brother and home planet.</figcaption>
+								</figure>
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a href="images/project_imgs/zuki/lock_space.png" itemprop="contentUrl" data-size="1080x1920">
+										<img src="images/project_imgs/zuki/lock_space.png" itemprop="thumbnail" alt="Lock screen showing ambient feedback about story progress" />
+									</a>
+									<figcaption itemprop="caption description">Lock screen showing ambient feedback about story progress.</figcaption>
+								</figure>
+							    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							    	<a href="images/project_imgs/zuki/multichapters_ch3.png" itemprop="contentUrl" data-size="1655x655">
+							    		<img src="images/project_imgs/zuki/multichapters_ch3.png" itemprop="thumbnail" alt="Weekly storyline" class="img-clip"/>
+							    	</a>
+							    	<figcaption itemprop="caption description">A weekly storyline, illustrating incremental progress of the main character, Zuki, towards his goal for that chapter (here, climbing to escape his antagonist), which parallels the user’s progress. The glanceable display uses visual elements to give feedback about tracked a1c2tivities (e.g., birds – top of screen) and progress towards weekly goals (e.g., carabiners – bottom right), accentuated with celebratory overlay (e.g., balloons) at 100%.</figcaption>
+							    </figure>
+							    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							    	<a href="images/project_imgs/zuki/multichapters_icons_progress.png" itemprop="contentUrl" data-size="4645x1254">
+							    		<img src="images/project_imgs/zuki/multichapters_icons_progress.png" itemprop="thumbnail" alt="Ambient visual feedback" />
+							    	</a>
+							    	<figcaption itemprop="caption description">Interfaces provide immediate ambient visual feedback about completed individual activities (top of screen) as well as overall goal progress (bottom right corner).</figcaption> 
+							    </figure>
+							</div> <!-- end screenshots -->
+							
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Narratives for health project-grid -->
+			</div> <!-- end projects-row -->
+			
+			<div class="projects-row">	
+				<div class="project-grid project-column"> 
+					<!-- HPDS project -->
+				  	<div class="title-tags-bar">
+						<span class="project-name">Well-Building</span>
+						<span class="project-tags">
+							<span class="domain-tag">well-being</span>
+				  			<span class="domain-tag">sustainability</span>
+				  			<span class="context-tag">built environment</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_hpds.png"/></div>
+				  	<div class="project-years"><span>2017&ndash;</span></div>
+				  	<div class="project-desc">People in countries like the U.S. now spend 87% of their time indoors, with research increasingly indicating that building features (lighting, materials, iconography) can substantially impact human attitudes, behaviors, and health. As part of the <a href="https://hpds.stanford.edu/" target="_blank">Hybrid Physical-Digital Spaces (HPDS)</a> group, this research has several thrusts to develop technology that blends digital and physical infrastructure to support various cognitive, physiological, psychological, and social dimensions of occupant wellness.</div>  
+				  	<div class="project-materials">
+						<!--<span class="material-workshop last-material">1 anything?</span>-->
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Sarah Billington, James Landay, Martin Fischer, Matt Mauriello, Pablo Paredes, Belle Douglas, Kyle Douglas, Jackie Yang, Michael Cooper, Dhara Yu, Dunia Karzai, Nik Sawe, Alana Conner, Sarah Lyons-Padilla, Nick Camp, Lucy Bencharit, Andreas Katsanevas, Jen King </span></p>
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end HPDS project-grid -->
+				
+				<div class="project-grid project-column"> 
+					<!-- AI & Healthcare project -->
+				  	<div class="title-tags-bar">
+						<span class="project-name">AI-Assisted Healthcare</span>
+						<span class="project-tags">
+							<span class="population-tag">patients</span>
+							<span class="population-tag">healthcare workers</span>
+				  			<span class="context-tag">clinical</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_aicare1.png"/></div>
+				  	<div class="project-years"><span>2017&ndash;</span></div>
+				  	<div class="project-desc">This project studies opportunities for intelligent, interactive systems to help address pressing challenges that face healthcare today. Current projects focus on the development of monitoring and intervention systems to improve hand hygiene, support aging-in-place, and manage anxiety in pediatric patients, as well as the examination of stakeholder perspectives on the broader ramifications of bringing sensing and AI into care workflows.</div>  
+				  	<div class="project-materials">
+						<!--<span class="material-publication last-material">1 abstract?</span>-->
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Michelle Guo, Lance Downing, Amit Singh, Fei-Fei Li, James Landay, Sarah Cunningham, Claudia Mueller, Lauren Heathcote</span></p>
+		  	  				<p class="proj-detail proj-imgs">Screenshots and mockups (click to enlarge images):</p>
+	  	  					<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+	  	  						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+	  	  							<a href="images/project_imgs/handhygiene/mock_hospital.png" itemprop="contentUrl" data-size="1717x1287">
+	  	  								<img src="images/project_imgs/handhygiene/mock_hospital.png" itemprop="thumbnail" alt="Mock hospital room" />
+	  	  							</a>
+	  	  							<figcaption itemprop="caption description">Mock hospital room set up for user testing, showing a subset of implemented visual intervention modalities including a monitor above the patient bed, light-based feedback below monitor and around patient bed, and wall projections.</figcaption>
+	  	  						</figure>
+	  	  					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+	  	  							<a href="images/project_imgs/handhygiene/interventions_collage.png" itemprop="contentUrl" data-size="2710x1204">
+	  	  								<img src="images/project_imgs/handhygiene/interventions_collage.png" itemprop="thumbnail" alt="Hand hygiene interventions" />
+	  	  							</a>
+	  	  							<figcaption itemprop="caption description">Categories of interventions for motivating hand hygiene compliance, with one representative intervention shown for each category.</figcaption>
+	  	  					    </figure>
+	  	  					</div> <!-- end screenshots -->
+
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end AI & Healthcare project-grid -->
+				
+			</div><!-- end projects-row -->
+			
+			<div class="projects-row">
+				<div class="project-grid project-column"> 
+				<!-- Interpersonal Informatics project -->
+				  	<div class="title-tags-bar DRAFT">
+						<span class="project-name">Interpersonal Informatics</span>
+						<span class="project-tags">
+				  			<span class="domain-tag"></span>
+				  			<span class="interaction-tag"></span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/.png"/></div>
+				  	<div class="project-years"><span>2016&ndash;</span></div>
+				  	<div class="project-desc">this research is examining more collective informatics contexts, where data tracking and sensemaking practices may be socially motivated, collaboratively conducted, or otherwise extend beyond single-user audiences and requirements --- use cases for which graphical metaphors can help balance the benefits of sharing data and experiences, while providing a privacy-sensitive layer of abstraction. mood.cloud -- see job research stmt where i discuss mood cloud
+				  	<!--especially pertinent for sensitive or stigmatic health data.. addressing/preserving privacy-related concerns/needs--></div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">1 publication</span>
+				  		<span class="material-talk">1 talk</span>
+						<span class="material-workshop">1 workshop</span>
+						<span class="recruiting-note last-material">Recruiting students</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Jaime Snyder, Steve Voida, Lucy Van Kleunen, Tara Walker, Beck Tench, Alex Weitzman, Gabe Saldivar, Andrew Ying, Catherine Mullings, Younghui Kim, Geri Gay</span></p>
 				  	  		
 				  	  		<p class="proj-detail proj-pubs">Publication: </p>
-		  	  				<div class="pub-entry-grid proj-pub-entry-grid">
-		  	  					<span class="paper-award-icon">icon</span>
-		  	  					<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
-		  	  					<div class="paper-info">
-		  	  						<p class="paper-title">Personal Informatics in Interpersonal Contexts: Towards the Design of Technology that Supports the Social Ecologies of Long-Term Mental Health Management</p>
-		  	  						<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Tara G. Walker, Beck Tench, Stephen Voida, Jaime Snyder</p>
-		  	  						<p class="paper-venue">Proceedings of the ACM on Human-Computer Interaction 2(CSCW) &middot; Pages 1&ndash;27 &middot; ACM &middot; 2018</p>
-		  	  						<p class="paper-award"><a href='https://medium.com/acm-cscw/announcing-the-best-of-cscw-2018-b98cb91e0f61' target='_blank'>Honorable Mention Award</a>  (top 5%)
-		  	  								1 of 5 papers to receive <a href='https://medium.com/acm-cscw/recognition-of-contribution-to-diversity-and-inclusion-at-cscw-2018-891ae0fce770' target='_blank'>Recognition of Contribution to Diversity and Inclusion</a></p>
-		  	  					</div>
-		  	  					<div class="paper-links">
-		  	  						<span class="paper-links-container">
-		  	  								<a href="files/CSCW18_Ecology.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
-		  	  						</span>
-		  	  					</div>
-		  	  				</div> <!-- end pubs -->
+								<div class="pub-entry-grid proj-pub-entry-grid">
+									<span class="paper-award-icon">icon</span>
+									<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+									<div class="paper-info">
+										<p class="paper-title">Personal Informatics in Interpersonal Contexts: Towards the Design of Technology that Supports the Social Ecologies of Long-Term Mental Health Management</p>
+										<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Tara G. Walker, Beck Tench, Stephen Voida, Jaime Snyder</p>
+										<p class="paper-venue">Proceedings of the ACM on Human-Computer Interaction 2(CSCW) &middot; Pages 1&ndash;27 &middot; ACM &middot; 2018</p>
+										<p class="paper-award"><a href='https://medium.com/acm-cscw/announcing-the-best-of-cscw-2018-b98cb91e0f61' target='_blank'>Honorable Mention Award</a> (top 5%)
+											&thinsp;&middot;&thinsp;
+											1 of 5 papers to receive <a href='https://medium.com/acm-cscw/recognition-of-contribution-to-diversity-and-inclusion-at-cscw-2018-891ae0fce770' target='_blank'>Recognition of Contribution to Diversity and Inclusion</a>
+											</p>
+									</div>
+									<div class="paper-links">
+										<span class="paper-links-container">
+												<a href="files/CSCW18_Ecology.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+										</span>
+									</div>
+								</div> <!-- end pubs -->
+								<p class="proj-detail proj-talks">Talk: </p>
+								<div class="talk-row">
+									<div class="talk-column column-x1">
+										<div class="talk-card">
+									  		<img src="images/thumbnails/talk_thumbs/CSCW18_Ecology_Slides_thumb.png" alt="CSCW'18 Social Ecology talk slides" class="talk-thumb">
+									  		<div class="talk-info">
+									  			<!--<p class="talk-title">Personal Informatics in Interpersonal Contexts: Towards the Design of Technology that Supports the Social Ecologies of Long-Term Mental Health Management</p>-->
+									  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+									  			<p class="talk-venue">at CSCW &middot; Jersey City, NJ &middot; November 6, 2018</p>
+									  		</div>
+									  		<div class="talk-links">
+									  			<span class="talk-links-container">
+									  				<a href="files/CSCW18_Ecology_Slides.pdf">Slides</a>
+									  			</span>
+									  		</div>
+										</div>
+									</div>
+								</div> <!-- end talk-row -->
 				  	  		
-				  	  		<p class="proj-detail proj-workshops">Organized Workshop: </p>
+				  	  		<p class="proj-detail proj-workshops">Organized workshop: </p>
 				  	  		<div class="workshop-row">
 				  	  			<div class="workshop-column">
 				  	  				<div class="workshop-card">
@@ -285,17 +645,22 @@
 				  	  			  		<div class="workshop-info">
 				  	  			  			<p class="workshop-title">Social Issues in Personal Informatics: Design, Data, and Infrastructure</p>
 				  	  			  			<p class="workshop-organizers">Organized by <span class="lab-member-emph">Elizabeth L. Murnane</span>, Jaime Snyder, Stephen Voida, Matthew Bietz, Mark Matthews, Sean Munson, Laura Pina</p>
-				  	  			  			<p class="talk-venue">at [write out] (CSCW) &middot; Jersey City, New Jersey &middot; November 4, 2018</p>
+				  	  			  			<p class="talk-venue">at CSCW &middot; Jersey City, New Jersey &middot; November 4, 2018</p>
 				  	  			  		</div>
 				  	  			  		<div class="workshop-links">
 				  	  			  			<span class="workshop-links-container">
-				  	  			  				<a href="">...</a>[<a href='http://stanford.edu/~emurnane/files/CSCW18_SocialPI.pdf' target='_blank'>PDF</a>] [<a href='https://dl.acm.org/citation.cfm?id=3273016' target='_blank'>ACM</a>] [<a href='https://tmilab.colorado.edu/socialpi/' target='_blank'>Workshop website</a>]
+				  	  			  				<a href='http://stanford.edu/~emurnane/files/CSCW18_SocialPI.pdf' target='_blank'>PDF</a>
+				  	  			  				&thinsp;&middot;&thinsp;
+				  	  			  				<a href='' target='_blank'>DOI</a> 
+				  	  			  				&thinsp;&middot;&thinsp;
+				  	  			  				<a href='https://tmilab.colorado.edu/socialpi/' target='_blank'>Workshop website</a>
 				  	  			  			</span>
 				  	  			  		</div>
+				  	  			  		
 				  	  				</div>
 				  	  			</div>
 				  	  		</div> <!-- end workshop-row -->
-				  	  		<p class="proj-detail proj-imgs">Screenshots and mockups (click to enlarge images):</p>
+				  	  		<p class="proj-detail proj-imgs">Installations and mockups (click to enlarge images):</p>
 				  	  		<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 				  	  			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				  	  				<a href="images/project_imgs/metaphor/community_informatics/moodcloud.png" itemprop="contentUrl" data-size="776x506">
@@ -303,27 +668,37 @@
 				  	  				</a>
 				  	  				<figcaption itemprop="caption description">Mood Cloud is an installation that reflects both individual and aggregate sentiment of occupants who visit the building in which it resides.</figcaption>
 				  	  			</figure>
-				  	  		</div>
+				  	  			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			  	  					<a href="images/project_imgs/metaphor/community_informatics/moodcloud.png" itemprop="contentUrl" data-size="776x506">
+			  	  						<img src="images/project_imgs/metaphor/community_informatics/moodcloud.png" itemprop="thumbnail" alt="Mood Cloud" />
+			  	  					</a>
+			  	  					<figcaption itemprop="caption description">Community garden ..... .</figcaption>
+			  	  				</figure>
+				  	  		</div> <!-- end screenshots -->
+				  	  		
+				  	  		
+				  	  		<p class="proj-detail proj-recruiting">Recruiting:<br />
+			  	  				<span>We are currently seeking students to.... </span>
+			  	  			</p>
 				  		</div> <!-- end collapsible--content -->
 				  	</div> <!-- end project-details -->
 				</div> <!-- end Interpersonal Informatics project-grid -->
 				
 				<!-- VisBD project -->
 				<div class="project-grid project-column"> 
-				  	<div class="project-title"></div>
-				  	<div class="title-tags-bar">
+				  	<div class="title-tags-bar DRAFT">
 						<span class="project-name">VisBD</span>
 						<span class="project-tags">
 				  			<span class="domain-tag">mental health</span>
 				  			<span class="interaction-tag">visualization</span>
 						</span>
 				  	</div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/thumb_metaphor.png"/></div>
-				  	<div class="project-years"><span>20??&ndash;</span></div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_metaphor.png"/></div>
+				  	<div class="project-years"><span>2016&ndash;</span></div>
 				  	<div class="project-desc">This project develops metaphor-based information visualizations that are more intuitive, meaningful, and better resonate with the lived experiences those data represent. [mental imagery people associate with the symptoms of bipolar disorder].</div>  
 				  	<div class="project-materials">
-			  			<span class="material-pub last-material">1 publication</span>
-			  		</div>
+							<span class="material-pub last-material">1 publication</span>
+						</div>
 				  	
 				  	<div class="project-details">
 				  		<!-- Expanded pane detailing project materials -->
@@ -334,7 +709,7 @@
 				  	  			<span>Jaime Snyder, Steve Voida</span></p>
 				  	  		<p class="proj-detail proj-pubs">Publication: </p>
 				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
-				  	  			<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 				  	  			<div class="paper-info">
 				  	  				<p class="paper-title">Visually Encoding the Lived Experience of Bipolar Disorder</p>
 				  	  				<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Caitie Lustig, Stephen Voida</p>
@@ -347,7 +722,6 @@
 				  	  			</div>
 				  	  		</div> <!-- end pubs -->
 				  	  		<p class="proj-detail proj-imgs">Screenshots and mockups (click to enlarge images):</p>
-				  	  		
 				  	  		<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 				  	  			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				  	  				<a href="images/project_imgs/metaphor/visbd/lichen_timeline.png" itemprop="contentUrl" data-size="2210x945">
@@ -361,189 +735,799 @@
 				  	  				</a>
 				  	  				<figcaption itemprop="caption description">A water-based motif co-designed with individuals managing serious mental illness, drawn from the mental imagery they associate with the sometimes fierce, uncertain, and uncontrollable ebbs and flows of their symptoms.</figcaption>
 				  	  		    </figure>
-				  	  		</div>
-				  	  		
+				  	  		</div> <!-- end screenshots -->
 				  	  		
 				  		</div> <!-- end collapsible--content -->
 				  	</div> <!-- end project-details -->
 				</div> <!-- end VisBD project-grid -->
-			</div><!-- end projects-row -->
-			
-			<div class="projects-row">
-				<!-- X project -->
-				<div class="project-grid project-column">
-				  	<div class="title-tags-bar">
-				  		<span class="project-name">Name</span>
-			  			<span class="project-tags">
-			  		  		<span class="domain-tag">education</span>
-			  		  		<span class="population-tag">children</span>
-			  		  		<span class="population-tag">families</span>
-			  		  		<span class="context-tag">cars</span>
-						</span>
-				  	</div>
-				  	<div class="project-thumb">mythumb</div>
-				  	<div class="project-years"><span>Menu</span></div>
-				  	<div class="project-desc">Main</div>  
-				  	<div class="project-materials">
-			  			<span class="material-pub">5 publications</span>
-			  			<span class="material-talk">5 talks</span>
-			  			<span class="material-press last-material">1 press</span>
-			  			<!--<div class="material-grant">1 grant</div>-->
-			  		</div>
-				  	<div class="project-details">
-			  			<!-- Expanded pane detailing project materials -->
-			  			<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
-			  			<div class="collapsible-content">
-			  		  		<!-- List and link collaborators, publications, talks, etc -->
-			  		  		<p class="proj-detail proj-collabs">Collaborators:<br />
-			  		  			<span>TODO</span></p>			  		  		
-			  			  	<p class="proj-detail proj-pubs">Publications: </p>
-			  				<div class="pub-row">
-			  					<div class="pub-column">
-			  						<div class="pub-card">
-			  					  		<img src="images/pub_thumbs/xxx.png" alt="" class="pub-thumb">
-			  					  		<div class="pub-info">
-			  					  			<p class="pub-title">xxx</p>
-			  					  		</div>
-			  						</div>
-			  		  			</div>
-			  				</div> <!-- end grant-row -->
-			  			</div> <!-- end collapsible--content -->
-			  		</div> <!-- end project-details -->
-				</div> <!-- end X project -->
-				
-				<!-- X project -->
-				<div class="project-grid project-column">
-				  	<div class="title-tags-bar">
-				  		<span class="project-name">Name</span>
-						<span class="project-tags">
-					  		<span class="domain-tag">education</span>
-					  		<span class="population-tag">children</span>
-					  		<span class="population-tag">families</span>
-					  		<span class="context-tag">cars</span>
-						</span>
-				  	</div>
-				  	<div class="project-thumb">mythumb</div>
-				  	<div class="project-years"><span>Menu</span></div>
-				  	<div class="project-desc">Main</div>  
-				  	<div class="project-materials">
-			  			<span class="material-pub">x publications</span>
-			  			<span class="material-talk">x talks</span>
-			  			<span class="material-press last-material">x press</span>
-			  			<!--<div class="material-grant">1 grant</div>-->
-			  		</div>
-				  	<div class="project-details">
-						<!-- Expanded pane detailing project materials -->
-						<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
-						<div class="collapsible-content">
-					  		<!-- List and link collaborators, publications, talks, etc -->
-					  		<p class="proj-detail proj-collabs">Collaborators:<br />
-					  			<span>TODO</span></p>			  		  		
-						  	<p class="proj-detail proj-pubs">Publications: </p>
-							<div class="pub-row">
-								<div class="pub-column">
-									<div class="pub-card">
-								  		<img src="images/pub_thumbs/xxx.png" alt="" class="pub-thumb">
-								  		<div class="pub-info">
-								  			<p class="pub-title">xxx</p>
-								  		</div>
-									</div>
-					  			</div>
-							</div> <!-- end grant-row -->
-						</div> <!-- end collapsible--content -->
-					</div> <!-- end project-details -->
-				</div> <!-- end X project -->
 			</div> <!-- end projects-row -->
 			
-			Check Omni projects
+			<div class="projects-row">
+						
+				<!-- Time & Tech project -->
+				<div class="project-grid project-column"> 
+				  	<div class="title-tags-bar DRAFT">
+				  		<span class="project-name">Representations and experiences of time</span>
+				  		<span class="project-tags">
+				  			<span class="domain-tag">...</span>
+				  			<span class="interaction-tag">...</span>
+				  		</span>
+				  	</div>
+				  	
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/xx.png"/></div>
+				  	<div class="project-years"><span>2015&ndash;</span></div>
+				  	<div class="project-desc">
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">1 publication</span>
+				  		<span class="material-poster">1 poster</span>
+				  		<span class="recruiting-note last-material">Recruiting students</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Mark Matthews, Eric P. S. Baumer, Basma Altaf, Sarah Billington</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publication: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/xx.png"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">...</p>
+				  	  				<p class="paper-authors">Basma Altaf, <span class="lab-member-emph">Elizabeth L. Murnane</span>, ... </p>
+				  	  				<p class="paper-venue">... (ANFA) &middot; Pages xx&ndash;xx &middot; Publisher &middot; 20xx</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+					  						<a href="files/ANFA20_xx.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div> <!-- end pubs -->
+				  	  		<p class="proj-detail proj-posters">Poster: </p>
+				  	  		<div class="poster-row">
+				  	  				<div class="poster-column column-x1">
+				  	  					<div class="poster-card">
+				  	  				  		<img src="images/thumbnails/poster_thumbs/xxx_thumb.png" alt="ANFA'20 time perceptions poster" class="poster-thumb">
+				  	  				  		<div class="poster-info">
+				  	  				  			<p class="poster-title">...</p>
+				  	  				  			<p class="poster-venue">at the ... (ANFA) &middot; xx 2020</p>
+				  	  				  		</div>
+				  	  				  		<div class="poster-links">
+				  	  			  				<span class="poster-links-container">
+				  	  			  					<a href='http://stanford.edu/~emurnane/files/ANFA20_xx_Poster.pdf' target='_blank'>Poster PDF</a>
+				  	  			  					&thinsp;&middot;&thinsp;
+				  	  			  				</span>
+				  	  			  			</div>
+				  	  					</div>
+				  	  				</div>
+				  	  		</div> <!-- end poster-row -->
+				  	  		<p class="proj-detail proj-recruiting">Recruiting:<br />
+			  	  				<span>We are currently seeking students to.... </span>
+			  	  			</p>
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Time & Tech project-grid -->
 			
-			
-			Interactive narratives/stories/comics/graphical... 
-			This project interactive graphical stories personalized, interactive, data-driven stories to shape behaviors and mindsets [description from website]
-			[thumbnail from website - or could use the boy with the book or something else from my talks]
-			
-			Curiosity-driven learning
-			augmented reality and context-aware quests for curiosity-driven learning 
-			"Kidizen science" activities
-			
-			Art therapy
-			tangibles, embodied artistic [see Restore] expression, and to support dual physical and psychological rehabilitation
-			tangibles, games, and musical interfaces for rehabilitation
-			[see CTBH talk + RESTORE proposal for description]
-			Recruiting - yes
-			keppi bear - for sensing+soothing
-			
-			
-			VR to build empathy with nature
-			
-			LCA
-			analytics and visualization tools for sustainable product design
-			
-			
-			[thumbnail from MOSE]
-			Lab in a browser
-			HPDS Audit tool
-			toolkits and frameworks to study and model lived experiences
-			
-			WhatIIIF
-			interactive futuring platforms to support ethics by design
-			privacy motifs
-			
-			(the current biofeedback + wearables project) Perception + mindsets? where to put the accusteps paper otherwise...
-			- i want to do that treadmill study at some point
-			
-			Tailormade games? need to think of good games to build...
-			
-			HPDS
-			
-			AI-Assisted Healthcare
-			<!--<h2 class="project-section-header2">Augmented Intelligence</h2>
-			<p class="section-desc">AI empowering people to...manage health...</p>-->
-			
-			Creative Drive
-			
-			
+				<!-- Tailormade Games project -->
+				<div class="project-grid project-column"> 
+				  	<div class="title-tags-bar">
+				  		<span class="project-name">Tailormade games & toys</span>
+				  		<span class="project-tags">
+				  			<span class="domain-tag">...</span>
+				  			<span class="interaction-tag">games & play</span>
+				  		</span>
+				  	</div>
+				  	
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_games.png"/></div>
+				  	<div class="project-years"><span>2015&ndash;</span></div>
+				  	<div class="project-desc">At the intersection of personal informatics and serious games, this project explores approaches to data capture, self-reflection, and intervention through art and play. For example, we are exploring the design space of ecological momentary assessment (EMA) games, musical interfaces, and embodied art therapy for mental and physical wellness.
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">1 publication</span>
+				  		<span class="material-talk">1 talk</span>
+				  		<span class="recruiting-note last-material">Recruiting students</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Mark Matthews, Hammad Malik, Shuo Xiong, Dan Cosley, Geri Gay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publication: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/xx.png"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">Playing with Your Data: Towards Personal Informatics Driven Games</p>
+				  	  				<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Mark Matthews, Dan Cosley, Geri Gay</p>
+				  	  				<p class="paper-venue">Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing Adjunct (UbiComp) &middot; Pages 565&ndash;569 &middot; ACM &middot; 2016</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+			  	  						<a href="files/UbiComp16_Playing.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<p class="proj-detail proj-talks">Talk: </p>
+				  	  		<div class="talk-row">
+				  	  			<div class="talk-column column-x1">
+				  	  				<div class="talk-card">
+				  	  			  		<img src="images/thumbnails/talk_thumbs/UbiComp16_Playing_Slides_thumb.png" alt="Ubi'16 Playable informatics talk slides" class="talk-thumb">
+				  	  			  		<div class="talk-info">
+				  	  			  			<!--<p class="talk-title">Playing with Your Data: Towards Personal Informatics Driven Games</p>-->
+				  	  			  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+				  	  			  			<p class="talk-venue">at the UbiComp workshop on New Frontiers of Quantified Self &middot; Heidelberg, Germany &middot; September 12, 2016</p>
+				  	  			  		</div>
+				  	  			  		<div class="talk-links">
+				  	  			  			<span class="talk-links-container">
+				  	  			  				<a href="files/UbiComp16_Playing_Slides.pdf">Slides</a>
+				  	  			  			</span>
+				  	  			  		</div>
+				  	  				</div>
+				  	  			</div>
+				  	  		</div> <!-- end talk-row -->
+				  	  		<p class="proj-detail proj-imgs">Screenshots and mockups (click to enlarge images):</p>
+				  	  		<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+				  	  			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				  	  				<a href="images/project_imgs/tailormade/whack.png" itemprop="contentUrl" data-size="282x573">
+				  	  					<img src="images/project_imgs/tailormade/whack.png" itemprop="thumbnail" alt="Prototype game for collecting alertness data"/>
+				  	  				</a>
+				  	  				<figcaption itemprop="caption description">Prototype game for collecting alertness data, based on the well-established psychomotor vigilance task.</figcaption>
+				  	  			</figure>
+				  	  			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				  	  				<a href="images/project_imgs/tailormade/memory.png" itemprop="contentUrl" data-size="1024x558">
+				  	  					<img src="images/project_imgs/tailormade/memory.png" itemprop="thumbnail" alt="Our picture-matching game injected with personal photographs from Facebook" />
+				  	  				</a>
+				  	  				<figcaption itemprop="caption description">Our picture-matching game injected with personal photographs from Facebook.</figcaption>
+				  	  			</figure>
+				  	  		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				  	  		    	<a href="images/project_imgs/tailormade/playmail_invaders.png" itemprop="contentUrl" data-size="727x779">
+				  	  		    		<img src="images/project_imgs/tailormade/playmail_invaders.png" itemprop="thumbnail" alt="PlayMail" class="img-clip"/>
+				  	  		    	</a>
+				  	  		    	<figcaption itemprop="caption description">A Space Invaders style variant of PlayMail, a game to explore personal email patterns.</figcaption>
+				  	  		    </figure>
+				  	  		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				  	  		    	<a href="images/project_imgs/tailormade/playmail_asteroids.png" itemprop="contentUrl" data-size="1024x768">
+				  	  		    		<img src="images/project_imgs/tailormade/playmail_asteroids.png" itemprop="thumbnail" alt="PlayMail game elements" />
+				  	  		    	</a>
+				  	  		    	<figcaption itemprop="caption description">In PlayMail, aspects of personal email patterns map onto game elements, like types of enemies or  number of bullets.</figcaption> 
+				  	  		    </figure>
+				  	  		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			  	  		        	<a href="images/project_imgs/tailormade/stress_fighter.png" itemprop="contentUrl" data-size="412x224">
+			  	  		        		<img src="images/project_imgs/tailormade/stress_fighter.png" itemprop="thumbnail" alt="Stress Fighter" />
+			  	  		        	</a>
+			  	  		        	<figcaption itemprop="caption description">Stress Fighter, our exergame stress intervention that maps daily stress levels onto opponent attributes and in-game biofeedback onto player performance.</figcaption> 
+			  	  		        </figure>
+				  	  		</div> <!-- end screenshots -->
+				  	  		<p class="proj-detail proj-recruiting">Recruiting:<br />
+			  	  				<span>We are currently seeking students to.... 
+			  	  				
+			  	  				Art therapy
+			  	  				tangibles, embodied artistic [see Restore] expression, and to support dual physical and psychological rehabilitation
+			  	  				tangibles, games, and musical interfaces for rehabilitation
+			  	  				[see CTBH talk + RESTORE proposal for description]
+			  	  				keppi bear - for sensing+soothing
+			  	  				
+			  	  				</span>
+			  	  			</p>
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Tailormade games project-grid -->
+			</div> <!-- end projects-row -->
 		</div> <!-- end Active projects-section-->
 		
-		
-		
-				
 		<h1 class="section-header1">Past projects & collaborations</h1>
-		<div class="header-footnote">While the lab is no longer actively engaged in these specific projects, we are still very interested in these and related topics. We are always happy to discuss such ideas, including opportunities for collaboration; email works best: emurnane@dartmouth.edu</div>	
-		
-		- privacy + chronic illness
-		[shruti paper, justin transparency paper]
-		
-		- BD self-tracking tech [the 'mental health' project on my website]
-		
-		Pain reporting interfaces
-		[the 'chronic pain' project on my website]
-		
-		
-		- Nutriphone
-		
-		(remove domain-driven development)
-		- check that the 4 materials are in pubs or somewhere
-		
-		Societal Media
-		
-		Regulation Room
-		
-		some clever Car title
-		Caring Car?
-		
-		StoryCoder
-		
-		Chatbots for education
-		QuizBot <-- or consider this smart primer? together with narrative stuff?
-		
+		<div class="header-footnote">While the lab is no longer actively engaged in these specific projects, we are still very interested in these and related topics. We are always happy to discuss, including opportunities to collaborate on taking these ideas in new directions.</div>	
 		
 		<div class="content">
-			<!--<h2 class="project-section-header2">Semantic Social Web</h2>
-			<p class="section-desc">These projects focus on leveraging linked datasets and assembling personalized knowledge graphs in order to enrich various information retrieval, creation, and management activities such as editing Wikipedia articles, programming software, or navigating geospatial data.</p>-->
-			
-			<!-- ClockWise project -->
+						
 			<div class="projects-row">
+				<!-- Privacy & ICI project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar DRAFT">
+						<span class="project-name">Illness & invisibility</span>
+						<span class="project-tags">
+							<span class="domain-tag">mental health</span>
+				  			<span class="domain-tag">pain</span>
+				  			<span class="domain-tag">privacy</span>
+				  			<span class="method-tag">qualitative</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_illness_invisibility.jpeg"/></div>
+				  	<div class="project-years"><span>2016&ndash;2020</span></div>
+				  	<div class="project-desc">psychosocial aspects of managing pain, by studying pain-related disclosures on online social platforms
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">2 publications</span>
+				  		<span class="material-video last-material">1 video</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Shruti Sannon, Justin Petelka, Jaime Snyder, Natalie Bazarova, Geri Gay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publications: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">I was really, really nervous posting it": Communicating about Invisible Chronic Illness across Social Media Platforms</p>
+				  	  				<p class="paper-authors">Shruti Sannon, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Natalya N. Bazarova</p>
+				  	  				<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; Pages 353&ndash;xx &middot; ACM &middot; 2019</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+			  	  						<a href="files/CHI19_ICI.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+			  	  				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+			  	  				<div class="paper-info">
+			  	  					<p class="paper-title">...</p>
+			  	  					<p class="paper-authors">Justin Petelka, <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+			  	  					<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; Pages xx&ndash;xx &middot; ACM &middot; 20xx</p>
+			  	  				</div>
+			  	  				<div class="paper-links">
+			  	  					<span class="paper-links-container">
+			  	  						<a href="files/CHIxx_xx.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+			  	  					</span>
+			  	  				</div>
+			  	  			</div> <!-- end pubs -->
+
+				  	  		<p class="proj-detail proj-videos">Video: </p>
+							<div class="video-row">
+				  				<div class="video-column column-x1">
+				  					<div class="video-card">
+				  				  		<img class="mklbItem" src="images/thumbnails/video_thumbs/CHI19_Spoonies_Video_thumb.png" data-video-src="http://stanford.edu/~emurnane/files/CHI19_Spoonies_Video.mp4" />
+										<div class="video-info">
+											<p class="video-venue">CHI video preview &thinsp;&middot;&thinsp; 2019</p>
+										</div>
+				  					</div>
+				  	  			</div>
+							</div> <!-- end video-row -->
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Privacy & ICI project-grid -->
+			
+				<!-- Chatbots for education -->
+				<div class="project-grid project-column"> 
+				  	<div class="title-tags-bar DRAFT">
+				  		<span class="project-name">Educational chatbots</span>
+				  		<span class="project-tags">
+				  			<span class="domain-tag">education</span>
+				  			<span class="method-tag">machine learning</span>
+							<span class="method-tag">NLP</span>
+				  		</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/"/></div>
+				  	<div class="project-years"><span>2018&ndash;2019</span></div>
+				  	<div class="project-desc">As part of the <a href ='https://smartprimer.github.io/' target='_blank'>Smart Primer</a> project, this research 
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">1 publication</span>
+				  		<span class="material-press last-material">1 press</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  			<span>Sherry Ruan, Glenn? Bryce? Emma Brunskill, James Landay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publication: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI19_QuizBot_thumb.png"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">QuizBot: A Dialogue-based Adaptive Learning System for Factual Knowledge</p>
+				  	  				<p class="paper-authors">Sherry Ruan, Liwei Jiang, Justin Xu, Bryce Tham, Zhengneng Qiu, Yeshuang Zhu, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Emma Brunskill, James A. Landay</p>
+				  	  				<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; Pages 357&ndash;xx &middot; ACM &middot; 2019</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+			  	  						<a href="files/CHI19_QuizBot.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<p class="proj-detail proj-press">Press: </p>
+				  	  		<div class="press-row">
+		  	  					<div class="press-column">
+		  	  						<div class="press-card">
+		  	  					  		<p class="press-info">
+		  	  					  			<ul class="condensed-list reduced-margin">
+		  	  					  				<li><span>Stanford’s ‘QuizBot’ – a chatbot that teaches – beats flashcards for learning factual information. By Andrew Myers. <i>Stanford News</i>. May 8, 2019. <a href='https://news.stanford.edu/2019/05/08/learning-chatbot-teaches-beats-flashcards/' target='_blank'>Article</a></span></li>
+		  	  					  			</ul>
+		  	  					  		</p>
+		  	  						</div>
+			  	  				</div>
+				  	  		</div> <!-- end press-row -->
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Educational chatbots project-grid -->
+			</div> <!-- end projects-row -->
+			
+			<div class="projects-row">
+				<!-- Commute project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar">
+						<span class="project-name">Caring Car</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">stress</span>
+				  			<span class="domain-tag">alertness</span>
+				  			<span class="context-tag">cars</span>
+				  			<span class="interaction-tag">haptics</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_cars3.jpg"/></div>
+				  	<div class="project-years"><span>2017&ndash;2019</span></div>
+				  	<div class="project-desc">This project explores how technology can enhance in-car safety and experiences, including to reframe commuting and other inter-situational moments in the car as opportunities for mindfulness and stress reduction.
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub last-material">3 publications</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators and advisors:<br />
+				  	  			<span>Pablo Paredes, Stephanie Balters, Wendy Ju, James Landay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publications: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">Driving with the Fishes: Towards Calming and Mindful Virtual Reality Experiences for the Car</p>
+				  	  				<p class="paper-authors">Pablo E. Paredes, Kyle Qian, Stephanie Balters, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Francisco Ordonez, Wendy Ju, James A. Landay </p>
+				  	  				<p class="paper-venue">Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies (IMWUT) &middot; 2(4) Pages 184&ndash;xx &middot; ACM &middot; 2019</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+					  						<a href="files/IMWUT19_VRCar.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+				  				<div class="paper-info">
+				  					<p class="paper-title">Breath Booster! Exploring In-Car, Fast-Paced Breathing Interventions to Enhance Driver Arousal State</p>
+				  					<p class="paper-authors">Stephanie Balters, <span class="lab-member-emph">Elizabeth L. Murnane</span>, James A. Landay, Pablo Paredes</p>
+				  					<p class="paper-venue">Proceedings of the 12th EAI International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth) &middot; Pages 128&ndash;137 &middot; ACM &middot; 2018</p>
+				  				</div>
+				  				<div class="paper-links">
+				  					<span class="paper-links-container">
+				  						<a href="files/Pervasive18_Breath.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  					</span>
+				  				</div>
+				  			</div>
+				  			<div class="pub-entry-grid proj-pub-entry-grid">
+			  					<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+			  					<div class="paper-info">
+			  						<p class="paper-title">Just Breathe: In-Car Interventions for Guided Slow Breathing</p>
+			  						<p class="paper-authors">Pablo Paredes, Yijun Zhou, Nur Al-Huda Hamdan, Stephanie Balters, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Wendy Ju, James A. Landay, P</p>
+			  						<p class="paper-venue">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) &middot; 2(1) Pages 28&ndash;xx &middot; ACM &middot; 2018</p>
+			  					</div>
+			  					<div class="paper-links">
+			  						<span class="paper-links-container">
+			  							<a href="files/IMWUT18_JustBreathe.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+			  						</span>
+			  					</div>
+			  				</div> <!-- end pubs -->
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Commute project-grid -->
+				
+				<!-- Mindsets and mobile health project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar">
+						<span class="project-name">Mindsets and mobile health</span>
+						<span class="project-tags">
+				  			<span class="interaction-tag">smartphones</span>
+				  			<span class="interaction-tag">wearables</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_biofeedback.png"/></div>
+				  	<div class="project-years"><span>2014&ndash;2019</span></div>
+				  	<div class="project-desc">Through online surveys, controlled experiments, and the development of wearable interfaces, this project investigates people's motivations for using (or not using) mobile health technologies and how the presentation and accuracy of biofeedback impacts self-perception and behavioral action.
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-poster last-material">2 posters</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators and advisors:<br />
+				  	  			<span>Octavia Zahrt, Kris Evans, Michelle Park, Mel Sampat, James Landay, Alia Crum, Sunny Consolvo, David Huffaker, Gueorgi Kossinets</span></p>
+				  	  		<p class="proj-detail proj-posters">Posters: </p>
+				  	  		<div class="poster-row">
+				  	  			<div class="poster-column column-x2">
+				  	  				<div class="poster-card">
+				  	  			  		<img src="images/thumbnails/poster_thumbs/xxx_thumb.png" alt="SPSP poster" class="poster-thumb">
+				  	  			  		<div class="poster-info">
+				  	  			  			<p class="poster-title">Wearable Fitness Trackers and Their Effects on Mindsets and Health: A Longitudinal Experiment</p>
+				  	  			  			<p class="poster-authors">Kristopher Evans, Octavia Zahrt, Alia Crum, James Landay, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Erik Santoro</p>
+				  	  			  			<p class="poster-venue">at the Annual Convention of the Society for Personality and Social Psychology (SPSP) &middot; 2019</p>
+				  	  			  		</div>
+				  	  			  		<div class="poster-links">
+				  	  		  				<span class="poster-links-container">
+				  	  		  					<a href='http://stanford.edu/~emurnane/files/xxx.pdf' target='_blank'>Poster Paper PDF</a>
+				  	  		  					&thinsp;&middot;&thinsp;
+				  	  		  					<a href='http://stanford.edu/~emurnane/files/xxx.pdf' target='_blank'>Poster PDF</a>
+				  	  		  					<!--http://stanford.edu/~emurnane/files/SPSP19_Wearable.pdf
+				  	  		  					https://event.crowdcompass.com/spsp2019/activity/fWgFyIVYXx-->
+				  	  		  				</span>
+				  	  		  			</div>
+				  	  				</div>
+				  	  			</div>
+				  	  			<div class="poster-column column-x2">
+			  	  					<div class="poster-card">
+			  	  				  		<img src="images/thumbnails/poster_thumbs/xxx_thumb.png" alt="UbiComp15 mobile health apps poster" class="poster-thumb">
+			  	  				  		<div class="poster-info">
+			  	  				  			<p class="poster-title">Mobile health apps: adoption, adherence, and abandonment</p>
+			  	  				  			<p class="poster-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, David Huffaker, Gueorgi Kossinets</p>
+			  	  				  			<p class="poster-venue">Adjunct Proceedings of the ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp) &middot; Pages 261&ndash;264 &middot; ACM &middot; 2015</p>
+			  	  				  		</div>
+			  	  				  		<div class="poster-links">
+			  	  			  				<span class="poster-links-container">
+			  	  			  					<a href='http://stanford.edu/~emurnane/files/UbiComp15_Mobile.pdf' target='_blank'>Poster Paper PDF</a>
+			  	  			  					&thinsp;&middot;&thinsp;
+			  	  			  					<a href='files/UbiComp15_Mobile_Poster.pdf' target='_blank'>Poster PDF</a>
+			  	  			  				</span>
+			  	  			  			</div>
+			  	  					</div>
+			  	  				</div>
+				  	  		</div> <!-- end poster-row -->
+
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Mindsets & mobile health project-grid -->
+				
+			</div> <!-- end projects-row -->
+			
+			<div class="projects-row">
+				
+				<!-- Bipolar Disorder self-tracking project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar">
+						<span class="project-name">Tech-Track BD</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">mental health</span>
+				  			<span class="method-tag">mHealth</span>
+				  			<span class="interaction-tag">smartphones</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_mental-health4.png"/></div>
+				  	<div class="project-years"><span>2014&ndash;2019</span></div>
+				  	<div class="project-desc">This project studies the lived experiences and self-monitoring practices of individuals with bipolar disorder in order to design and develop technology for assessment and intervention that are more personalized and illness-tailored than generic personal informatics tools and more preemptive and broadly deployable than traditional clinical treatments.
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">5 publications</span>
+				  		<span class="material-talk">2 talks</span>
+				  		<span class="material-workshop last-material">1 annual workshop</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators and advisors:<br />
+				  	  			<span>Mark Matthews, Saeed Abdullah, Pam Chang, Shion Guha, Caitie Lustig, Jaime Snyder, Steve Voida, Ellen Frank, Tanzeem Choudhury, Geri Gay, Dan Cosley</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publications: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/xxx.png"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">The Double-Edged Sword: A Mixed Methods Study of the Interplay Between Bipolar Disorder and Technology Use</p>
+				  	  				<p class="paper-authors">Mark Matthews, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Jaime Snyder, Shion Guha, Pamara Chang, Gavin Doherty, Geri Gay</p>
+				  	  				<p class="paper-venue">Computers in Human Behavior (CHB), 75 &middot; Pages 288&ndash;300 &middot; Publisher?? &middot; 2017</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+				  						<a href="files/CHB17_Double.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  						<!--<a href='http://www.sciencedirect.com/science/article/pii/S0747563217303217' target='_blank'>ScienceDirect</a>-->
+				  	  				</span>
+				  	  			</div>
+				  	  		</div> 
+							<div class="pub-entry-grid proj-pub-entry-grid">
+								<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+								<div class="paper-info">
+									<p class="paper-title">Quantifying the Changeable Self: The role of self-tracking in coming to terms with and managing bipolar disorder</p>
+									<p class="paper-authors">Mark Matthews, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Jaime Snyder</p>
+									<p class="paper-venue">Human-Computer Interaction &middot; Pages 1&ndash;34 &middot; Taylor & Francis &middot; 2017</p>
+								</div>
+								<div class="paper-links">
+									<span class="paper-links-container">
+											<a href="files/HCIJ17_Quantifying.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+											<!--http://www.tandfonline.com/doi/full/10.1080/07370024.2017.1294983-->
+									</span>
+								</div>
+							</div> 
+							<div class="pub-entry-grid proj-pub-entry-grid">
+								<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+								<div class="paper-info">
+									<p class="paper-title">Opportunities for Technology in the Self-Management of Mental Health</p>
+									<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Mark Matthews, Geri Gay</p>
+									<p class="paper-venue">Proceedings of the 18th International Conference on Human-Computer Interaction with Mobile Devices and Services Adjunct (MobileHCI) &middot; Pages 1093&ndash;1096 &middot; ACM &middot; 2016</p>
+								</div>
+								<div class="paper-links">
+									<span class="paper-links-container">
+										<a href="files/MobileHCI16_Opportunities.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+									</span>
+								</div>
+							</div>
+							<div class="pub-entry-grid proj-pub-entry-grid">
+								<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+								<div class="paper-info">
+									<p class="paper-title">Development and evaluation of a smartphone-based measure of social rhythms for bipolar disorder</p>
+									<p class="paper-authors">Mark Matthews, Saeed Abdullah, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Stephen Voida, Tanzeem Choudhury, Geri Gay, Ellen Frank</p>
+									<p class="paper-venue">Assessment &middot; 23(4) Pages 472&ndash;483 &middot; Sage &middot; 2016</p>
+								</div>
+								<div class="paper-links">
+									<span class="paper-links-container">
+										<a href="files/Assessment16_Development.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+										<!--<a href='http://asm.sagepub.com/content/23/4/472' target='_blank'>Sage</a>-->
+									</span>
+								</div>
+							</div> 
+							<div class="pub-entry-grid proj-pub-entry-grid">
+								<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+								<div class="paper-info">
+									<p class="paper-title">Self-Monitoring Practices, Attitudes, and Needs of Individuals with Bipolar Disorder: Implications for the Design of Technologies to Manage Mental Health</p>
+									<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Dan Cosley, Pamara Chang, Shion Guha, Ellen Frank, Geri Gay, Mark Matthews</p>
+									<p class="paper-venue">Journal of the American Medical Informatics Association (JAMIA) &middot; 23(3) Pages 477&ndash;484 &middot; Oxford &middot; 2016</p>
+								</div>
+								<div class="paper-links">
+									<span class="paper-links-container">
+										<a href="files/JAMIA16_SelfMonitoring.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+										<!--<a href='http://jamia.oxfordjournals.org/content/early/2016/01/22/jamia.ocv165' target='_blank'></a>-->
+									</span>
+								</div>
+							</div> <!-- end pubs -->
+							<p class="proj-detail proj-talks">Talks: </p>
+							<div class="talk-row">
+								<div class="talk-column column-x2">
+									<div class="talk-card">
+								  		<img src="images/thumbnails/talk_thumbs/CHI18_Quantifying_Slides_thumb.png" alt="CHI'18 QS-BD talk slides" class="talk-thumb">
+								  		<div class="talk-info">
+								  			<!--<p class="talk-title">Quantifying the Changeable Self: The role of self-tracking in coming to terms with and managing bipolar disorder</p>-->
+								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+								  			<p class="talk-venue">at CHI &middot; Montreal, Canada &middot; April 25, 2018</p>
+								  		</div>
+								  		<div class="talk-links">
+								  			<span class="talk-links-container">
+								  				<a href="files/CHI18_Quantifying_Slides.pdf">Slides</a>
+								  				&thinsp;&middot;&thinsp;
+								  				<a class="mklbItem" data-video-src="http://stanford.edu/~emurnane/files/CHI18_Quantifying_Talk.mp4">Video of presentation</a>
+								  			</span>
+								  		</div>
+									</div>
+								</div>
+								<div class="talk-column column-x2">
+									<div class="talk-card">
+								  		<img src="images/thumbnails/talk_thumbs/MobileHCI16_Opportunities_Slides_thumb.png" alt="MobileHCI'16 workshop talk slides" class="talk-thumb">
+								  		<div class="talk-info">
+								  			<!--<p class="talk-title">Opportunities for Technology in the Self-Management of Mental Health</p>-->
+								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+								  			<p class="talk-venue">at MobileHCI Workshop on Mobile Healthcare for the Self-Management of Chronic Diseases and the Empowerment of Patients &middot; Florence, Italy &middot; September 6, 2016</p>
+								  		</div>
+								  		<div class="talk-links">
+								  			<span class="talk-links-container">
+								  				<a href="files/MobileHCI16_Opportunities_Slides.pdf">Slides</a>
+								  			</span>
+								  		</div>
+									</div>
+								</div>
+							</div> <!-- end talk-row -->
+							<p class="proj-detail proj-workshops">Organized workshop: </p>
+							<div class="workshop-row">
+								<div class="workshop-column">
+									<div class="workshop-card">
+								  		<img src="images/workshop_thumbs/MHSI-workshop-photo.png" alt="" class="workshop-thumb">
+								  		<div class="workshop-info">
+								  			<p class="workshop-title">The 1st-5th Annual Workshop on Mental Health and Well-being: Sensing and Intervention (MHSI)</p>
+								  			<p class="workshop-organizers">Organized by Saeed Abdullah, Jakob Bardram, Tanzeem Choudhury, Varun Mishra, <span class="lab-member-emph">Elizabeth Murnane</span>, Mirco Musolesi, Akane Sano, Sandra Servia, Giovanna Vilaza</p>
+								  			<p class="talk-venue">at UbiComp &middot; 2016-2020</p>
+								  		</div>
+								  		<div class="workshop-links">
+								  			<span class="workshop-links-container">
+								  				<a href='https://ubicomp-mental-health.github.io/'>Workshop website</a>
+								  			</span>
+								  		</div>
+									</div>
+								</div>
+							</div> <!-- end workshop-row -->
+							<p class="proj-detail proj-imgs">Screenshots (click to enlarge images):</p>
+							<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a href="images/project_imgs/moodrhythm/mr_srm.png" itemprop="contentUrl" data-size="2700x4147">
+										<img src="images/project_imgs/moodrhythm/mr_srm.png" itemprop="thumbnail" alt="MoodRhythm's self-report screen"/>
+									</a>
+									<figcaption itemprop="caption description">MoodRhythm's self-report screen.</figcaption>
+								</figure>
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a href="images/project_imgs/moodrhythm/moodrhythm-feedback.png" itemprop="contentUrl" data-size="2066x1165">
+										<img src="images/project_imgs/moodrhythm/moodrhythm-feedback.png" itemprop="thumbnail" alt="Reports and feedback about behavior and mood" />
+									</a>
+									<figcaption itemprop="caption description">Reports and feedback about behavior and mood.</figcaption>
+								</figure>
+							    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							    	<a href="images/project_imgs/moodrhythm/mr_feedback.png" itemprop="contentUrl" data-size="2695x4195">
+							    		<img src="images/project_imgs/moodrhythm/mr_feedback.png" itemprop="thumbnail" alt="Metrics of stability" class="img-clip"/>
+							    	</a>
+							    	<figcaption itemprop="caption description">Metrics of stability</figcaption>
+							    </figure>
+							    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							    	<a href="images/project_imgs/moodrhythm/mr_badges.png" itemprop="contentUrl" data-size="1079x1697">
+							    		<img src="images/project_imgs/moodrhythm/mr_badges.png" itemprop="thumbnail" alt="Badges rewarding adherence to self-monitoring" />
+							    	</a>
+							    	<figcaption itemprop="caption description">Badges encouraging adherence to self-monitoring.</figcaption> 
+							    </figure>
+							</div> <!-- end screenshots -->
+							
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end BD self-tracking project-grid -->
+
+				<!-- Pain reporting interfaces project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar">
+						<span class="project-name">Pain reporting UIs</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">pain</span>
+				  			<span class="population-tag">older adults</span>
+				  			<span class="interaction-tag">smartphones</span>
+				  			<span class="interaction-tag">tangibles</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_pain.png"/></div>
+				  	<div class="project-years"><span>2016&ndash;2018</span></div>
+				  	<div class="project-desc">Given the subjective experience of pain, self-report is considered essential to its measurement and, in turn, treatment. Through user-centered design approaches, lab studies, and field trials, a main focus of this research is on developing novel interfaces and tangible devices that support accurate, quick, and repeated use along with other participant-valued interactions (e.g., discreet, intuitive, highly manipulable).
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">2 publications</span>
+				  		<span class="material-talk last-material">2 talks</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators and advisors:<br />
+				  	  			<span>Phil Adams, Alex Adams, Pam Chang, Shruti Sannon, Michael Elfenbein, Elaine Wethington, Tanzeem Choudhury, Geri Gay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publications: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">Keppi: A Tangible User Interface for Self-Reporting Pain</p>
+				  	  				<p class="paper-authors">Alexander T. Adams, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Phil Adams, Michael Elfenbein, Pamara F. Chang, Shruti Sannon, Geri Gay, Tanzeem Choudhury</p>
+				  	  				<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; Pages 502&ndash;xx &middot; ACM &middot; 2018</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+					  						<a href="files/CHI18_Keppi.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+					  				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+					  				<div class="paper-info">
+					  					<p class="paper-title">Supporting the Self-Management of Chronic Pain Conditions with Tailored Momentary Self-Assessments</p>
+					  					<p class="paper-authors">Phil Adams, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Michael Elfenbein, Elaine Wethington, Geri Gay</p>
+					  					<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1065&ndash;1077 &middot; ACM &middot; 2017</p>
+					  				</div>
+					  				<div class="paper-links">
+					  					<span class="paper-links-container">
+					  						<a href="files/CHI17_Pain.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+					  					</span>
+					  				</div>
+					  			</div> <!-- end pubs -->
+							<p class="proj-detail proj-talks">Talks: </p>
+							<div class="talk-row">
+								<div class="talk-column column-x2">
+									<div class="talk-card">
+								  		<img src="images/thumbnails/talk_thumbs/CHI17_Keppi_Slides_thumb.png" alt="CHI18 Keppi talk slides" class="talk-thumb">
+								  		<div class="talk-info">
+								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+								  			<p class="talk-venue">at CHI &middot; Montreal, Canada &middot; April 26, 2018</p>
+								  		</div>
+								  		<div class="talk-links">
+								  			<span class="talk-links-container">
+								  				<a href="files/CHI18_Keppi_Slides.pdf">Slides</a>
+								  				&thinsp;&middot;&thinsp;
+								  				<a class="mklbItem" data-video-src="http://stanford.edu/~emurnane/files/CHI18_Keppi_Talk.mp4">Video of presentation</a>
+								  			</span>
+								  		</div>
+									</div>
+								</div>
+								<div class="talk-column column-x2">
+									<div class="talk-card">
+								  		<img src="images/thumbnails/talk_thumbs/CHI17_Pain_Slides_thumb.png" alt="CHI17 Meter talk slides" class="talk-thumb">
+								  		<div class="talk-info">
+								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+								  			<p class="talk-venue">at CHI &middot; Denver, Colorado &middot; May 8, 2017</p>
+								  		</div>
+								  		<div class="talk-links">
+								  			<span class="talk-links-container">
+								  				<a href="files/CHI17_Pain_Slides.pdf">Slides</a>
+								  			</span>
+								  		</div>
+									</div>
+								</div>
+							</div> <!-- end talk-row -->
+							
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Pain reporting project-grid -->
+			</div> <!-- end projects-row -->
+				
+			<div class="projects-row">
+				<!-- Nutriphone project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar">
+						<span class="project-name">NutriPhone</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">nutrition</span>
+				  			<span class="population-tag">rural</span>
+				  			<span class="context-tag">point-of-care</span>
+				  			<span class="interaction-tag">smartphones</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_nutriphone.png"/></div>
+				  	<div class="project-years"><span>2016&ndash;2018</span></div>
+				  	<div class="project-desc">This project develops rapid diagnostic tools for resource-limited settings, with a specific focus on novel hardware that minimizes user error and can be reliably and inexpensively deployed at the point-of-care as well as software that optimizes accurate interpretation of diagnostic outputs.
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub last-material">2 publications</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators and advisors:<br />
+				  	  			<span>Jess Hohenstein, Lindsay Reynolds, Shion Guha, Eric P. S. Baumer, David Erickson, Geri Gay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publication: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">Enhancing the Usability of an Optical Reader System to Support Point-of-Care Rapid Diagnostic Testing: An Iterative Design Approach</p>
+				  	  				<p class="paper-authors">Jessica Hohenstein, Dakota O'Dell, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Zhengda Lu, David Erickson, Geri Gay.</p>
+				  	  				<p class="paper-venue">Journal of Medical Internet Research Human Factors (JMIR) &middot; 4(4), e29 &middot; 2017</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+					  						<a href="files/JMIR17_Enhancing.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+					  						<!--http://humanfactors.jmir.org/2017/4/e29/-->
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+					  				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+					  				<div class="paper-info">
+					  					<p class="paper-title">Supporting Accurate Interpretation of Self-Administered Medical Test Results for Mobile Health: Assessment of Design, Demographics, and Health Condition</p>
+					  					<p class="paper-authors">Jessica Hohenstein, Eric P. S. Baumer, Lindsay Reynolds, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Dakota O'Dell, Seoho Lee, Shion Guha, Yu Qi, Erin Rieger, Geri Gay.</p>
+					  					<p class="paper-venue">Journal of Medical Internet Research Human Factors (JMIR) &middot; 5(1), e9 &middot; 2018</p>
+					  				</div>
+					  				<div class="paper-links">
+					  					<span class="paper-links-container">
+					  						<a href="files/JMIR18_Supporting.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+					  						<!--http://humanfactors.jmir.org/2018/1/e9/-->
+					  					</span>
+					  				</div>
+					  			</div> <!-- end pubs -->
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Nutriphone project-grid -->
+			
+				<!-- ClockWise project -->
 				<div class="project-grid project-column"> 
 				  	<!--<div class="project-title"></div>-->
 				  	<div class="title-tags-bar">
@@ -555,8 +1539,8 @@
 				  			<span class="interaction-tag">smartphones</span>
 						</span>
 				  	</div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/thumb_clockwise4.png"/></div>
-				  	<div class="project-years"><span>2012&ndash;2017</span></div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_clockwise4.png"/></div>
+				  	<div class="project-years"><span>2012&ndash;2018</span></div>
 				  	<div class="project-desc">Numerous dimensions of biological and neurobehavioral functioning (sleep, alertness, mood, etc.) follow roughly 24 hour patterns known as circadian rhythms. The ClockWise project aims to advance a vision of <i>circadian computing</i>: a novel class of technologies that can passively sense and, in turn, provide chronobiology-aware feedback and interventions to stabilize and support personal daily rhythms.
 				  	</div>  
 				  	<div class="project-materials">
@@ -570,11 +1554,11 @@
 				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
 				  		<div class="collapsible-content">
 				  	  		<!-- List and link collaborators, publications, talks, etc -->
-				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  		<p class="proj-detail proj-collabs">Collaborators and advisors:<br />
 				  	  			<span>Saeed Abdullah, Mark Matthews, Matt Kay, Julie Kientz, Dan Cosley, Geri Gay, Tanzeem Choudhury</span></p>
 				  	  		<p class="proj-detail proj-pubs">Publications: </p>
 				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
-				  	  			<span class="paper-thumb"><img src="images/paper_thumbs/Springer17_Circadian_thumb.png"/></span>
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/Springer17_Circadian_thumb.png"/></span>
 				  	  			<div class="paper-info">
 				  	  				<p class="paper-title">Circadian Computing: Sensing, Modeling, and Maintaining Biological Rhythms</p>
 				  	  				<p class="paper-authors">Saeed Abdullah, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Mark Matthews, Tanzeem Choudhury </p>
@@ -588,7 +1572,7 @@
 				  	  			</div>
 				  	  		</div> 
 							<div class="pub-entry-grid proj-pub-entry-grid">
-								<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+								<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 								<div class="paper-info">
 									<p class="paper-title">Cognitive Rhythms: Unobtrusive and Continuous Sensing of Alertness Using a Mobile Phone</p>
 									<p class="paper-authors">Saeed Abdullah, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Mark Matthews, Matthew Kay, Julie A. Kientz, Geri Gay, Tanzeem Choudhury</p>
@@ -602,7 +1586,7 @@
 							</div> 
 							<div class="pub-entry-grid proj-pub-entry-grid">
 				  	  			<span class="paper-award-icon">blerb</span>
-				  	  			<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 				  	  			<div class="paper-info">
 				  	  				<p class="paper-title">Mobile Manifestations of Alertness: Connecting Biological Rhythms with Patterns of Smartphone App Use</p>
 				  	  				<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Saeed Abdullah, Mark Matthews, Matthew Kay, Julie A. Kientz, Tanzeem Choudhury, Geri Gay, Dan Cosley</p>
@@ -616,7 +1600,7 @@
 				  	  			</div>
 				  	  		</div>
 				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
-				  	  			<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 				  	  			<div class="paper-info">
 				  	  				<p class="paper-title">Social (media) jet lag: How usage of social technology can modulate and reflect circadian rhythms</p>
 				  	  				<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Saeed Abdullah, Mark Matthews, Tanzeem Choudhury, Geri Gay</p>
@@ -629,7 +1613,7 @@
 				  	  			</div>
 				  	  		</div>
 				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
-			  	  				<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+			  	  				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 			  	  				<div class="paper-info">
 			  	  					<p class="paper-title">Towards circadian computing: early to bed and early to rise makes some of us unhealthy and sleep deprived</p>
 			  	  					<p class="paper-authors">Saeed Abdullah, Mark Matthews, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Geri Gay, Tanzeem Choudhury</p>
@@ -637,7 +1621,7 @@
 			  	  				</div>
 			  	  				<div class="paper-links">
 			  	  					<span class="paper-links-container">
-		  	  							<a href="files/UbiComp14_TowardsCircadian.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  							<a href="files/UbiComp14_TowardsCircadian.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
 			  	  					</span>
 			  	  				</div>
 			  	  			</div> <!-- end pubs -->
@@ -646,7 +1630,7 @@
 							<div class="talk-row">
 								<div class="talk-column column-x3">
 									<div class="talk-card">
-								  		<img src="images/talk_thumbs/CHI17_Chronobio-WISH_Slides_thumb.png" alt="" class="talk-thumb">
+								  		<img src="images/thumbnails/talk_thumbs/CHI17_Chronobio-WISH_Slides_thumb.png" alt="" class="talk-thumb">
 								  		<div class="talk-info">
 								  			<!--<p class="talk-title">Exploring the Design Space of Chronobiology-Aware Health Tools</p>-->
 								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth Murnane</span></p>
@@ -661,7 +1645,7 @@
 								</div>
 								<div class="talk-column column-x3">
 									<div class="talk-card">
-								  		<img src="images/talk_thumbs/MobileHCI16_MobileManifestations_Slides_thumb.png" alt="" class="talk-thumb">
+								  		<img src="images/thumbnails/talk_thumbs/MobileHCI16_MobileManifestations_Slides_thumb.png" alt="" class="talk-thumb">
 								  		<div class="talk-info">
 								  			<!--<p class="talk-title">Mobile Manifestations of Alertness: Connecting Biological Rhythms with Patterns of Smartphone App Use</p>-->
 								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth Murnane</span></p>
@@ -676,7 +1660,7 @@
 								</div>
 								<div class="talk-column column-x3">
 									<div class="talk-card">
-								  		<img src="images/talk_thumbs/HDE-Webinar16_Slides_thumb.png" alt="" class="talk-thumb">
+								  		<img src="images/thumbnails/talk_thumbs/HDE-Webinar16_Slides_thumb.png" alt="" class="talk-thumb">
 								  		<div class="talk-info">
 								  			<!--<p class="talk-title">Passive Sensing of Circadian Rhythms for Individualized Models of Cognitive Performance</p>-->
 								  			<p class="talk-presenters">Presented by Saeed Abdullah and <span class="lab-member-emph">Elizabeth Murnane</span></p>
@@ -695,7 +1679,7 @@
 							<div class="talk-row">
 								<div class="talk-column column-x3">
 									<div class="talk-card">
-								  		<img src="images/talk_thumbs/UbiComp15_Social_Slides_thumb.png" alt="" class="talk-thumb">
+								  		<img src="images/thumbnails/talk_thumbs/UbiComp15_Social_Slides_thumb.png" alt="" class="talk-thumb">
 								  		<div class="talk-info">
 								  			<!--<p class="talk-title">Social (media) jet lag: How usage of social technology can modulate and reflect circadian rhythms</p>-->
 								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth Murnane</span></p>
@@ -710,7 +1694,7 @@
 								</div>
 								<div class="talk-column column-x3">
 									<div class="talk-card">
-								  		<img src="images/talk_thumbs/CHI14_Circadian_Slides_thumb.png" alt="" class="talk-thumb">
+								  		<img src="images/thumbnails/talk_thumbs/CHI14_Circadian_Slides_thumb.png" alt="" class="talk-thumb">
 								  		<div class="talk-info">
 								  			<!--<p class="talk-title">Circadian computing: Towards a body clock friendly smartphone</p>-->
 								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth Murnane</span></p>
@@ -724,7 +1708,6 @@
 									</div>
 								</div>
 							</div> <!-- end talk-row -->
-				  	  		
 				  	  		<p class="proj-detail proj-press">Press: </p>
 							<div class="press-row">
 					  				<div class="press-column">
@@ -737,7 +1720,7 @@
 					  				  		</p>
 					  					</div>
 				  	  			</div>
-							</div> <!-- end poster-row -->
+							</div> <!-- end press-row -->
 							<p class="proj-detail proj-imgs">Screenshots and mockups (click to enlarge images):</p>
 							<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -770,12 +1753,271 @@
 							    	</a>
 							    	<figcaption itemprop="caption description">To provide peripheral self-awareness, this live wallpaper’s color transitions in real-time with the user’s alertness levels at that moment. By default, brighter yellow saturation corresponds to higher alertness while faded blue-gray corresponds to lower alertness. From left to right, these images illustrate an individual’s early morning low alertness, late morning alertness peak, and mid-day alertness dip.</figcaption>
 							    </figure>
-							</div>
+							</div> <!-- end screenshots and mockups -->
 							
 				  		</div> <!-- end collapsible--content -->
 				  	</div> <!-- end project-details -->
-				</div> <!-- end ClockWise project-grid -->
+				</div> <!-- end ClockWise project-grid -->	
+			</div> <!-- end projects-row -->
+				
+			<div class="projects-row">
 			
+				<!-- Domain-Driven project -->
+				<div class="project-grid project-column"> 
+				  	<div class="title-tags-bar">
+						<span class="project-name">Domain-Driven Design</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">health</span>
+				  			<span class="domain-tag">equity</span>
+				  			<span class="interaction-tag">personal informatics</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_dknow5.png"/></div>
+				  	<div class="project-years"><span>2011&ndash;2017</span></div>
+				  	<div class="project-desc">This work examines how grounding development choices (e.g., data harvesting, feature engineering) in scientific domain knowledge (e.g., disease etiology, behavioral theory) enables the creation of informatics systems that are more accurate, computationally lightweight, and well-received in terms of assessing health indicators and delivering feedback. Future work aims to investigate how domain-driven approaches can counteract algorithmic fairness issues that stem from more generic and black-box techniques.
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-thesis">1 thesis</span>
+				  		<span class="material-talk">1 talk</span>
+				  		<span class="material-poster last-material">1 poster</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Advisors:<br />
+				  	  			<span>Dan Cosley, Claire Cardie, Geri Gay</span></p>
+				  	  		<p class="proj-detail proj-pubs">Thesis: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">A Framework for Domain-Driven Development of Personal Health Informatics Technologies</p>
+				  	  				<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>,</p>
+				  	  				<p class="paper-venue">xx &middot; Pages xx&ndash;xx &middot; 2017</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+					  						<a href="files/xx.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<p class="proj-detail proj-talks">Talk: </p>
+				  	  		<div class="talk-row">
+				  	  			<div class="talk-column column-x1">
+				  	  				<div class="talk-card">
+				  	  			  		<img src="images/thumbnails/talk_thumbs/UbiComp15_Exploring_Slides_thumb.png" alt="UbiComp DC talk slides" class="talk-thumb">
+				  	  			  		<div class="talk-info">
+				  	  			  			<!-- Domain-Driven Personalization of Personal Informatics and Intervention Technologies -->
+				  	  			  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+				  	  			  			<p class="talk-venue">at the UbiComp Doctoral School &middot; Osaka, Japan &middot; September 7, 2015</p>
+				  	  			  		</div>
+				  	  			  		<div class="talk-links">
+				  	  			  			<span class="talk-links-container">
+				  	  			  				<a href="files/UbiComp15_Exploring_Slides.pdf">Slides</a>
+				  	  			  			</span>
+				  	  			  		</div>
+				  	  				</div>
+				  	  			</div>
+				  	  		</div> <!-- end talk-row -->	
+				  	  		<p class="proj-detail proj-posters">Poster: </p>
+				  	  		<div class="poster-row">
+				  	  			<div class="poster-column column-x1">
+				  	  				<div class="poster-card">
+				  	  			  		<img src="images/thumbnails/poster_thumbs/xxx_thumb.png" alt="UbiComp DC poster" class="poster-thumb">
+				  	  			  		<div class="poster-info">
+				  	  			  			<p class="poster-title">Exploring a theory-guided path to the design of personal informatics and intervention technologies</p>
+				  	  			  			<p class="poster-authors">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+				  	  			  			<p class="poster-venue">Adjunct Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp) &middot; Pages 447&ndash;452 &middot; ACM &middot; 2015</p>
+				  	  			  		</div>
+				  	  			  		<div class="poster-links">
+				  	  		  				<span class="poster-links-container">
+				  	  		  					<a href="files/UbiComp15_Exploring.pdf">Poster Paper PDF</a>
+				  	  		  					&thinsp;&middot;&thinsp;
+				  	  		  					<a href='http://stanford.edu/~emurnane/files/UbiComp15_Exploring_Poster.pdf' target='_blank'>Poster PDF</a>
+				  	  		  					&thinsp;&middot;&thinsp;
+				  	  		  					<a href="">DOI</a>
+				  	  		  				</span>
+				  	  		  			</div>
+				  	  				</div>
+				  	  			</div>
+				  	  		</div> <!-- end poster-row -->	  	  		
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Dissertation project-grid -->
+				
+				<!-- CeRI project -->
+				<div class="project-grid project-column"> 
+				  	<div class="title-tags-bar">
+						<span class="project-name">Regulation Room</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">civics</span>
+				  			<span class="method-tag">NLP</span>
+				  			<span class="interaction-tag">social networks</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_eGov3.png"/></div>
+				  	<div class="project-years"><span>2012&ndash;2016</span></div>
+				  	<div class="project-desc">As part of the <a href='http://www.lawschool.cornell.edu/ceri/' target='_blank'>Cornell eRulemaking Initiative (CeRI)</a>, this research's overarching goal is building online communities that support public participation in government regulation-making processes. This project focuses on improving member recruitment by modeling traits of willing and effective contribution as well exploring design features that better motivate substantive participation and the transition from peripheral engagement to active contribution. 
+				  	
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">1 publication</span>
+				  		<span class="material-talk">2 talks</span>
+				  		<span class="material-press last-material">1 press</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators and advisors:<br />
+				  	  			<span>Brian McInnis, Dima Epstein, Cynthia Farina, Mary Newhart, Gilly Leshed, Claire Cardie, Dan Cosley</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publication: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">One and Done: Factors affecting one-time contributors to ad-hoc online communities</p>
+				  	  				<p class="paper-authors">Brian McInnis, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Dmitry Epstein, Dan Cosley, Gilly Leshed</p>
+				  	  				<p class="paper-venue">Proceedings of the 19th ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW) &middot; Pages 609&ndash;623 &middot; 2016</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+					  						<a href="files/CSCW16_OneDone.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>
+				  	  		<p class="proj-detail proj-talks">Talks: </p>
+				  	  		<div class="talk-row">
+				  	  			<div class="talk-column column-x2">
+				  	  				<div class="talk-card">
+				  	  			  		<img src="images/thumbnails/talk_thumbs/StanfordLunch14_Slides_thumb.png" alt="Stanford HCI Lunch talk slides" class="talk-thumb">
+				  	  			  		<div class="talk-info">
+				  	  			  			<!-- Designing an Online Civic Participation Platform: Socio-Computational Supports for Finding, Enlisting, and Motivating Contributors -->
+				  	  			  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+				  	  			  			<p class="talk-venue">at the Stanford HCI Lunch Seminar &middot; Stanford, California &middot; August 6, 2014</p>
+				  	  			  		</div>
+				  	  			  		<div class="talk-links">
+				  	  			  			<span class="talk-links-container">
+				  	  			  				<a href="files/StanfordLunch14_Slides.pdf">Slides</a>
+				  	  			  			</span>
+				  	  			  		</div>
+				  	  				</div>
+				  	  			</div>
+				  	  			<div class="talk-column column-x2">
+				  	  				<div class="talk-card">
+				  	  			  		<img src="images/thumbnails/talk_thumbs/Berkman14_Slides_thumb.png" alt="Berkman RegRoom talk slides" class="talk-thumb">
+				  	  			  		<div class="talk-info">
+				  	  			  			<!--Social-Computational Supports for Online Civic Engagement-->
+				  	  			  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+				  	  			  			<p class="talk-venue">at the Harvard Berkman Center &middot; Cambridge, Massachusetts &middot; March 4, 2014</p>
+				  	  			  		</div>
+				  	  			  		<div class="talk-links">
+				  	  			  			<span class="talk-links-container">
+				  	  			  				<a href="files/Berkman14_Slides.pdf">Slides</a>
+				  	  			  			</span>
+				  	  			  		</div>
+				  	  				</div>
+				  	  			</div>
+				  	  		</div> <!-- end talk-row -->
+				  	  		
+				  	  		<p class="proj-detail proj-press">Press: </p>
+				  	  		<div class="press-row">
+		  	  					<div class="press-column">
+		  	  						<div class="press-card">
+		  	  					  		<p class="press-info">
+		  	  					  			<ul class="condensed-list reduced-margin">
+		  	  					  				<li><span>How Do We Participate in Rulemaking? By Alexandra Chang. <i>Cornell Research</i>. Jan 29, 2016. <a href='https://research.cornell.edu/news-features/how-do-we-participate-rulemaking' target='_blank'>Article</a></span></li>
+		  	  					  			</ul>
+		  	  					  		</p>
+		  	  						</div>
+		  	  					</div>
+				  	  		</div> <!-- end press-row -->
+				  	  		<p class="proj-detail proj-website">Website: </p>
+				  	  			<div class="website-row">
+				  	  				<div class="website-column">
+				  	  					<div class="website-card">
+				  	  				  		<p class="website-info">
+				  	  				  			<ul class="condensed-list reduced-margin">
+				  	  				  				<li><a href='http://regulationroom.org/' target='_blank'>RegulationRoom</a></li>
+				  	  				  			</ul>
+				  	  				  		</p>
+				  	  					</div>
+				  	  				</div>
+				  	  			</div> <!-- end website-row -->				  	  		
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Regulation Room project-grid -->
+			</div> <!-- end projects-row -->
+						
+			<div class="projects-row">
+				
+				<!-- Societal Media project -->
+				<div class="project-grid project-column"> 
+				  	<!--<div class="project-title"></div>-->
+				  	<div class="title-tags-bar">
+						<span class="project-name">Societal media</span>
+						<span class="project-tags">
+				  			<span class="domain-tag">civics</span>
+				  			<span class="method-tag">data mining</span>
+				  			<span class="method-tag">NLP</span>
+				  			<span class="interaction-tag">social media</span>
+						</span>
+				  	</div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_societal_media1.png"/></div>
+				  	<div class="project-years"><span>2014&ndash;2015</span></div>
+				  	<div class="project-desc">This project focuses on leveraging social media data, including posted photographs, text-based content, and network information to assess societal level phenomena including public mood or civil unrest.
+				  	</div>  
+				  	<div class="project-materials">
+				  		<span class="material-pub">1 publication</span>
+				  		<span class="material-poster last-material">1 poster</span>
+				  	</div>
+				  	<div class="project-details">
+				  		<!-- Expanded pane detailing project materials -->
+				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
+				  		<div class="collapsible-content">
+				  	  		<!-- List and link collaborators, publications, talks, etc -->
+				  	  		<p class="proj-detail proj-collabs">Collaborators and advisors:<br />
+				  	  			<span>Saeed Abdullah, Jean Costa, Rahmtin Rotabi, Tanzeem Choudhury</span></p>
+				  	  		<p class="proj-detail proj-pubs">Publications: </p>
+				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/xxx.png"/></span>
+				  	  			<div class="paper-info">
+				  	  				<p class="paper-title">Collective Smile: Measuring Societal Happiness from Geolocated Images</p>
+				  	  				<p class="paper-authors">Saeed Abdullah, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Jean Costa, Tanzeem Choudhury </p>
+				  	  				<p class="paper-venue">Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW) &middot; Pages 361&ndash;374 &middot; ACM &middot; 2015</p>
+				  	  			</div>
+				  	  			<div class="paper-links">
+				  	  				<span class="paper-links-container">
+			  	  						<a href="files/CSCW15_CollectiveSmile.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+				  	  				</span>
+				  	  			</div>
+				  	  		</div>  <!-- end pubs -->
+							<p class="proj-detail proj-posters">Poster: </p>
+							<div class="poster-row">
+								<div class="poster-column column-x1">
+									<div class="poster-card">
+								  		<img src="images/thumbnails/poster_thumbs/xxx_thumb.png" alt="ICWSM'15 Brazillian protests poster" class="poster-thumb">
+								  		<div class="poster-info">
+								  			<p class="poster-title">It Is Not Only About Grievances: Emotional Dynamics in Social Media During the Brazilian Protests</p>
+								  			<p class="poster-authors">Jean Costa, Rahmtin Rotabi, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Tanzeem Choudhury</p>
+								  			<p class="poster-venue">at the Ninth International AAAI Conference on Web and Social Media (ICWSM) &middot; Pages 594&ndash;597 &middot; AAAI &middot; May 2015</p>
+								  		</div>
+								  		<div class="poster-links">
+							  				<span class="poster-links-container">
+							  					<a href="files/ICWSM15_Grievances.pdf">Poster Paper PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+							  					&thinsp;&middot;&thinsp;
+							  					<a href='http://stanford.edu/~emurnane/files/ICWSM15_Grievances_Poster.pdf' target='_blank'>Poster PDF</a>
+							  					<!--http://www.aaai.org/ocs/index.php/ICWSM/ICWSM15/paper/view/10569-->
+							  				</span>
+							  			</div>
+									</div>
+								</div>
+							</div> <!-- end poster-row -->
+				  		</div> <!-- end collapsible--content -->
+				  	</div> <!-- end project-details -->
+				</div> <!-- end Societal Media project-grid -->
+				
 				<!-- Smoking Twitter project -->
 				<div class="project-grid project-column"> 
 				  	<!--<div class="project-title"></div>-->
@@ -787,7 +2029,7 @@
 				  			<span class="interaction-tag">social media</span>
 						</span>
 				  	</div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/thumb_smoking2.png"/></div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_smoking2.png"/></div>
 				  	<div class="project-years"><span>2013&ndash;2014</span></div>
 				  	<div class="project-desc">Conducting mixed method analyses of Twitter users' content and posting activity, this project explores personal, behavioral, and social factors predictive of abstinence or relapse during attempts to quit smoking. Going forward, we hope to expand this research to the design and deployment of adaptive smoking intervention technologies that provide personalized support.
 				  	</div>  
@@ -801,11 +2043,11 @@
 				  		<button class="proj-collapsible"><span>More project details (click to expand)</span></button>
 				  		<div class="collapsible-content">
 				  	  		<!-- List and link collaborators, publications, talks, etc -->
-				  	  		<p class="proj-detail proj-collabs">Collaborators:<br />
+				  	  		<p class="proj-detail proj-collabs">Advisors:<br />
 				  	  			<span>Scott Counts, Munmun De Choudhury, Merrie Morris, <a href='http://research.microsoft.com/en-us/groups/nexus/' target='_blank'>Nexus Group</a> at Microsoft Research</span></p>
 				  	  		<p class="proj-detail proj-pubs">Publication: </p>
 				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
-				  	  			<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 				  	  			<div class="paper-info">
 				  	  				<p class="paper-title">Unraveling abstinence and relapse: smoking cessation reflected in social media</p>
 				  	  				<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span> & Scott Counts </p>
@@ -813,17 +2055,17 @@
 				  	  			</div>
 				  	  			<div class="paper-links">
 				  	  				<span class="paper-links-container">
-				  	  						<a href="files/CHI14_Smoking.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
+					  						<a href="files/CHI14_Smoking.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a>
 				  	  				</span>
 				  	  			</div>
-				  	  		</div>
+				  	  		</div> <!-- end pubs -->
 				  	  		<p class="proj-detail proj-talks">Talk: </p>
 							<div class="talk-row">
-								<div class="talk-column">
+								<div class="talk-column column-x1">
 									<div class="talk-card">
-								  		<img src="images/talk_thumbs/RESLVE_talk_thumb.png" alt="" class="talk-thumb">
+								  		<img src="images/thumbnails/talk_thumbs/CHI14_Smoking_Slides_thumb.png" alt="CHI14 Smoking Cessation talk slides" class="talk-thumb">
 								  		<div class="talk-info">
-								  			<p class="talk-title">Unraveling Abstinence and Relapse: Smoking Cessation Reflected in Social Media</p>
+								  			<!--<p class="talk-title">Unraveling Abstinence and Relapse: Smoking Cessation Reflected in Social Media</p>-->
 								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
 								  			<p class="talk-venue">at CHI &middot; Toronto, Canada &middot; April 29, 2014</p>
 								  		</div>
@@ -835,22 +2077,14 @@
 									</div>
 								</div>
 							</div> <!-- end talk-row -->
-				  	  		
 				  	  		<p class="proj-detail proj-videos">Video: </p>
 							<div class="video-row">
-				  				<div class="video-column">
+				  				<div class="video-column column-x1">
 				  					<div class="video-card">
-				  				  		<img src="images/video_thumbs/smoking-video-thumb.png" alt="" class="video-thumb">
-				  				  		<div class="video-info">
-				  				  			<p class="video-title">Unraveling Abstinence and Relapse: Smoking Cessation Reflected in Social Media</p>
-				  				  			<p class="video-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
-				  				  			<p class="video-venue">at the 22nd International Conference on World Wide Web (WWW) &middot; May 13, 2013</p>
-				  				  		</div>
-				  				  		<div class="video-links">
-							  				<span class="video-links-container">
-							  					<!--[<a class="afterglow" href="#CHI14_Smoking_Video">Video</a><video id="CHI14_Smoking_Video" width="960" height="540"> <source type="video/mp4" src="http://stanford.edu/~emurnane/files/CHI14_Smoking_Video.mp4" /> </video>]-->
-							  				</span>
-							  			</div>
+				  				  		<img class="mklbItem" src="images/thumbnails/video_thumbs/CHI14_Smoking_Video_thumb.png" data-video-src="http://stanford.edu/~emurnane/files/CHI14_Smoking_Video.mp4" />
+										<div class="video-info">
+											<p class="video-venue">CHI video preview &thinsp;&middot;&thinsp; 2014</p>
+										</div>
 				  					</div>
 				  	  			</div>
 							</div> <!-- end video-row -->
@@ -864,20 +2098,20 @@
 				<div class="project-grid project-column"> 
 				  	<div class="project-title"></div>
 				  	<div class="title-tags-bar">
-			  			<span class="project-name">NEED A NAME</span>
+			  			<span class="project-name">Semantic social web</span>
 		  				<span class="project-tags">
 		  		  			<span class="domain-tag">geography</span>
 		  		  			<span class="method-tag">information retrieval</span>
 			  			</span>
 				  	</div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/thumb_linkeddata.png"/></div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_linkeddata.png"/></div>
 				  	<div class="project-years"><span>2011&ndash;2013</span></div>
 				  	<div class="project-desc">This project builds systems that connect with structured information sources like <a href='http://wiki.dbpedia.org/' target='_blank'>DBpedia</a> in order to explore novel solutions to the Named Entity Disambiguation problem or to support the exploration and annotation of semantically-enhanced historic maps.</div>  
 				  	<div class="project-materials">
 				  		<span class="material-pub">1 publication</span>
 				  		<span class="material-talk">1 talk</span>
-				  		<span class="material-poster">1 poster</span>
-				  		<span class="material-demo last-material">1 demo</span>
+				  		<span class="material-poster last-material">1 poster</span>
+				  		<!--<span class="material-demo last-material">1 demo</span>-->
 				  	</div> 	
 				  	<div class="project-details">
 				  		<!-- Expanded pane detailing project materials -->
@@ -889,7 +2123,7 @@
 				  	  		<p class="proj-detail proj-pubs">Publication: </p>
 				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
 				  	  			<span class="paper-award-icon">icon</span>
-				  	  			<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 				  	  			<div class="paper-info">
 				  	  				<p class="paper-title">RESLVE: leveraging user interest to improve entity disambiguation on short text</p>
 				  	  				<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Bernhard Haslhofer, Carl Lagoze</p>
@@ -906,7 +2140,7 @@
 							<div class="talk-row">
 								<div class="talk-column column-x1">
 									<div class="talk-card">
-								  		<img src="images/talk_thumbs/WWW13_RESLVE_Slides_thumb.png" alt="RESLVE WWW slides" class="talk-thumb">
+								  		<img src="images/thumbnails/talk_thumbs/WWW13_RESLVE_Slides_thumb.png" alt="RESLVE WWW slides" class="talk-thumb">
 								  		<div class="talk-info">
 								  			<!--<p class="talk-title">RESLVE: leveraging user interest to improve entity disambiguation on short text</p>-->
 								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth Murnane</span></p>
@@ -914,7 +2148,7 @@
 								  		</div>
 								  		<div class="talk-links">
 								  			<span class="talk-links-container">
-								  				<a href="">Slides</a>
+								  				<a href="files/WWW13_RESLVE_Slides.pdf">Slides</a>
 								  			</span>
 								  		</div>
 									</div>
@@ -925,7 +2159,7 @@
 							<div class="poster-row">
 			  	  				<div class="poster-column column-x1">
 			  	  					<div class="poster-card">
-			  	  				  		<img src="images/poster_thumbs/WWW13_RESLVE_Poster_thumb.png" alt="RESLVE WWW'13 poster" class="poster-thumb">
+			  	  				  		<img src="images/thumbnails/poster_thumbs/WWW13_RESLVE_Poster_thumb.png" alt="RESLVE WWW'13 poster" class="poster-thumb">
 			  	  				  		<div class="poster-info">
 			  	  				  			<p class="poster-title">RESLVE: leveraging user interest to improve entity disambiguation on short text</p>
 			  	  				  			<p class="poster-presenters">Presented by <span class="lab-member-emph">Elizabeth Murnane</span></p>
@@ -965,7 +2199,7 @@
 							<span class="interaction-tag">visualization</span>
 						</span>
 					</div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/thumb_architexa.png"/></div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_architexa.png"/></div>
 				  	<div class="project-years"><span>2007&ndash;2011</span></div>
 				  	<div class="project-desc">Prof Murnane co-founded Architexa, an MIT spin-off that made visualization tools for software developers. As lead engineer<!-- and head of experimental features-->, she spearheaded numerous projects such as tools to diagram runtime behavior or automatically generate visual documentation. A main focus was developing viz techniques to address info overload challenges of complex codebases, as well as diagram sharing and an online platform to support programmers' collaborative practices and provide personalized recommendations for finding and contributing content.
 				  	</div>  
@@ -982,10 +2216,10 @@
 				  		<div class="collapsible-content">
 				  	  		<!-- List and link collaborators, publications, talks, etc -->
 				  	  		<p class="proj-detail proj-collabs">Team:<br />
-				  	  			<span>Abishek Rakshit, Seth Rosen, Vineet Sinha</span></p>
+				  	  			<span>CEO: Vineet Sinha &middot; Devs: Abishek Rakshit, Seth Rosen</span></p>
 				  	  		<p class="proj-detail proj-pubs">Publications: </p>
 				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
-				  	  			<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+				  	  			<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 				  	  			<div class="paper-info">
 				  	  				<p class="paper-title">Interactive exploration of compacted visualizations for understanding behavior in complex software</p>
 				  	  				<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Vineet Sinha</p>
@@ -997,7 +2231,7 @@
 				  	  			</div>
 				  	  		</div>
 				  	  		<div class="pub-entry-grid proj-pub-entry-grid">
-			  	  				<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+			  	  				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/"/></span>
 			  	  				<div class="paper-info">
 			  	  					<p class="paper-title">Understanding code architectures via interactive exploration and layout of layered diagrams</p>
 			  	  					<p class="paper-authors">Vineet Sinha, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Scott W. Kurth, Edy S. Liongosari, Rob Miller, David Karger</p>
@@ -1009,72 +2243,65 @@
 			  	  				</div>
 			  	  			</div>
 				  	  		<p class="proj-detail proj-talks">Talk: </p>
-							<div class="talk-row">
-								<div class="talk-column">
-									<div class="talk-card">
-								  		<img src="images/talk_thumbs/RESLVE_talk_thumb.png" alt="" class="talk-thumb">
-								  		<div class="talk-info">
-								  			<p class="talk-title">Interactive Exploration of Compacted Visualizations for Understanding Behavior in Complex Software</p>
-								  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
-								  			<p class="talk-venue">at OOPSLA &middot; Nashville, Tennessee &middot; October 19, 2008</p>
-								  		</div>
-								  		<div class="talk-links">
-								  			<span class="talk-links-container">
-								  				<a href="http://stanford.edu/~emurnane/files/OOPSLA08_Interactive_Demo.pdf">Slides</a>
-								  			</span>
-								  		</div>
-									</div>
-								</div>
-							</div> <!-- end talk-row -->
-				  	  		
-				  	  		<p class="proj-detail proj-posters">Poster: </p>
-							<div class="poster-row">
-				  				<div class="poster-column">
-				  					<div class="poster-card">
-				  				  		<img src="images/poster_thumbs/-thumb.png" alt="" class="poster-thumb">
-				  				  		<div class="poster-info">
-				  				  			<p class="poster-title">Interactive exploration of compacted visualizations for understanding behavior in complex software</p>
-				  				  			<!--<p class="poster-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>-->
-				  				  			<p class="poster-venue">At the 23rd ACM SIGPLAN conference on Object-oriented programming systems languages and applications (OOPSLA) &middot; October 2008</p>
-				  				  		</div>
-				  				  		<div class="poster-links">
-							  				<span class="poster-links-container">
-							  					<a href='http://stanford.edu/~emurnane/files/OOPSLA08_Interactive_Poster.pdf' target='_blank'>Poster PDF</a>
-							  					<!--<a href='http://stanford.edu/~emurnane/files/WWW13_RESLVE_PosterPaper.pdf' target='_blank'>Poster Short Paper</a>-->
-							  				</span>
-							  			</div>
-				  					</div>
-				  	  			</div>
-				  	  			<div class="poster-column">
-				  	  					<div class="poster-card">
-				  	  				  		<img src="images/poster_thumbs/-thumb.png" alt="" class="poster-thumb">
-				  	  				  		<div class="poster-info">
-				  	  				  			<p class="poster-title">Understanding code architectures via interactive exploration and layout of layered diagrams</p>
-				  	  				  			<!--<p class="poster-presenters">Presented by <span class="lab-member-emph">Elizabeth L. Murnane</span></p>-->
-				  	  				  			<p class="poster-venue">At the 23rd ACM SIGPLAN conference on Object-oriented programming systems languages and applications (OOPSLA) &middot; October 2008</p>
-				  	  				  		</div>
-				  	  				  		<div class="poster-links">
-				  	  							<span class="poster-links-container">
-				  	  								<a href='http://stanford.edu/~emurnane/files/OOPSLA08_Understanding_Poster.pdf' target='_blank'>Poster PDF</a>
-				  	  								<!--<a href='http://stanford.edu/~emurnane/files/WWW13_RESLVE_PosterPaper.pdf' target='_blank'>Poster Short Paper</a>-->
-				  	  							</span>
-				  	  						</div>
-				  	  					</div>
-				  	  				</div>
-							</div> <!-- end poster-row -->						
-				  	  		<p class="proj-detail proj-videos">Video: </p>
-				  	  		<div class="video-row">
-				  	  			<div class="video-column">
-				  	  				<div class="video-card">
-				  	  			  		<img src="images/video_thumbs/architexa-thumb.png" alt="" class="video-thumb">
-				  	  			  		<div class="video-info">
-				  	  			  			<p class="video-title">An Introduction to Architexa</p> 
-				  	  			  			<!--Recorded by Elizabeth L. Murnane-->
-				  	  			  			2010. 
-											<!--[<a class="afterglow" href="#Architexa_Video">Video</a><video id="Architexa_Video" width="960" height="700"> <source type="video/mp4" src="http://stanford.edu/~emurnane/files/Architexa_Demo.mp4" /> </video>]-->
+				  	  		<div class="talk-row">
+				  	  			<div class="talk-column column-x1">
+				  	  				<div class="talk-card">
+				  	  			  		<img src="images/thumbnails/talk_thumbs/OOPSLA08_Interactive_Demo_Slides_thumb.png" alt="OOPSLA demo slides" class="talk-thumb">
+				  	  			  		<div class="talk-info">
+				  	  			  			<!--<p class="talk-title">Interactive Exploration of Compacted Visualizations for Understanding Behavior in Complex Software</p>-->
+				  	  			  			<p class="talk-presenters">Presented by <span class="lab-member-emph">Elizabeth Murnane</span></p>
+				  	  			  			<p class="talk-venue">at OOPSLA &middot; Nashville, Tennessee &middot; October 19, 2008</p>
+				  	  			  		</div>
+				  	  			  		<div class="talk-links">
+				  	  			  			<span class="talk-links-container">
+				  	  			  				<a href="http://stanford.edu/~emurnane/files/OOPSLA08_Interactive_Demo.pdf">Slides</a>
+				  	  			  			</span>
 				  	  			  		</div>
 				  	  				</div>
 				  	  			</div>
+				  	  		</div> <!-- end talk-row -->
+				  	  		
+				  	  		<p class="proj-detail proj-posters">Poster: </p>
+				  	  		<div class="poster-row">
+			  	  				<div class="poster-column column-x1">
+			  	  					<div class="poster-card">
+			  	  				  		<img src="images/thumbnails/poster_thumbs/OOPSLA08_Interactive_Poster_thumb.png" alt="OOPSLA Chrono poster" class="poster-thumb">
+			  	  				  		<div class="poster-info">
+			  	  				  			<p class="poster-title">Interactive exploration of compacted visualizations for understanding behavior in complex software</p>
+			  	  				  			<p class="poster-venue">the 23rd ACM SIGPLAN conference on Object-oriented programming systems languages and applications (OOPSLA) &middot; October 2008</p>
+			  	  				  		</div>
+			  	  				  		<div class="poster-links">
+			  	  			  				<span class="poster-links-container">
+			  	  			  					<a href='files/OOPSLA08_Interactive_Poster.pdf' target='_blank'>Poster PDF</a>
+			  	  			  				</span>
+			  	  			  			</div>
+			  	  					</div>
+			  	  				</div>
+			  	  				<div class="poster-column column-x1">
+		  	  						<div class="poster-card">
+		  	  					  		<img src="images/thumbnails/poster_thumbs/OOPSLA08_Understanding_Poster_thumb.png" alt="OOPSLA Strata poster" class="poster-thumb">
+		  	  					  		<div class="poster-info">
+		  	  					  			<p class="poster-title">Understanding code architectures via interactive exploration and layout of layered diagrams</p>
+		  	  					  			<p class="poster-venue">at the 23rd ACM SIGPLAN conference on Object-oriented programming systems languages and applications (OOPSLA) &middot; October 2008</p>
+		  	  					  		</div>
+		  	  					  		<div class="poster-links">
+		  	  				  				<span class="poster-links-container">
+		  	  				  					<a href='http://stanford.edu/~emurnane/files/OOPSLA08_Understanding_Poster.pdf' target='_blank'>Poster PDF</a>
+		  	  				  				</span>
+		  	  				  			</div>
+		  	  						</div>
+		  	  					</div>
+				  	  		</div> <!-- end poster-row -->
+				  	  		<p class="proj-detail proj-videos">Video: </p>
+				  	  		<div class="video-row">
+			  	  				<div class="video-column column-x1">
+			  	  					<div class="video-card">
+			  	  				  		<img class="mklbItem" src="images/thumbnails/video_thumbs/Architexa_demo_video_thumb.png" data-video-src="http://stanford.edu/~emurnane/files/Architexa_Demo.mp4" />
+			  	  					<div class="video-info">
+			  	  						<p class="video-venue">An Introduction to Architexa &thinsp;&middot;&thinsp; 2010</p>
+			  	  					</div>
+			  	  					</div>
+			  	  				</div>
 				  	  		</div> <!-- end video-row -->
 				  	  	</div> <!-- end collapsible--content -->
 				  	</div> <!-- end project-details -->
@@ -1091,7 +2318,7 @@
 				  			<span class="interaction-tag">visualization</span>
 				  		</span>
 				  	</div>
-				  	<div class="project-thumb"><img src="images/project_thumbs/thumb_relo.png"/></div>
+				  	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_relo.png"/></div>
 				  	<div class="project-years"><span>2005&ndash;2007</span></div>
 				  	<div class="project-desc">A collaboration between the <a href='http://haystack.csail.mit.edu/' target='_blank'>Haystack</a> and <a href='https://groups.csail.mit.edu/uid/' target='_blank'>User Interface Design</a> research groups in the MIT Computer Science & Artificial Intelligence Lab, <a href='http://relo.csail.mit.edu/' target='_blank'>Relo</a> is an IDE-plugin built on RDF that visualizes relationships in Java source code using interactive diagrams. Contributions focused on studying how the level of detail shown in a visualization affects comprehension and developing new interaction techniques to enable easy information filtering.
 				  	<br />Advisors: Vineet Sinha, David Karger
@@ -1110,7 +2337,7 @@
 							<span class="interaction-tag">voice</span>
 						</span>
 					</div>
-			    	<div class="project-thumb"><img src="images/project_thumbs/thumb_citybrowser.png"/></div>
+			    	<div class="project-thumb"><img src="images/thumbnails/project_thumbs/thumb_citybrowser.png"/></div>
 			    	<div class="project-years"><span>2005&ndash;2007</span></div>
 			    	<div class="project-desc">The <a href='https://groups.csail.mit.edu/sls/' target='_blank'>Spoken Language Systems (SLS)</a> research group in the MIT Computer Science & Artificial Intelligence Lab aims to create conversational interfaces that enable people to interact with computers via naturally spoken language. SLS's <a href='http://web.sls.csail.mit.edu/CityBrowser/' target='_blank'>CityBrowser</a> is a multimodal system that gives local information in response to a user's spoken or typed inquiries. Contributions focused on developing an interactive agent that offered personalized recommendations.
 			    	<br />Advisors: Alex Gruenstein, James Glass
@@ -1371,5 +2598,7 @@
 	// execute above function
 	initPhotoSwipeFromDOM('.my-gallery');
 </script>
+<!--Lightbox for videos; credit: https://www.cssscript.com/gallery-lightbox-mk/-->
+<script src="libs/mk-lightbox-master/mklb/js/mklb.js"></script>
 
 </html>
