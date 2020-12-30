@@ -22,6 +22,8 @@
   --more-details-font-bigger1: 11px;
   --more-details-font-bigger2: 13px;
   --single-space: 12px;
+  --single-space-pub-page: 16px;
+  --best-paper-highlight: #d21b42;
 }
 
 @font-face { /* Neutra Text TF 500 */
@@ -311,6 +313,108 @@ p + .condensed-list { margin-top: -1em; }
 }
 
 /*********************NEWS PAGE*********************/
+.news-entry-grid {
+	font-family: Avenir;
+	font-size: 15px;
+  	display: grid;
+  	grid-template-areas:
+    	'news-thumb news-headline news-type'
+    	'news-thumb news-date news-type'
+    	'news-thumb news-content news-content';
+  	grid-template-columns: 200px auto 50px;
+  	grid-template-rows: 30px 30px auto;
+  	grid-gap: 5x;
+  	padding: 0px;
+  	margin-bottom: 30px;
+}
+.news-thumb {
+	grid-area: news-thumb;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 10px;
+	max-height: 200px;
+	background-color: yellow;
+	
+}
+.news-thumb img {
+	width: 100%;
+	height: 100%;
+}
+.news-type {
+	grid-area: news-type;
+	text-align: center;
+	/*padding-top: 15px;*/
+	/*background-color: pink;*/
+}
+.news-type:before {
+	font-family: "Font Awesome 5 Free";  /* updated font-family */
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	/*font-weight: 400; /* regular style/weight *!/*/
+	color: var( --dark-gray-color);
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid #333;
+	border-radius: 40%; /* make the border a circle */
+	font-weight: 900; /*Some font awesome 5 icons not working without font-weight:900 https://stackoverflow.com/questions/47788847/font-awesome-5-font-family-issue */
+}
+.news-type-celebrate:before {
+	content:  "\f582";
+}
+.news-type-event:before {
+	content: "\f274";
+}
+.news-type-job:before {
+	content: "\f0b1";
+}
+.news-type-pub:before {
+	content: "\f570";
+}
+.news-type-pub-book:before {
+	content: "\f02d";
+}
+.news-type-reshare:before {
+	content:  "\f1ea";
+}
+.news-type-scholarship:before {
+	content: "\f5a2";
+}
+.news-type-travel:before {
+	content: "\f072";
+}
+
+
+.news-headline {
+	grid-area: news-headline;
+	font-size: 20px;
+	text-align: left;
+	background-color: cyan;
+	padding: 0;
+	margin: 0;
+	/*position: relative;*/
+}
+/*.news-headline p {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+}*/
+.news-date {
+	grid-area: news-date;
+	font-style: italic;
+	text-align: left;
+	background-color: #c35de9;
+}
+.news-content {
+	grid-area: news-content;
+	text-align: left;
+	background-color: #a7e99d;
+}
+.news-content p {
+	margin: 0;
+	padding: 0;
+}
+
 
 /*********************PROJECTS PAGE*********************/
 
@@ -496,7 +600,7 @@ p + .condensed-list { margin-top: -1em; }
 	/*background-color: rgba(116, 172, 244, 0.66); /* for layout/debugging *!/*/
 }
 .project-materials > span:before {
-	font-family: 'FontAwesome';
+	font-family: "Font Awesome 5 Free";
 	font-size: 10px;
 	width: 9px;
 	height: 11px;
@@ -543,6 +647,7 @@ p + .condensed-list { margin-top: -1em; }
 }
 .material-video:before {
 	content: '\f03d';
+	font-weight: 900;
 	/*content: "";
 	background-image:url(images/icons/material_video2.png);
 	background-size: 100% 100%;*/
@@ -555,6 +660,8 @@ p + .condensed-list { margin-top: -1em; }
 	background-size: 100% 100%;
 }
 .material-press:before {
+	/*content: '\f519';
+	font-weight: 900;*/
 	content: "";
 	background: url(images/icons/material_press3.png) no-repeat;
 	background-size: 100% 100%;
@@ -703,7 +810,7 @@ projects page, but could eventually make separate Talks/etc page) */
 	width: 100%;
     /*background: yellow; /*for layout/debugging*!/*/
 }
-.talk-thumb, .poster-thumb, .demo-thumb, .video-thumb, .mklbItem, .workshop-thumb {
+.talk-thumb, .poster-thumb, .demo-thumb, .video-thumb, .mklbItem-video, .workshop-thumb {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px;
@@ -713,17 +820,17 @@ projects page, but could eventually make separate Talks/etc page) */
 	border: 1px solid var(--light-gray-color);
 	/*background-color: #ea7f7f; /*for layout/debugging*!/*/
 }
-/*For videos that appear in talk links, it's just text so don't put border, make it look like a link, and don't italicize on hover*/
-.talk-links-container > .mklbItem {
+/*For videos that appear in paper or talk links, it's just text so don't put border, make it look like a link, and don't italicize on hover*/
+/*.paper-links-container > .mklbItem, .talk-links-container > .mklbItem, .video-info > .mklbItem {
 	border: none;
 	text-decoration: underline; 
 	color: var(--link-color)
 }
-.talk-links-container > .mklbItem:hover {
+.paper-links-container > .mklbItem:hover, .talk-links-container > .mklbItem:hover, .video-info > .mklbItem:hover {
     font-style: normal;
 	font-weight: normal;
 	color: var(--link-hover);
-}
+}*/
 
 
 /*********************PUBLICATIONS PAGE*********************/
@@ -731,9 +838,11 @@ projects page, but could eventually make separate Talks/etc page) */
 
 }
 #pub-content {
-	margin-left: auto;
+	margin-left: 0px;
+	padding-left: 0px;
+	/*margin-left: auto;
 	margin-right: auto;
-	padding-left: var(--header-padding-left);
+	padding-left: var(--header-padding-left);*/
 }
 .header-footnote {
 	font: italic 13px Avenir, sans-serif;
@@ -744,7 +853,7 @@ projects page, but could eventually make separate Talks/etc page) */
 	margin-right: auto;
 	margin-bottom: 20px;
 }
-.pub-year-header, .project-section-header {
+.pub-year-header, .project-section-header, .news-year-header {
 	font-family: "Alegreya Sans SC", "Alegreya Sans", sans-serif;
 	font-size: 26px;
     overflow: hidden;
@@ -763,13 +872,22 @@ projects page, but could eventually make separate Talks/etc page) */
 	font-size: 12px;
   	display: grid;
   	grid-template-areas:
-    	'paper-id paper-thumb paper-info'
+    	'award paper-thumb paper-info'
     	'award paper-thumb paper-tags'
     	'award paper-thumb paper-links';
   	grid-template-columns: 30px 100px auto;
+  	grid-template-rows: auto 25px 15px;
   	grid-gap: 0x;
   	padding: 0px;
   	margin-bottom: 30px;
+}
+.pub-entry-grid > .paper-info > p {
+	/*padding-top: 5px;*/
+	line-height: var(--single-space-pub-page);
+}
+.paper-title {
+	padding-top: 0px;
+	margin-top: 0px;
 }
 .proj-pub-entry-grid {
 	grid-template-columns: 0px 90px auto;
@@ -778,37 +896,65 @@ projects page, but could eventually make separate Talks/etc page) */
 .proj-pub-entry-grid > .paper-thumb {
 	margin: 0px;
 	padding: 0px;
+	margin-right: 5px;
 }
-.proj-pub-entry-grid > .paper-info > p {
-	padding-top: 3px;
+.proj-pub-entry-grid > .paper-info > .paper-title {
+	padding-top: 0px;
+}
+.proj-pub-entry-grid > .paper-info p {
+	/*padding-top: 3px;*/
 	line-height: var(--single-space);
+}
+.paper-title {
+	/*background-color: cyan;*/
+	/*padding-top: 0px;*/
 }
 .paper-id {
 	grid-area: paper-id;
 	text-align: left;
 }
+.paper-award {
+	color: var(--best-paper-highlight);
+	font-weight: bold;
+}
 .paper-award-icon {
 	grid-area: award;
-	text-align: left;
+	text-align: center;
+	padding-top: 3px;
 }
-.paper-award-icon i {
-	width: 10px;
+.paper-award-icon:before {
+	font-family: "Font Awesome 5 Free";  /* updated font-family */
+	font-size: 20px;
+	font-weight: 400; /* regular style/weight */
+	color: var(--best-paper-highlight);
+	display: inline-block;
+}
+.best-paper:before {
+	content: "\f091";
+	font-weight: 900; /*Some font awesome 5 icons not working without font-weight:900 https://stackoverflow.com/questions/47788847/font-awesome-5-font-family-issue */
+}
+.honorable-mention:before {
+	content: '\f559';
+	font-weight: 900; /*Some font awesome 5 icons not working without font-weight:900 https://stackoverflow.com/questions/47788847/font-awesome-5-font-family-issue */
 }
 .paper-thumb {
 	grid-area: paper-thumb;
 	margin-left: auto;
 	margin-right: auto;
+	margin-right: 10px;
 }
 .paper-thumb img {
-	width: 85px;
-	height: 100%;
+	width: 90px;
+	height: 120px;
 	border: 1px solid #cbcbcb;
 	background-color: green;
+}
+.horizontal-paper-thumb {
+	height: 70px;
 }
 .paper-info {
 	grid-area: paper-info;
 	text-align: left;
-	height: 100px;
 }
 .paper-info > p {
 	margin: 0px;
@@ -816,13 +962,16 @@ projects page, but could eventually make separate Talks/etc page) */
 .paper-title, .talk-title, .poster-title, .demo-title, .video-title, .workshop-title { 
 	font-size: 15px;
 }
-.poster-title, .video-venue {
+.poster-title, .video-info, .video-venue {
 	padding-top: 5px;
 }
 .paper-authors, .talk-presenters, .poster-presenters, .workshop-organizers { 
 	font-size: 13px;
 	padding-top: 5px;
-	line-height: var(--single-space);
+	/*line-height: var(--single-space);*/
+}
+.pub-entry-grid > .paper-info > .paper-authors {
+	padding-top: 3px;
 }
 .poster-presenters {
 	padding-top: 0px;
@@ -831,7 +980,7 @@ projects page, but could eventually make separate Talks/etc page) */
 	font-style: italic;
 	line-height: var(--single-space);
 	color: var(--dark-gray-color);
-	/*padding-top: 5px;*/
+	padding-top: 3px;
 }
 .paper-tags { 
 	grid-area: paper-tags; 
@@ -850,9 +999,21 @@ projects page, but could eventually make separate Talks/etc page) */
 }
 .paper-links a, .talk-links a, .poster-links a, .video-links a, .workshop-links a {
 	color: var(--link-color);
+	text-decoration: underline;
 }
-.paper-links a:hover, .talk-links a:hover, .poster-links a:hover, .video-links a:hover, .workshop-links a:hover {
+.paper-links a:hover, .talk-links a:hover, .poster-links a:hover, .video-links a:hover, .workshop-links a:hover { 
 	color: var(--link-hover);
+	
+	/* Override mklb.css .mklbItem:hover italicizing */
+	font-style: normal; 
+	font-weight: normal;
+}
+.video-links a {
+	text-decoration: underline; 
+}
+.video-links a:hover { /* Override mklb.css .mklbItem:hover italicizing */
+	font-style: normal;
+	font-weight: normal;
 }
 
 /*Make lines in the Talk entries uniform heights even if wrap a 
@@ -871,6 +1032,11 @@ for content within the 'More details' collapsible on the Projects page*/
 	text-align: left;
 	/*background-color: cyan;*/
 	font-size: var(--more-details-font);
+}
+.proj-recruiting > ul li {
+	margin-top: -1em;
+	padding-top: 0px;
+	background: #cce5ff;
 }
 
 .collapsible-content .pub-entry-grid .paper-title {
@@ -1005,6 +1171,7 @@ for content within the 'More details' collapsible on the Projects page*/
 	position: absolute;
 	width: 100%;
 	top: -1em; /* Placing icons halfway up overlapping photo */
+	/*background-color: black;*/
 }
 .affiliate-linkout {
 	/*font-size: 18px;*/
@@ -1029,11 +1196,17 @@ for content within the 'More details' collapsible on the Projects page*/
   	margin-right: auto;
   	text-align: center;
   	padding-top: 0px;
+  	padding-bottom: 0px;
   	margin-top: 0x;
   	padding-right: 2px;
   	padding-left: 2px;
 	transition: all 0.3s ease;
 	/*text-shadow: 1px 0px 2px white, -1px 0px 2px white, 0px -1px 2px white, 0px 1px 2px white;*/
+}
+.ai, .member-contact-bar a svg {
+	background-color: black;
+	border-radius: 20px 20px 1px 1px;
+	padding: 0px;
 }
 .affiliate-linkout a {
 	font-size: 24px;
