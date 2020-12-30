@@ -6,15 +6,22 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="Empower Research Lab at Dartmouth College">
 
-	<title>Publications</title>
+	<title>Empower Lab Publications</title>
 	<link rel="SHORTCUT ICON" href="images/empower-lab.ico" />	
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+	
+	<!-- Lightbox for videos -->
+	<link rel="stylesheet" href="libs/mk-lightbox-master/mklb/css/mklb.css"> 
 	
 	<!-- Icons & web fonts -->
-	<link rel="stylesheet" href="images/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="images/icons/fontawesome-free-5.15.1-web/css/all.css">
+	<link rel="stylesheet" href="images/icons/fontawesome-free-5.15.1-web/css/v4-shims.css">
+	<script defer src="images/icons/fontawesome-free-5.15.1-web/js/all.js"></script>
+	<script defer src="images/icons/fontawesome-free-5.15.1-web/js/v4-shims.js"></script>
 	<link rel="stylesheet" href="images/icons/academicons-1.9.0/css/academicons.min.css"/>
-	<script src="https://use.fontawesome.com/cb1f9cec96.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i|Alegreya+Sans+SC:300,300i,400,400i,500,500i,700,700i' rel='stylesheet' type='text/css' /> 
+	
+	<!-- My stylesheet (needs to be loaded after other stylesheets to enable any desired overwriting) -->
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 	
 	<meta name="google-site-verification" content="0ws4vyaq4Uqntg3jDvGOEi_Uspk1Km0LlmEy6GJ5G7c" />
 </head>
@@ -28,9 +35,9 @@
 		  	<nav class="nav-links">
 		    	<a href="index.html">Home</a>
 		    	<a href="news.html">News</a>
-		    	<a href="projects.html">Projects</a>
-		    	<a class="selected-link" href="publications.html">Publications</a>
 		    	<a href="people.html">People</a>
+		    	<a class="selected-link" href="publications.html">Publications</a>
+		    	<a href="projects.html">Projects</a>
 		    	<a href="involvement.html">Get Involved</a>
 		  	</nav>
 		</div>
@@ -38,15 +45,31 @@
 		<p class='tagline'>Publications</p>
 		<div class="header-footnote">Lab members denoted in <b>bold</b></div>	
 		
-		CHECK ALL LINKS
-		<p>CHANGE ACM, NAS, etc to DOI (which should then redirect)</p>
-		
 		<div class="content" id="pub-content">		
 			<div class="pub-year-header">2020</div>
 			
 			<div class="pub-entry-grid">
-				<span class="paper-id">[B.2]</span>
-				<span class="paper-thumb"><img src="images/paper_thumbs/"/></span>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/IMWUT20_Tracking_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Understanding Physical Practices and the Role of Technology in Manual Self-Tracking</p>
+					<p class="paper-authors">Parastoo Abtahi, Victoria Ding, Anna. C. Yang, Tommy Bruzzese, Alyssa B. Romanos, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Sean Follmer, James A. Landay</p>
+					<p class="paper-venue">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) &middot; 4(4), Pages 1&ndash;24 &middot; 2020</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">self-tracking</span>
+					<span class="method-tag">surveys</span>
+					<span class="method-tag">interviews</span>
+					<span class="interaction-tag">paper-based tools</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/IMWUT20_Tracking.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3432236">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/NAS20_Mobile_thumb.png"/></span>
 				<div class="paper-info">
 					<p class="paper-title">Mobile and Sensor Technology as a Tool for Health Measurement, Management, and Research with Aging Populations</p>
 					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Tanzeem Choudhury</p>
@@ -58,17 +81,31 @@
 				</div>
 				<div class="paper-links">
 					<span class="paper-links-container">
-						<a href="">PDF</a> &thinsp;&middot;&thinsp; <a href="">Slides</a> &thinsp;&middot;&thinsp; <a href="">NAS</a> &thinsp;&middot;&thinsp; Project
+						<a href="files/NAS20_Mobile.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="NAS20_Mobile_Slides.pdf">Slides</a> &thinsp;&middot;&thinsp; <a href="">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#pain-reporting-UIs">Project</a>
 					</span>
 				</div>
 			</div>
 			
-			[W.xx] 5th international workshop on mental health and well-being: sensing and intervention
-			<span class="domain-tag">mental health</span>
+			<div class="pub-entry-grid">
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/Ubi20_MHSI_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">5th International workshop on mental health and well-being: sensing and intervention</p>
+					<p class="paper-authors">Varun Mishra, Akane Sano, Saeed Abdullah, Jakob E. Bardram, Sandra Servia, <span class="lab-member-emph">Elizabeth Murnane</span>, Tanzeem Choudhury, Mirco Musolesi, Giovanna Vilaza, Rajalakshmi Nandakumar, Tauhidur  Rahman</p>
+					<p class="paper-venue">Adjunct Proceedings of the 2020 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2020 ACM International Symposium on Wearable Computers (UbiComp/ISWC) &middot; Pages 474&ndash;476 &middot; ACM &middot; 2020</p> <!-- Sep 2020 -->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">mHealth</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/Ubi20_MHSI.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3410530.3414615">DOI</a> &thinsp;&middot;&thinsp; <a href='https://ubicomp-mental-health.github.io/workshop-2020.html' target='_blank'>Workshop website</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
 			
 			<div class="pub-entry-grid">
-				<span class="paper-id">[C.19]</span>
-				<span class="paper-thumb"><img src="images/paper_thumbs/C19_thumb.png"/></span>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/IDC20_Math_thumb.png"/></span>
 				<div class="paper-info">
 					<p class="paper-title">Supporting children's math learning with feedback-augmented narrative technology</p>
 					<p class="paper-authors">Sherry Ruan, Jiayu He, Rui Ying, Jonathan Burkle, Dunia Hakim, Anna Wang, Yufeng Yin, Lily Zhou, Qianyao Xu, Abdallah AbuHashem, Griffin Dietz, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Emma Brunskill, James A. Landay</p>
@@ -76,40 +113,19 @@
 				</div>
 				<div class="paper-tags">
 					<span class="domain-tag">education</span>
+					<span class="method-tag">lab study</span>
 					<span class="population-tag">children</span>
 					<span class="interaction-tag">narrative</span>
 				</div>
 				<div class="paper-links">
 					<span class="paper-links-container">
-						<a href="">PDF</a> &thinsp;&middot;&thinsp; <a href="">ACM</a> &thinsp;&middot;&thinsp; Project
+						<a href="IDC20_Math.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3392063.3394400">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#edu-quests">Project</a>
 					</span>
 				</div>
 			</div>
-			 BEST PAPER
+			
 			<div class="pub-entry-grid">
-				<span class="paper-id">[C.18]</span>
-				<div class="paper-award-icon">award icon </div>
-				<span class="paper-thumb"><img src="images/paper_thumbs/C18_thumb.png"/></span>
-				<div class="paper-info">
-					<p class="paper-title">Designing Ambient Narrative-Based Interfaces to Reflect and Motivate Physical Activity</p>
-					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>,  Xin Jiang, Anna Kong, Michelle Park, Weili Shi, Connor Soohoo, Luke Vink, Iris Xia, Xin Yu, John Yang-Sammataro, Grace Young, Jenny Zhi, Paula Moya, James A. Landay</p>
-					<p class="paper-venue">Proceedings of the 38th Annual Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1&ndash;14 &middot; ACM &middot; 2020</p>
-				</div>
-				<div class="paper-tags">
-					<span class="domain-tag">mobility?</span>
-					<span class="domain-tag">physical activity?</span>
-					<span class="interaction-tag">smartphones? ambient displays?</span>
-					<span class="interaction-tag">narrative</span>
-				</div>
-				<div class="paper-links">
-					<span class="paper-links-container">
-						<a href="">PDF</a> &thinsp;&middot;&thinsp; <a href="">ACM</a> &thinsp;&middot;&thinsp; Project
-					</span>
-				</div>
-			</div>
-			<div class="pub-entry-grid">
-				<span class="paper-id">[C.17]</span>
-				<span class="paper-thumb"><img src="images/paper_thumbs/C17_thumb.png"/></span>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI20_Invisible_thumb.png"/></span>
 				<div class="paper-info">
 					<p class="paper-title">Being (In) Visible: Privacy, Transparency, and Disclosure in the Self-Management of Bipolar Disorder</p>
 					<p class="paper-authors">Justin Petelka, Lucy Van Kleunen, Liam Albright, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Stephen Voida, Jaime Snyder</p>
@@ -117,114 +133,868 @@
 				</div>
 				<div class="paper-tags">
 					<span class="domain-tag">mental health</span>
+					<span class="method-tag">interviews</span>
 					<span class="domain-tag">privacy</span>
 				</div>
 				<div class="paper-links">
 					<span class="paper-links-container">
-						<a href="">PDF</a> &thinsp;&middot;&thinsp; <a href="">ACM</a> &thinsp;&middot;&thinsp; Project
-					</span>
-				</div>
-			</div>
-			<div class="pub-entry-grid">
-				<!--<span class="paper-id">[C.]</span>-->
-				<span class="paper-thumb"><img src="images/paper_thumbs/xx_thumb.png"/></span>
-				<div class="paper-info">
-					<p class="paper-title">Perception of Sustainable Design Integration Benefits Among Industry Product Development Teams: A Case Study</p>
-					<p class="paper-authors"><span class="lab-member-emph">Tejaswini Chatty</span>, Jeremy Faludi</p>
-					<p class="paper-venue">Proceedings of the Design Society (DESIGN) &middot; Volume 1 &middot; Pages 2475&ndash;2484 &middot; Cambridge University Press &middot; 2020</p>
-				</div>
-				<div class="paper-tags">
-					<span class="domain-tag">sustainability</span>
-				</div>
-				<div class="paper-links">
-					<span class="paper-links-container">
-						<a href="">PDF</a> &thinsp;&middot;&thinsp; <a href="">ACM</a> &thinsp;&middot;&thinsp; Project
-					</span>
-				</div>
-			</div>
-			<div class="pub-entry-grid">
-				<span class="paper-id">[xx]</span>
-				<span class="paper-thumb"><img src="images/paper_thumbs/xx_thumb.png"/></span>
-				<div class="paper-info">
-					<p class="paper-title">Inbodied interaction design example: chronobiology-friendly technology</p>
-					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, anyone else?</p>
-					<p class="paper-venue">venue... (IX) &middot; Pages x&ndash;xx &middot; ACM &middot; 2020</p>
-				</div>
-				<div class="paper-tags">
-					<span class="domain-tag">sleep?</span>
-				</div>
-				<div class="paper-links">
-					<span class="paper-links-container">
-						<a href="">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a> &thinsp;&middot;&thinsp; Project
+						<a href="files/CHI20_Invisible.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3313831.3376573">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#invisibility">Project</a>
 					</span>
 				</div>
 			</div>
 			
-
-					
-			Do Better. Sustainable Product Design. Synapse. Chatty, harrison, Cowen, stillman
+			<div class="pub-entry-grid">
+				<div class="paper-award-icon best-paper"></div>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI20_Zuki_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Designing Ambient Narrative-Based Interfaces to Reflect and Motivate Physical Activity</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>,  Xin Jiang, Anna Kong, Michelle Park, Weili Shi, Connor Soohoo, Luke Vink, Iris Xia, Xin Yu, John Yang-Sammataro, Grace Young, Jenny Zhi, Paula Moya, James A. Landay</p>
+					<p class="paper-venue">Proceedings of the 38th Annual Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1&ndash;14 &middot; ACM &middot; 2020</p>
+				<p class="paper-award">Best Paper Award (top 1%)</a></p>
+				</div>		 
+				<div class="paper-tags">
+					<span class="domain-tag">physical activity</span>
+					<span class="interaction-tag">narrative</span>
+					<span class="interaction-tag">ambient displays</span>
+					<span class="interaction-tag">smartphones</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/CHI20_Zuki.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3313831.3376478">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#narratives">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/DESIGN20_Perception_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Perception of Sustainable Design Integration Benefits Among Industry Product Development Teams: A Case Study</p>
+					<p class="paper-authors"><span class="lab-member-emph">Tejaswini Chatty</span>, Jeremy Faludi</p>
+					<p class="paper-venue">Proceedings of the Design Society (DESIGN) &middot; Volume 1 &middot; Pages 2475&ndash;2484 &middot; Cambridge University Press &middot; 2020</p> <!-- May 2020 -->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">sustainability</span>
+					<span class="domain-tag">product development</span>
+					<span class="population-tag">designers</span>
+					<span class="population-tag">engineers</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/DESIGN20_Perception.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1017/dsd.2020.54">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#ecosketch">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/Synapse20-Ebook_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Do Better. Sustainable Product Design</p>
+					<p class="paper-authors"><span class="lab-member-emph">Tejaswini Chatty</span>, Will Harrison, Lina Cowen, Martine Stillman, Jeremy Faludi</p>
+					<p class="paper-venue">Pages 1&ndash;51 &middot; Synapse Product Development Inc. &middot; 2020</p> <!--May/June 2020-->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">sustainability</span>
+					<span class="domain-tag">product development</span>
+					<span class="population-tag">designers</span>
+					<span class="population-tag">engineers</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/Synapse20-Ebook.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://blog.synapse.com/post/download-do-better-sustainable-product-design-ebook">Synapse blog</a> &thinsp;&middot;&thinsp; <a href="projects.html#ecosketch">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/IX20_Chrono_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Inbodied interaction design example: chronobiology-friendly technology</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+					<p class="paper-venue">Interactions (IX) &middot; 27(2) Pages 54&ndash;55 &middot; ACM &middot; 2020</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">circadian rhythms</span>
+					<span class="domain-tag">sleep</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/IX20_Chrono.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="http://dx.doi.org/10.1145/3380938">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#clockwise">Project</a>
+					</span>
+				</div>
+			</div>
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/IX20_Discomfort_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Discomfort design</p>
+					<p class="paper-authors">mc schraefel, Aaron Tabor, <span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+					<p class="paper-venue">Interactions (IX) &middot; 27(2) Pages 40&ndash;45 &middot; ACM &middot; 2020</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">health</span>
+					<span class="interaction-tag">inbodied interaction</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/IX20_Discomfort.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="http://dx.doi.org/10.1145/3381875">DOI</a> &thinsp;&middot;&thinsp; Project
+					</span>
+				</div>
+			</div>
+			
+			<!-- Liz's papers from before the lab was founded -->
+<!--			<div style="margin-bottom: 20px;">
+				<span class="section-header2">Previous</span>
+				<span style="font: italic 13px Avenir, sans-serif;">&ensp;(Prof. Murnane's papers that were published prior to her joining Dartmouth and founding the lab)</span>
+			</div>	-->		
+			<h1 class="section-header1">Previous</h1>
+			<div class="header-footnote">(Prof. Murnane's papers that were published prior to her joining Dartmouth and founding the lab)</div>
 
 			<div class="pub-year-header">2019</div>
 			
 			<div class="pub-entry-grid">
-				<span class="paper-id">[xx]</span>
-				<span class="paper-thumb"><img src="images/paper_thumbs/xx_thumb.png"/></span>
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/Ubi19_MHSI_thumb.png"/></span>
 				<div class="paper-info">
-					<p class="paper-title">title</p>
-					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, anyone else?</p>
-					<p year="paper-venue">venue... (abbrev) &middot; Pages x&ndash;xx &middot; ACM &middot; 2020</p>
+					<p class="paper-title">4th International workshop on mental health and well-being: sensing and intervention</p>
+					<p class="paper-authors">Akane Sano, Saeed Abdullah, Jakob E. Bardram, Sandra Servia, <span class="lab-member-emph">Elizabeth Murnane</span>, Tanzeem Choudhury, Mirco Musolesi, Giovanna Vilaza, Varun Mishra</p>
+					<p class="paper-venue">Adjunct Proceedings of the 2019 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2019 ACM International Symposium on Wearable Computers (UbiComp/ISWC) &middot; Pages 899&ndash;901 &middot; ACM &middot; 2019</p> <!-- Sep 2019 -->
 				</div>
 				<div class="paper-tags">
-					<span class="domain-tag">sleep?</span>
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">mHealth</span>
 				</div>
 				<div class="paper-links">
 					<span class="paper-links-container">
-						<a href="">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a> &thinsp;&middot;&thinsp; Project
+							<a href="files/Ubi19_MHSI.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3341162.3347764">DOI</a> &thinsp;&middot;&thinsp; <a href='https://ubicomp-mental-health.github.io/workshop-2019.html' target='_blank'>Workshop website</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
+						
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI19_Visually_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Visually Encoding the Lived Experience of Bipolar Disorder</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Caitie Lustig, Stephen Voida</p>
+					<p class="paper-venue">Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1&ndash;14 &middot; ACM &middot; 2019</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">visual elicitation</span>
+					<span class="interaction-tag">visualization</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/CHI19_Visually.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3290605.3300363">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#visbd">Project</a>
+					</span>
+				</div>
+			</div>
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI19_QuizBot_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">QuizBot: A Dialogue-based Adaptive Learning System for Factual Knowledge</p>
+					<p class="paper-authors">Sherry Ruan, Liwei Jiang, Justin Xu, Bryce Tham, Zhengneng Qiu, Yeshuang Zhu, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Emma Brunskill, James A. Landay</p>
+					<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1&ndash;13 &middot; ACM &middot; 2019</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">education</span>
+					<span class="method-tag">machine learning</span>
+					<span class="method-tag">NLP</span>
+					<span class="interaction-tag">chatbots</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/CHI19_QuizBot.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3290605.3300587">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#edu-chatbots">Project</a>
 					</span>
 				</div>
 			</div>
 			
-			Acceptance rates? 
-			
-			<!-- Liz's papers from before the lab was founded -->
-			<div class="pub-year-header">Previous <span style="font: italic 13px Avenir, sans-serif;">&ensp;(Prof. Murnane's papers that were published prior to her joining Dartmouth and founding the lab)</span></div>
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI19_ICI_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">I was really, really nervous posting it": Communicating about Invisible Chronic Illness across Social Media Platforms</p>
+					<p class="paper-authors">Shruti Sannon, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Natalya N. Bazarova</p>
+					<p class="paper-venue">Proceedings of the xxnd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1&ndash;13 &middot; ACM &middot; 2019</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">pain</span>
+					<span class="method-tag">interviews</span>
+					<span class="interaction-tag">social media</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/CHI19_ICI.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3290605.3300583">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#invisibility">Project</a>
+					</span>
+				</div>
+			</div>
 			
 			<div class="pub-entry-grid">
-				<span class="paper-id">[C.9]</span>
-				<span class="paper-thumb" style="border: none;"><img src="images/paper_thumbs/C9_thumb.jpg"/></span>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/SPSP19_Wearable_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Wearable Fitness Trackers and Their Effects on Mindsets and Health: A Longitudinal Experiment</p>
+					<p class="paper-authors">Kristopher Evans, Octavia Zahrt, Alia Crum, James Landay, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Erik Santoro</p>
+					<p class="paper-venue">The Annual Convention of the Society for Personality and Social Psychology (SPSP) &middot; 2019</p>
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">physical activity</span>
+					<span class="interaction-tag">smart watches</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/SPSP19_Wearable.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#mindsets-mhealth">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-year-header">2018</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/IMWUT19_VRCar_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Driving with the Fishes: Towards Calming and Mindful Virtual Reality Experiences for the Car</p>
+					<p class="paper-authors">Pablo E. Paredes, Kyle Qian, Stephanie Balters, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Francisco Ordonez, Wendy Ju, James A. Landay </p>
+					<p class="paper-venue">Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies (IMWUT) &middot; 2(4) Pages 184&ndash;xx &middot; ACM &middot; 2019</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">stress</span>
+					<span class="context-tag">cars</span>
+					<span class="interaction-tag">virtual reality</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/IMWUT19_VRCar.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3287062">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#caring-car">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-award-icon honorable-mention"></span>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CSCW18_Ecology_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Personal Informatics in Interpersonal Contexts: Towards the Design of Technology that Supports the Social Ecologies of Long-Term Mental Health Management</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Tara G. Walker, Beck Tench, Stephen Voida, Jaime Snyder</p>
+					<p class="paper-venue">Proceedings of the ACM on Human-Computer Interaction 2(CSCW) &middot; Pages 1&ndash;27 &middot; ACM &middot; 2018</p>
+					<p class="paper-award"><a href='https://medium.com/acm-cscw/announcing-the-best-of-cscw-2018-b98cb91e0f61' target='_blank'>Honorable Mention Award</a> (top 5%)
+						&thinsp;&middot;&thinsp;
+						1 of 5 papers to receive <a href='https://medium.com/acm-cscw/recognition-of-contribution-to-diversity-and-inclusion-at-cscw-2018-891ae0fce770' target='_blank'>Recognition of Contribution to Diversity and Inclusion</a>
+						</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">interviews</span>
+					<span class="method-tag">focus groups</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/CSCW18_Ecology.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3274396">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#interpersonal-informatics">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/CSCW18_SocialPI_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Social Issues in Personal Informatics: Design, Data, and Infrastructure</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Jaime Snyder, Stephen Voida, Matthew Bietz, Mark Matthews, Sean Munson, Laura Pina</p>
+					<p class="paper-venue">Companion of the 2018 ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW) &middot; Pages 471&ndash;478 &middot; ACM &middot; 2018</p> <!-- Oct 2018 -->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">self-tracking</span>
+					<span class="domain-tag">quantified self</span>
+					<span class="domain-tag">sensemaking</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/CSCW18_SocialPI.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3272973.3273016">DOI</a> &thinsp;&middot;&thinsp; <a href='https://tmilab.colorado.edu/socialpi/' target='_blank'>Workshop website</a> &thinsp;&middot;&thinsp; <a href="projects.html#interpersonal-informatics">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/Ubi18_MHSI_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">3rd International Workshop on Mental Health and Well-being: Sensing and Intervention</p>
+					<p class="paper-authors">Saeed Abdullah, Akane Sano, <span class="lab-member-emph">Elizabeth Murnane</span>, Mirco Musolesi, Jakob E. Bardram, Sandra Servia, Tanzeem Choudhury</p>
+					<p class="paper-venue">Proceedings of the 2018 ACM International Joint Conference and 2018 International Symposium on Pervasive and Ubiquitous Computing and Wearable Computers (UbiComp/ISWC) &middot; Pages 1681&ndash;1685 &middot; ACM &middot; 2018</p> <!-- Oct 2018 -->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">mHealth</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/Ubi18_MHSI.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3267305.3274147">DOI</a> &thinsp;&middot;&thinsp; <a href='https://ubicomp-mental-health.github.io/workshop-2018.html' target='_blank'>Workshop website</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
+						
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/Pervasive18_Breath_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Breath Booster! Exploring In-Car, Fast-Paced Breathing Interventions to Enhance Driver Arousal State</p>
+					<p class="paper-authors">Stephanie Balters, <span class="lab-member-emph">Elizabeth L. Murnane</span>, James A. Landay, Pablo Paredes</p>
+					<p class="paper-venue">Proceedings of the 12th EAI International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth) &middot; Pages 128&ndash;137 &middot; ACM &middot; 2018</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">alertness</span>
+					<span class="context-tag">cars</span>
+					<span class="interaction-tag">haptics</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/Pervasive18_Breath.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3240925.3240939">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#caring-car">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb" style="border: none;"><img src="images/thumbnails/paper_thumbs/CHI18_Keppi_thumb.png"/></span>
 				<div class="paper-info">
 					<p class="paper-title">Keppi: A Tangible User Interface for Self-Reporting Pain</p>
-					<p class="paper-authors">Alex Adams, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Phil Adams, Mike Elfenbein, Pamara Chang, Shruti Sannon, Geri Gay, Tanzeem Choudhury</p>
-					<p year="paper-venue">Proceedings of the 36th Annual Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1&ndash;13 &middot; ACM &middot; 2018</p>
+					<p class="paper-authors">Alexander T. Adams, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Phil Adams, Mike Elfenbein, Pamara F. Chang, Shruti Sannon, Geri Gay, Tanzeem Choudhury</p>
+					<p class="paper-venue">Proceedings of the 36th Annual Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1&ndash;13 &middot; ACM &middot; 2018</p>
 				</div>
 				<div class="paper-tags">
 					<span class="domain-tag">pain</span>
 					<span class="interaction-tag">tangibles</span>
 				</div>
-				<div class="paper-links"><span class="paper-links-container"><a href="CHI18_Keppi.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="CHI18_Keppi_Slides.pdf">Slides</a> &thinsp;&middot;&thinsp; CHI Talk Recording &thinsp;&middot;&thinsp; <a href="https://dl.acm.org/citation.cfm?id=3174076">ACM</a> &thinsp;&middot;&thinsp; Project</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="CHI18_Keppi.pdf">PDF</a> &thinsp;&middot;&thinsp; 
+						<a href="CHI18_Keppi_Slides.pdf">Slides</a> &thinsp;&middot;&thinsp; 
+						<a class="mklbItem" data-video-src="files/CHI18_Keppi_Talk.mp4">Video of presentation</a> &thinsp;&middot;&thinsp; 
+						<a href="https://doi.org/10.1145/3173574.3174076">DOI</a> &thinsp;&middot;&thinsp; 
+						<a href="projects.html#pain-reporting-UIs">Project</a>
+					</span>
 				</div>
 			</div>
+			
 			<div class="pub-entry-grid">
-				<span class="paper-id">[C.8]</span>
-				<span class="paper-thumb"><img src="images/paper_thumbs/C8_thumb.jpg"/></span>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/IMWUT18_JustBreathe_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Just Breathe: In-Car Interventions for Guided Slow Breathing</p>
+					<p class="paper-authors">Pablo Paredes, Yijun Zhou, Nur Al-Huda Hamdan, Stephanie Balters, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Wendy Ju, James A. Landay, P</p>
+					<p class="paper-venue">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) &middot; 2(1) Pages 28&ndash;xx &middot; ACM &middot; 2018</p> <!-- March 2018 -->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">stress</span>
+					<span class="context-tag">cars</span>
+					<span class="interaction-tag">haptics</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/IMWUT18_JustBreathe.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3191760">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#caring-car">Project</a>
+					</span>
+				</div>
+			</div>
+						
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/JMIR18_Supporting_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Supporting Accurate Interpretation of Self-Administered Medical Test Results for Mobile Health: Assessment of Design, Demographics, and Health Condition</p>
+					<p class="paper-authors">Jessica C. Hohenstein, Eric P. S. Baumer, Lindsay Reynolds, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Dakota O'Dell, Seoho Lee, Shion Guha, Yu Qi, Erin Rieger, Geri Gay</p>
+					<p class="paper-venue">Journal of Medical Internet Research Human Factors (JMIR) &middot; 5(1):e9 &middot; 2018</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">health diagnostics</span>
+					<span class="domain-tag">information design</span>
+					<span class="method-tag">interviews</span>
+					<span class="method-tag">online experiment</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/JMIR18_Supporting.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.2196/humanfactors.8620">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#nutriphone">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-year-header">2017</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/HCIJ17_Quantifying_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Quantifying the Changeable Self: The role of self-tracking in coming to terms with and managing bipolar disorder</p>
+					<p class="paper-authors">Mark Matthews, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Jaime Snyder</p>
+					<p class="paper-venue">Human-Computer Interaction &middot; Pages 413&ndash;446 &middot; Taylor & Francis &middot; 2017</p> <!-- Nov 2, 2017 -->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">interviews</span>
+					<span class="method-tag">surveys</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/HCIJ17_Quantifying.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1080/07370024.2017.1294983">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHB17_Double_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">The Double-Edged Sword: A Mixed Methods Study of the Interplay Between Bipolar Disorder and Technology Use</p>
+					<p class="paper-authors">Mark Matthews, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Jaime Snyder, Shion Guha, Pamara Chang, Gavin Doherty, Geri Gay</p>
+					<p class="paper-venue">Computers in Human Behavior (CHB), 75 &middot; Pages 288&ndash;300 &middot; Publisher?? &middot; 2017</p> <!-- Oct 31, 2017 -->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">surveys</span>
+					<span class="method-tag">quantitative analysis</span>
+					<span class="method-tag">qualitative analysis</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/CHB17_Double.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1016/j.chb.2017.05.009">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/JMIR17_Enhancing_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Enhancing the Usability of an Optical Reader System to Support Point-of-Care Rapid Diagnostic Testing: An Iterative Design Approach</p>
+					<p class="paper-authors">Jessica Hohenstein, Dakota O'Dell, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Zhengda Lu, David Erickson, Geri Gay</p>
+					<p class="paper-venue">Journal of Medical Internet Research Human Factors (JMIR) &middot; 4(4):e29 &middot; 2017</p> <!--Oct/Nov 2017-->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">nutrition</span>
+					<span class="context-tag">point-of-care</span>
+					<span class="interaction-tag">smartphones</span>
+					<span class="interaction-tag">lateral flow assays</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/JMIR17_Enhancing.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.2196/humanfactors.8621">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#nutriphone">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/Ubi17_MHSI_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">2nd International Workshop on Mental Health and Well-being: Sensing and Intervention</p>
+					<p class="paper-authors">Saeed Abdullah, <span class="lab-member-emph">Elizabeth Murnane</span>, Mirco Musolesi, Jakob E. Bardram, Tanzeem Choudhury</p>
+					<p class="paper-venue">Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers (UbiComp/ISWC) &middot; Pages 745&ndash;748 &middot; ACM &middot; 2017</p> <!-- Sep 2017 -->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">mHealth</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/Ubi17_MHSI.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/3123024.3124461">DOI</a> &thinsp;&middot;&thinsp; <a href='https://ubicomp-mental-health.github.io/workshop-2017.html' target='_blank'>Workshop website</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI17_Pain_thumb.png"/></span>
 				<div class="paper-info">
 					<p class="paper-title">Supporting the Self-Management of Chronic Pain Conditions with Tailored Momentary Self-Assessments</p>
 					<p class="paper-authors">Phil Adams, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Mike Elfenbein, Elaine Wethington, Geri Gay</p>
-					<p year="paper-venue">Proceedings of the 35th Annual Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1065&ndash;1077 &middot; ACM &middot; 2017</p>
+					<p class="paper-venue">Proceedings of the 35th Annual Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1065&ndash;1077 &middot; ACM &middot; 2017</p>
 				</div>
 				<div class="paper-tags">
 					<span class="domain-tag">pain</span>
 					<span class="interaction-tag">smartphones</span>
 				</div>
-				<div class="paper-links"><span class="paper-links-container"><a href="CHI17_Pain.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="CHI17_Pain_Slides.pdf">Slides</a> <a href="https://dl.acm.org/doi/10.1145/3025453.3025832">ACM</a> &thinsp;&middot;&thinsp; Project</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="CHI17_Pain.pdf">PDF</a> &thinsp;&middot;&thinsp; 
+						<a href="CHI17_Pain_Slides.pdf">Slides</a> &thinsp;&middot;&thinsp; 
+						<a href="https://doi.org/10.1145/3025453.3025832">DOI</a> &thinsp;&middot;&thinsp; 
+						<a href="projects.html#pain-reporting-UIs">Project</a>
+					</span>
 				</div>
 			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/Springer17_Circadian_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Circadian Computing: Sensing, Modeling, and Maintaining Biological Rhythms</p>
+					<p class="paper-authors">Saeed Abdullah, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Mark Matthews, Tanzeem Choudhury </p>
+					<p class="paper-venue">Mobile Health: Sensors, Analytic Methods, and Applications &middot; edited by James M. Rehg, Susan A. Murphy, Santosh Kumar &middot; Pages 35&ndash;58 &middot; Springer &middot; 2017</p> <!--July 2017-->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">chronobiology</span>
+					<span class="domain-tag">alertness</span>
+					<span class="domain-tag">mental health</span>
+					<span class="domain-tag">sleep</span>
+					<span class="method-tag">mHealth</span>
+					<span class="method-tag">sensing</span>
+					<span class="interaction-tag">smartphones</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/Springer17_Circadian.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1007/978-3-319-51394-2_3">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#clockwise">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/Dissertation17_Murnane_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">A Framework for Domain-Driven Development of Personal Health Informatics Technologies</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+					<p class="paper-venue">Cornell University, PhD Dissertation &middot; Pages 1&ndash;296 &middot; 2017</p>
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">health</span>
+					<span class="domain-tag">equity</span>
+					<span class="interaction-tag">personal informatics</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/Dissertation17_Murnane.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.7298/X4CR5RBR">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#domain-driven">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-year-header">2016</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/UbiComp16_Cognitive_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Cognitive Rhythms: Unobtrusive and Continuous Sensing of Alertness Using a Mobile Phone</p>
+					<p class="paper-authors">Saeed Abdullah, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Mark Matthews, Matthew Kay, Julie A. Kientz, Geri Gay, Tanzeem Choudhury</p>
+					<p class="paper-venue">Proceedings of the ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp) &middot; Pages 178&ndash;189 &middot; ACM &middot; 2016</p> <!--September 2016-->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">alertness</span>
+					<span class="method-tag">mHealth</span>
+					<span class="method-tag">sensing</span>
+					<span class="interaction-tag">smartphones</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/UbiComp16_Cognitive.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2971648.2971712">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#clockwise">Project</a>
+					</span>
+				</div>
+			</div> 
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/UbiComp16_Playing_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Playing with Your Data: Towards Personal Informatics Driven Games</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Mark Matthews, Dan Cosley, Geri Gay</p>
+					<p class="paper-venue">Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing Adjunct (UbiComp) &middot; Pages 565&ndash;569 &middot; ACM &middot; 2016</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">personal informatics</span>
+					<span class="interaction-tag">games & play</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/UbiComp16_Playing.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2968219.2968322">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#games">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-award-icon best-paper"></span>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/MobileHCI16_MobileManifestations_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Mobile Manifestations of Alertness: Connecting Biological Rhythms with Patterns of Smartphone App Use</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Saeed Abdullah, Mark Matthews, Matthew Kay, Julie A. Kientz, Tanzeem Choudhury, Geri Gay, Dan Cosley</p>
+					<p class="paper-venue">Proceedings of the 18th International Conference on Human-Computer Interaction with Mobile Devices and Services (MobileHCI) &middot; Pages 465&ndash;477 &middot; ACM &middot; 2016</p>
+					<p class="paper-award">Best Paper Award (top 2 papers) & ACM Computing Best of 2016 Notable Article</a></p>
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">alertness</span>
+					<span class="method-tag">mHealth</span>
+					<span class="interaction-tag">smartphones</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/MobileHCI16_MobileManifestations.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2935334.2935383">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#clockwise">Project</a>
+					</span>
+				</div>
+			</div>
+			<div class="pub-entry-grid">
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/MobileHCI16_Opportunities_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Opportunities for Technology in the Self-Management of Mental Health</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Mark Matthews, Geri Gay</p>
+					<p class="paper-venue">Proceedings of the 18th International Conference on Human-Computer Interaction with Mobile Devices and Services Adjunct (MobileHCI) &middot; Pages 1093&ndash;1096 &middot; ACM &middot; 2016</p>
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">mHealth</span>
+					<span class="interaction-tag">smartphones</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/MobileHCI16_Opportunities.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2957265.2965008">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/Assessment16_Development_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Development and evaluation of a smartphone-based measure of social rhythms for bipolar disorder</p>
+					<p class="paper-authors">Mark Matthews, Saeed Abdullah, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Stephen Voida, Tanzeem Choudhury, Geri Gay, Ellen Frank</p>
+					<p class="paper-venue">Assessment &middot; 23(4) Pages 472&ndash;483 &middot; Sage &middot; 2016</p><!--June 2016-->
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">mHealth</span>
+					<span class="interaction-tag">smartphones</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/Assessment16_Development.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1177/1073191116656794">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div> 
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CSCW16_OneDone_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">One and Done: Factors affecting one-time contributors to ad-hoc online communities</p>
+					<p class="paper-authors">Brian McInnis, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Dmitry Epstein, Dan Cosley, Gilly Leshed</p>
+					<p class="paper-venue">Proceedings of the 19th ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW) &middot; Pages 609&ndash;623 &middot; 2016</p> <!--Feb 2016-->
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">civics</span>
+					<span class="method-tag">quantitative analysis</span>
+					<span class="population-tag">crowdworkers</span>
+					<span class="interaction-tag">online discussion forum</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/CSCW16_OneDone.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2818048.2820075">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#regulation-room">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/JAMIA16_SelfMonitoring_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Self-Monitoring Practices, Attitudes, and Needs of Individuals with Bipolar Disorder: Implications for the Design of Technologies to Manage Mental Health</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Dan Cosley, Pamara Chang, Shion Guha, Ellen Frank, Geri Gay, Mark Matthews</p>
+					<p class="paper-venue">Journal of the American Medical Informatics Association (JAMIA) &middot; 23(3) Pages 477&ndash;484 &middot; Oxford &middot; 2016</p> <!--January 2016-->
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">mental health</span>
+					<span class="method-tag">surveys</span>
+					<span class="method-tag">descriptive statistics</span>
+					<span class="method-tag">qualitative analysis</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/JAMIA16_SelfMonitoring.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1093/jamia/ocv165">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#mood-tracking">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-year-header">2015</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/UbiComp15_Social_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Social (media) jet lag: How usage of social technology can modulate and reflect circadian rhythms</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Saeed Abdullah, Mark Matthews, Tanzeem Choudhury, Geri Gay</p>
+					<p class="paper-venue">Proceedings of the ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp) &middot; Pages 843&ndash;854 &middot; ACM &middot; 2015</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">sleep</span>
+					<span class="method-tag">mHealth</span>
+					<span class="interaction-tag">smartphones</span>
+					<span class="interaction-tag">social media</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/UbiComp15_Social.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2750858.2807522">DOI</a>  &thinsp;&middot;&thinsp; <a href="projects.html#clockwise">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/UbiComp15_Mobile_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Mobile health apps: adoption, adherence, and abandonment</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, David Huffaker, Gueorgi Kossinets</p>
+					<p class="paper-venue">Adjunct Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2015 ACM International Symposium on Wearable Computers (UbiComp/ISWC) &middot; Pages 261&ndash;264 &middot; ACM &middot; 2015</p>
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">health</span>
+					<span class="method-tag">quantitative analysis</span>
+					<span class="method-tag">qualitative analysis</span>
+					<span class="interaction-tag">smartphones</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/UbiComp15_Mobile.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2800835.2800943">DOI</a> <a href="projects.html#mindsets-mhealth">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb horizontal-paper-thumb"><img src="images/thumbnails/paper_thumbs/UbiComp15_Exploring_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Exploring a theory-guided path to the design of personal informatics and intervention technologies</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span></p>
+					<p class="paper-venue">Adjunct Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2015 ACM International Symposium on Wearable Computers (UbiComp/ISWC) &middot; Pages 447&ndash;452 &middot; ACM &middot; 2015</p>
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">health</span>
+					<span class="domain-tag">equity</span>
+					<span class="interaction-tag">personal informatics</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/UbiComp15_Exploring.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2800835.2801646">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#domain-driven">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CSCW15_CollectiveSmile_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Collective Smile: Measuring Societal Happiness from Geolocated Images</p>
+					<p class="paper-authors">Saeed Abdullah, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Jean Costa, Tanzeem Choudhury </p>
+					<p class="paper-venue">Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW) &middot; Pages 361&ndash;374 &middot; ACM &middot; 2015</p>
+				</div>
+				<span class="paper-tags">
+					<span class="method-tag">data mining</span>
+					<span class="method-tag">facial detection</span>
+					<span class="method-tag">quantitative analysis</span>
+					<span class="interaction-tag">social media</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/CSCW15_CollectiveSmile.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2675133.2675186">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#societal-media">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/ICWSM15_Grievances_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">It is not only about grievances-emotional dynamics in social media during the Brazilian protests</p>
+					<p class="paper-authors">Jean M. R. Costa, Rahmtin Rotabi, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Tanzeem Choudhury </p>
+					<p class="paper-venue">Proceedings of the Ninth International AAAI Conference on Web and Social Media (ICWSM) &middot; Pages 594&ndash;597 &middot; AAAI &middot; 2015</p>
+				</div>
+				<span class="paper-tags">
+					<span class="method-tag">data mining</span>
+					<span class="method-tag">NLP</span>
+					<span class="interaction-tag">social media</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+						<a href="files/ICWSM15_Grievances.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#societal-media">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-year-header">2014</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/UbiComp14_TowardsCircadian_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Towards circadian computing: early to bed and early to rise makes some of us unhealthy and sleep deprived</p>
+					<p class="paper-authors">Saeed Abdullah, Mark Matthews, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Geri Gay, Tanzeem Choudhury</p>
+					<p class="paper-venue">Proceedings of the ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp) &middot; Pages 673&ndash;684 &middot; ACM &middot; 2014</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">sleep</span>
+					<span class="method-tag">mHealth</span>
+					<span class="method-tag">sensing</span>
+					<span class="interaction-tag">smartphones</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/UbiComp14_TowardsCircadian.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2632048.2632100">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#clockwise">Project</a>
+					</span>
+				</div>
+			</div>
+				
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/CHI14_Smoking_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Unraveling abstinence and relapse: smoking cessation reflected in social media</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span> & Scott Counts </p>
+					<p class="paper-venue">Proceedings of the 32nd Annual ACM Conference on Human Factors in Computing Systems (CHI) &middot; Pages 1345&ndash;1354 &middot; ACM &middot; 2014</p>
+				</div>
+				<span class="paper-tags">
+					<span class="domain-tag">behavior change</span>
+					<span class="method-tag">data mining</span>
+					<span class="population-tag">smokers</span>
+					<span class="interaction-tag">social media</span>
+				</span>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/CHI14_Smoking.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2556288.2557145">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#smoking">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-award-icon best-paper"></span>
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/WWW13_RESLVE_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">RESLVE: Leveraging user interest to improve entity disambiguation on short text</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Bernhard Haslhofer, Carl Lagoze</p>
+					<p class="paper-venue">Proceedings of the 22nd International Conference on World Wide Web Companion (WWW) &middot; Pages 1275&ndash;1284 &middot; ACM &middot; 2013</p>
+					<p class="paper-award">Best Paper Award at Web of Linked Entities workshop (WoLE'13)</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">geography</span>
+					<span class="method-tag">information retrieval</span>
+					<span class="interaction-tag">social media</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container">
+							<a href="files/WWW13_RESLVE.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/2487788.2488162">DOI</a> &thinsp;&middot;&thinsp; <a href="projects.html#social-semantic-web">Project</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/OOPSLA08_Interactive_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Interactive exploration of compacted visualizations for understanding behavior in complex software</p>
+					<p class="paper-authors"><span class="lab-member-emph">Elizabeth L. Murnane</span>, Vineet Sinha</p>
+					<p class="paper-venue">Companion to the 23rd ACM SIGPLAN conference on object-oriented programming systems languages and applications (OOPSLA) &middot; Pages 763&ndash;764 &middot; ACM &middot; 2008</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">usable programming</span>
+					<span class="population-tag">software developers</span>
+					<span class="interaction-tag">visualization</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container"><a href="files/OOPSLA08_Interactive.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/1449814.1449833">DOI</a></span> &thinsp;&middot;&thinsp; <a href="projects.html#architexa">Project</a>
+				</div>
+			</div>
+			<div class="pub-entry-grid">
+				<span class="paper-thumb"><img src="images/thumbnails/paper_thumbs/OOPSLA08_UnderstandingCodeArchitectures_thumb.png"/></span>
+				<div class="paper-info">
+					<p class="paper-title">Understanding code architectures via interactive exploration and layout of layered diagrams</p>
+					<p class="paper-authors">Vineet Sinha, <span class="lab-member-emph">Elizabeth L. Murnane</span>, Scott W. Kurth, Edy S. Liongosari, Rob Miller, David Karger</p>
+					<p class="paper-venue">Companion to the 23rd ACM SIGPLAN conference on Object-oriented programming systems languages and applications (OOPSLA) &middot; Pages 745&ndash;746 &middot; ACM &middot; 2008</p>
+				</div>
+				<div class="paper-tags">
+					<span class="domain-tag">usable programming</span>
+					<span class="population-tag">software developers</span>
+					<span class="interaction-tag">visualization</span>
+				</div>
+				<div class="paper-links">
+					<span class="paper-links-container"><a href="files/OOPSLA08_UnderstandingCodeArchitectures.pdf">PDF</a> &thinsp;&middot;&thinsp; <a href="https://doi.org/10.1145/1449814.1449841">DOI</a></span> &thinsp;&middot;&thinsp; <a href="projects.html#architexa">Project</a>
+				</div>
+			</div>
+			
 						
 		</div>	<!-- end pub-content -->
 	</div> <!-- end page-wrapper -->
 	
-	ADD FOOTER
+	<div class="footer-container">
+		<div class="footer-grid">
+			<div class="footer-left"><img src="images/icons/thayer_logo.png" id="thayer-logo"/></div>
+			<div class="footer-mid"><span class="footer-text">Murnane Research Group at Dartmouth College &ensp;|&ensp; Contact: emurnane@dartmouth.edu &ensp;|&ensp; Last updated: December 2020</span></div>
+			<div class="footer-right"><img src="images/icons/D-Pine_RGB.png" id="DC-logo"/></div>
+		</div>
+	</div>
 
 </body>
-
 </html>
