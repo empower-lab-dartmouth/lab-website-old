@@ -8,19 +8,23 @@
 
 	<title>News</title>
 	<link rel="SHORTCUT ICON" href="images/empower-lab.ico" />
-	<link rel="stylesheet" type="text/css" href="styles.css" />
 	
 	<!-- Icons & web fonts -->
-	<link rel="stylesheet" href="images/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="images/icons/fontawesome-free-5.15.1-web/css/all.css">
+	<link rel="stylesheet" href="images/icons/fontawesome-free-5.15.1-web/css/v4-shims.css">
+	<script defer src="images/icons/fontawesome-free-5.15.1-web/js/all.js"></script>
+	<script defer src="images/icons/fontawesome-free-5.15.1-web/js/v4-shims.js"></script>
 	<link rel="stylesheet" href="images/icons/academicons-1.9.0/css/academicons.min.css"/>
-	<script src="https://use.fontawesome.com/cb1f9cec96.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i|Alegreya+Sans+SC:300,300i,400,400i,500,500i,700,700i' rel='stylesheet' type='text/css' />  
+	<link href='https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i|Alegreya+Sans+SC:300,300i,400,400i,500,500i,700,700i' rel='stylesheet' type='text/css' /> 
+	
+	<!-- My stylesheet (needs to be loaded after other stylesheets to enable any desired overwriting) -->
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 	
 	<meta name="google-site-verification" content="0ws4vyaq4Uqntg3jDvGOEi_Uspk1Km0LlmEy6GJ5G7c" />
 </head>
 
 <body>
-	<div class="page-wrapper">
+	<div class="page-wrapper" id="news-page">
 	
 		<div class="header-bar">
 			<span><img  id="header-title-icon" src="images/empower_lab_icon.png"/></span>
@@ -28,22 +32,85 @@
 		  	<nav class="nav-links">
 		    	<a href="index.html">Home</a>
 		    	<a class="selected-link" href="news.html">News</a>
-		    	<a href="projects.html">Projects</a>
-		    	<a href="publications.html">Publications</a>
 		    	<a href="people.html">People</a>
+		    	<a href="publications.html">Publications</a>
+		    	<a href="projects.html">Projects</a>
 		    	<a href="involvement.html">Get Involved</a>
 		  	</nav>
 		</div>
 		
 		<p class='tagline'>News</p>
+		<div class="header-footnote">Announcements, travel, and other updates about the lab and its members</div>
 		
-		<div class='content'>		
-			<p></p>
+		<div class="content" id="news-content">		
+			
+			<div class="news-year-header">2020</div>
+			
+			<div class="news-entry-grid">
+				<!--<span class="paper-id">[B.x]</span>-->
+				<span class="news-thumb"><img src="images/thumbnails/news_thumbs/"/></span>
+				<span class="news-type news-travel"></span>
+				<span class="news-headline">TADA NEWS</span>
+				<span class="news-date">xx, xx, 2020</span>
+				<div class="news-content">
+					<p>our paper was... </p>
+				</div>
+			</div>
+			
+			<div class="news-year-header">2019</div>
+			
+			<div class="news-entry-grid">
+				<!--<span class="paper-id">[B.x]</span>-->
+				<span class="news-thumb"><img src="images/thumbnails/news_thumbs/"/></span>
+				<span class="news-type news-travel"></span>
+				<span class="news-headline">TADA NEWS</span>
+				<span class="news-date">xx, xx, 2020</span>
+				<div class="news-content">
+					<p>Teja is heading to an internship at Synapse</p>
+				</div>
+			</div>
+			
+			<div class="news-entry-grid">
+				<!--<span class="paper-id">[B.x]</span>-->
+				<span class="news-thumb"><img src="images/thumbnails/news_thumbs/"/></span>
+				<span class="news-type news-travel"></span>
+				<span class="news-headline">TADA NEWS</span>
+				<span class="news-date">xx, xx, 2020</span>
+				<div class="news-content">
+					<p>new lab! </p>
+				</div>
+			</div>
+			
+			- Catherine awarded a Luce fellowship
+			- 2 papers appearing in Interactions
+			- X papers appearing at CHI ... 
+			- Paper now available..... 
+			
+			Dec 11-12, 2019: In Washington DC to present at an NIA-sponsored National Academies of Sciences workshop on mobile technology for adaptive aging
+			Oct 17-18, 2019: In NYC for Brown Institute all-hands for outgoing and incoming grantees
+			Aug 6-9, 2019: In Southampton at the Inbodied Interaction summer school
+			
+			
+			<div class="news-entry-grid">
+				<span class="news-thumb"><img src="images/thumbnails/news_thumbs/"/></span>
+				<span class="news-type news-travel"></span>
+				<span class="news-headline">TADA NEWS</span>
+				<span class="news-date">June 2019</span>
+				<div class="news-content">
+					<p>Liz has accepted Thayer's offer to join the faculty as the Charles H. Gaut & Charles H. Norberg Assistant Professor of Engineering! She'll be deferring the appointment for one year, to wrap up her postdoc at Stanford while ramping up her new lab at Dartmouth.</p>
+				</div>
+			</div>
+			
+		</div> <!-- end content -->
+	</div> <!-- end page-wrapper -->
+	
+	<div class="footer-container">
+		<div class="footer-grid">
+			<div class="footer-left"><img src="images/icons/thayer_logo.png" id="thayer-logo"/></div>
+			<div class="footer-mid"><span class="footer-text">Murnane Research Group at Dartmouth College &ensp;|&ensp; Contact: emurnane@dartmouth.edu &ensp;|&ensp; Last updated: December 2020</span></div>
+			<div class="footer-right"><img src="images/icons/D-Pine_RGB.png" id="DC-logo"/></div>
 		</div>
 	</div>
-	
-	ADD FOOTER
 
 </body>
-
 </html>
