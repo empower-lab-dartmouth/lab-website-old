@@ -10,6 +10,7 @@
   --light-gray-color: #c8c8c8;
   --dark-gray-color: #5e5e5e; /*#82a043;*/
   --project-tags-year-top-alignment: 30%;
+  --generic-tag-color: #adadad;
   --domain-tag-color: #90daea;
   --population-tag-color: #f9ec27;
   --context-tag-color: #ae79e0;
@@ -23,7 +24,7 @@
   --more-details-font-bigger2: 13px;
   --single-space: 12px;
   --single-space-pub-page: 16px;
-  --best-paper-highlight: #d21b42;
+  --best-paper-highlight: #ca2c2c;
 }
 
 @font-face { /* Neutra Text TF 500 */
@@ -213,12 +214,17 @@ p + .condensed-list { margin-top: -1em; }
 
 /* Lightbox for images (screenshots, mockups, photos, etc) */
 .my-gallery {
-  	width: 100%;
-  	float: left;
+  	/*width: 100%;*/
+  	height: 100%;
+  	display: inline-block;
 }
 .my-gallery img {
-  	width: 100%;
-  	height: auto;
+  	height: 100%;
+  	width: auto;
+}
+.tall-figure img {
+	width: 100%;
+	height: auto;
 }
 /*.gallery-thumb {
 	float: left;
@@ -231,9 +237,12 @@ p + .condensed-list { margin-top: -1em; }
   	display: block;
   	float: left;
   	margin: 0 10px 10px 0;
-  	width: 100px;
+  	height: 100px;
   	/*width: 100%;
   	height: 100%;*/
+}
+.tall-figure {
+	width: 100px;
 }
 .my-gallery figcaption {
   	display: none;
@@ -321,78 +330,98 @@ p + .condensed-list { margin-top: -1em; }
     	'news-thumb news-headline news-type'
     	'news-thumb news-date news-type'
     	'news-thumb news-content news-content';
-  	grid-template-columns: 200px auto 50px;
+  	grid-template-columns: 150px auto 50px;
   	grid-template-rows: 30px 30px auto;
   	grid-gap: 5x;
   	padding: 0px;
-  	margin-bottom: 30px;
+  	margin-bottom: 50px;
+  	/*border-bottom: 1px solid var(--light-gray-color);*/
 }
 .news-thumb {
 	grid-area: news-thumb;
 	margin-left: auto;
 	margin-right: auto;
 	padding-right: 10px;
-	max-height: 200px;
-	background-color: yellow;
+	padding-top: 12px;
+	/*max-height: 200px;*/
+	/*background-color: yellow;*/
 	
 }
 .news-thumb img {
-	width: 100%;
-	height: 100%;
+	max-width: 100%; 
+	max-height: 150px;
+}
+.news-thumb-border img {
+	border: 1px solid var(--light-gray-color);
 }
 .news-type {
 	grid-area: news-type;
 	text-align: center;
-	/*padding-top: 15px;*/
-	/*background-color: pink;*/
+	color: white;
 }
-.news-type:before {
-	font-family: "Font Awesome 5 Free";  /* updated font-family */
-	font-size: 20px;
-	width: 20px;
-	height: 20px;
-	/*font-weight: 400; /* regular style/weight *!/*/
-	color: var( --dark-gray-color);
-	display: inline-block;
-	padding: 5px;
-	border: 1px solid #333;
-	border-radius: 40%; /* make the border a circle */
-	font-weight: 900; /*Some font awesome 5 icons not working without font-weight:900 https://stackoverflow.com/questions/47788847/font-awesome-5-font-family-issue */
+.fa-2x {
+	font-size: 1.5em;
 }
-.news-type-celebrate:before {
-	content:  "\f582";
+/*To the eye, not all the font awesome icons look the same
+size, within a circular border (looks more like an ellipsis), 
+or centered within the outline border, so doing some per-icon resizing*/
+.fa-border {
+	border: 1px solid var(--dark-gray-color);
+	border-radius: 50%;
+	/*background-color: #e7e7e7;*/
+	background-color: black;
 }
-.news-type-event:before {
-	content: "\f274";
+.fa-briefcase {
+	padding: 5px 8px;
 }
-.news-type-job:before {
-	content: "\f0b1";
+.fa-exclamation {
+	font-size: 1.3em;
+	padding-left: 6px;
+	padding-right: 6px;
 }
-.news-type-pub:before {
+.fa-file-invoice, .fa-calendar-check, .fa-book {
+	font-size: 1.2em;
+	padding: 8px 10px;
+}
+.fa-newspaper {
+	font-size: 1.7em;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.fa-plane {
+	padding-left: 8px; /*To appear centered*/
+}
+
+.news-type-present:before {
+	content: "";
+	background: url(images/icons/material_talk1.png) no-repeat;
+	background-position: center center;
+	background-size: 70% 70%;	
+}
+/*.news-type-pub:before {
 	content: "\f570";
-}
-.news-type-pub-book:before {
+}*/
+/*.news-type-pub-book:before {
 	content: "\f02d";
-}
-.news-type-reshare:before {
+}*/
+/*.news-type-press:before {
 	content:  "\f1ea";
-}
-.news-type-scholarship:before {
+}*/
+/*.news-type-scholarship:before {
 	content: "\f5a2";
-}
-.news-type-travel:before {
+}*/
+/*.news-type-travel:before {
 	content: "\f072";
-}
-
-
+}*/
 .news-headline {
 	grid-area: news-headline;
-	font-size: 20px;
+	font-size: 24px;
 	text-align: left;
-	background-color: cyan;
 	padding: 0;
+	padding-top: 5px;
 	margin: 0;
 	/*position: relative;*/
+	/*background-color: cyan;*/
 }
 /*.news-headline p {
 	position: absolute;
@@ -403,12 +432,14 @@ p + .condensed-list { margin-top: -1em; }
 	grid-area: news-date;
 	font-style: italic;
 	text-align: left;
-	background-color: #c35de9;
+	padding-top: 8px;
+	/*background-color: #c35de9;*/
 }
 .news-content {
 	grid-area: news-content;
 	text-align: left;
-	background-color: #a7e99d;
+	padding-top: 8px;
+	/*background-color: #a7e99d;*/
 }
 .news-content p {
 	margin: 0;
@@ -439,7 +470,11 @@ p + .condensed-list { margin-top: -1em; }
 	border-radius: 6px;
 	padding: 3px;
 }
-
+.generic-tag {
+	background-color: var(--generic-tag-color);
+	font-style: normal;
+	font-weight: normal;
+}
 .domain-tag {
 	background-color: var(--domain-tag-color);
 }
@@ -845,7 +880,7 @@ projects page, but could eventually make separate Talks/etc page) */
 	padding-left: var(--header-padding-left);*/
 }
 .header-footnote {
-	font: italic 13px Avenir, sans-serif;
+	font: italic 14px Avenir, sans-serif;
 	text-align: center;
 	margin-top: -5px;
 	width: 75%;
