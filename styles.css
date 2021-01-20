@@ -828,12 +828,16 @@ projects page, but could eventually make separate Talks/etc page) */
 .column-x1 {
 	width: 100%;
 }
-.column-x1 > div > img, .column-x2 > div > img {
+.column-x1 > div > img {
 	/*Even though column is wider, don't make thumbnail stretch the full width*/
 	width: 40%;
 }
 .column-x2 {
 	width: 50%;
+}
+.column-x2 > div > img {
+	/*Even though column is wider, don't make thumbnail stretch the full width*/
+	width: 80%;
 }
 .column-x3 {
 	width: 33.33%;
@@ -855,6 +859,9 @@ projects page, but could eventually make separate Talks/etc page) */
 	border: 1px solid var(--light-gray-color);
 	/*background-color: #ea7f7f; /*for layout/debugging*!/*/
 }
+ .workshop-thumb {
+ 	width: 40%; /*The workshop images are full size, so need to reduce them down*/
+ }
 /*For videos that appear in paper or talk links, it's just text so don't put border, make it look like a link, and don't italicize on hover*/
 /*.paper-links-container > .mklbItem, .talk-links-container > .mklbItem, .video-info > .mklbItem {
 	border: none;
@@ -997,10 +1004,10 @@ projects page, but could eventually make separate Talks/etc page) */
 .paper-title, .talk-title, .poster-title, .demo-title, .video-title, .workshop-title { 
 	font-size: 15px;
 }
-.poster-title, .video-info, .video-venue {
+.poster-title, .video-info, .video-venue, .workshop-title {
 	padding-top: 5px;
 }
-.paper-authors, .talk-presenters, .poster-presenters, .workshop-organizers { 
+.paper-authors, .talk-presenters, .poster-presenters { 
 	font-size: 13px;
 	padding-top: 5px;
 	/*line-height: var(--single-space);*/
