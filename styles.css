@@ -947,6 +947,15 @@ projects page, but could eventually make separate Talks/etc page) */
 	/*padding-top: 3px;*/
 	line-height: var(--single-space);
 }
+.horizontal-proj-pub-entry-grid {
+	grid-template-rows: auto auto 15px;
+}
+.horizontal-paper-thumb {
+	height: 70px;
+}
+.horizontal-proj-pub-entry-grid .paper-links {
+	margin-top: 5px;
+}
 .paper-title {
 	/*background-color: cyan;*/
 	/*padding-top: 0px;*/
@@ -990,9 +999,6 @@ projects page, but could eventually make separate Talks/etc page) */
 	height: 120px;
 	border: 1px solid #cbcbcb;
 	background-color: green;
-}
-.horizontal-paper-thumb {
-	height: 70px;
 }
 .paper-info {
 	grid-area: paper-info;
